@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Dx&#39;s Monkey Life</title>
+    <link>https://dxball.github.io/tag/git/</link>
+    <description>Recent content in git on Dx&#39;s Monkey Life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Fri, 01 May 2020 20:14:12 +0800</lastBuildDate>
+    
+	<atom:link href="https://dxball.github.io/tag/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>git ignore 替代方案</title>
+      <link>https://dxball.github.io/2020/05/01/git-ignore-%E6%9B%BF%E4%BB%A3%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Fri, 01 May 2020 20:14:12 +0800</pubDate>
+      
+      <guid>https://dxball.github.io/2020/05/01/git-ignore-%E6%9B%BF%E4%BB%A3%E6%96%B9%E6%A1%88/</guid>
+      <description>git 忽略異動 當有某個檔案或資料夾會因為測試需求而異動，但又不想簽入到 git repo 裡面 (例如 config 檔)，通常將路徑加入專案的 .gitignore 做排除 .git/info/exclude 若不想修改專案的 .gi</description>
+    </item>
+    
+  </channel>
+</rss>
