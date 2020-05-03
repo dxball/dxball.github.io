@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CI/CD on Dx&#39;s Monkey Life</title>
+    <link>https://dxball.github.io/categories/ci/cd/</link>
+    <description>Recent content in CI/CD on Dx&#39;s Monkey Life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://dxball.github.io/categories/ci/cd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gitlab Runner as Windows service freezed when building Unity project</title>
+      <link>https://dxball.github.io/post/gitlab_runner_service_unity_build_failed/</link>
+      <pubDate>Fri, 01 May 2020 23:51:04 +0800</pubDate>
+      
+      <guid>https://dxball.github.io/post/gitlab_runner_service_unity_build_failed/</guid>
+      <description>&lt;p&gt;用 Gitlab CI 建置自動化編譯 Unity 專案流程，在 &lt;a href=&#34;https://docs.gitlab.com/runner/install/windows.html#installation&#34; title=&#34;Install GitLab Runner on Windows&#34;&gt;Runner 註冊為服務&lt;/a&gt;時，若專案過大可能會發生任務卡住的問題&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

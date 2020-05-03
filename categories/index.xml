@@ -5,7 +5,7 @@
     <link>https://dxball.github.io/categories/</link>
     <description>Recent content in Categories on Dx&#39;s Monkey Life</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-tw</language>
+    <language>en</language>
     <lastBuildDate>Fri, 01 May 2020 20:14:12 +0800</lastBuildDate>
     
 	<atom:link href="https://dxball.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,19 @@
     
     <item>
       <title>Notes</title>
-      <link>https://dxball.github.io/category/notes/</link>
+      <link>https://dxball.github.io/categories/notes/</link>
       <pubDate>Fri, 01 May 2020 20:14:12 +0800</pubDate>
       
-      <guid>https://dxball.github.io/category/notes/</guid>
+      <guid>https://dxball.github.io/categories/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CI/CD</title>
+      <link>https://dxball.github.io/categories/ci/cd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dxball.github.io/categories/ci/cd/</guid>
       <description></description>
     </item>
     
