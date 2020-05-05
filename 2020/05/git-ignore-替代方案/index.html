@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Gitlab Runner as Windows service freezed when building Unity project - Dx&#39;s Monkey Life</title>
+  <title>git ignore 替代方案 - Dx&#39;s Monkey Life</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Dxball" /><meta name="description" content="用 Gitlab CI 建置自動化編譯 Unity 專案流程，在 Runner 註冊為服務時，若專案過大可能會發生任務卡住的問題" /><meta name="keywords" content="Programming, Games, Life" />
+<meta name="author" content="Dxball" /><meta name="description" content="當有某個檔案或資料夾會因為測試需求而異動，但又不想簽入到 git repo 裡面 (例如 config 檔)，通常將路徑加入專案的 .gitignore 做排除
+" /><meta name="keywords" content="Programming, Games, Life" />
 
 
 
@@ -26,7 +27,7 @@
 <meta name="generator" content="Hugo 0.69.2 with theme even" />
 
 
-<link rel="canonical" href="https://dxball.github.io/post/gitlab_runner_service_unity_build_failed/" />
+<link rel="canonical" href="https://dxball.github.io/2020/05/git-ignore-%E6%9B%BF%E4%BB%A3%E6%96%B9%E6%A1%88/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -39,23 +40,23 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Gitlab Runner as Windows service freezed when building Unity project" />
-<meta property="og:description" content="用 Gitlab CI 建置自動化編譯 Unity 專案流程，在 Runner 註冊為服務時，若專案過大可能會發生任務卡住的問題" />
+<meta property="og:title" content="git ignore 替代方案" />
+<meta property="og:description" content="當有某個檔案或資料夾會因為測試需求而異動，但又不想簽入到 git repo 裡面 (例如 config 檔)，通常將路徑加入專案的 .gitignore 做排除" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dxball.github.io/post/gitlab_runner_service_unity_build_failed/" />
-<meta property="article:published_time" content="2020-05-01T23:51:04+08:00" />
-<meta property="article:modified_time" content="2020-05-01T23:51:04+08:00" />
-<meta itemprop="name" content="Gitlab Runner as Windows service freezed when building Unity project">
-<meta itemprop="description" content="用 Gitlab CI 建置自動化編譯 Unity 專案流程，在 Runner 註冊為服務時，若專案過大可能會發生任務卡住的問題">
-<meta itemprop="datePublished" content="2020-05-01T23:51:04&#43;08:00" />
-<meta itemprop="dateModified" content="2020-05-01T23:51:04&#43;08:00" />
-<meta itemprop="wordCount" content="287">
+<meta property="og:url" content="https://dxball.github.io/2020/05/git-ignore-%E6%9B%BF%E4%BB%A3%E6%96%B9%E6%A1%88/" />
+<meta property="article:published_time" content="2020-05-01T20:14:12+08:00" />
+<meta property="article:modified_time" content="2020-05-01T20:14:12+08:00" />
+<meta itemprop="name" content="git ignore 替代方案">
+<meta itemprop="description" content="當有某個檔案或資料夾會因為測試需求而異動，但又不想簽入到 git repo 裡面 (例如 config 檔)，通常將路徑加入專案的 .gitignore 做排除">
+<meta itemprop="datePublished" content="2020-05-01T20:14:12&#43;08:00" />
+<meta itemprop="dateModified" content="2020-05-01T20:14:12&#43;08:00" />
+<meta itemprop="wordCount" content="193">
 
 
 
-<meta itemprop="keywords" content="Unity3D,Gitlab,CI/CD,Gitlab Runner," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Gitlab Runner as Windows service freezed when building Unity project"/>
-<meta name="twitter:description" content="用 Gitlab CI 建置自動化編譯 Unity 專案流程，在 Runner 註冊為服務時，若專案過大可能會發生任務卡住的問題"/>
+<meta itemprop="keywords" content="git," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="git ignore 替代方案"/>
+<meta name="twitter:description" content="當有某個檔案或資料夾會因為測試需求而異動，但又不想簽入到 git repo 裡面 (例如 config 檔)，通常將路徑加入專案的 .gitignore 做排除"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -118,107 +119,79 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Gitlab Runner as Windows service freezed when building Unity project</h1>
+      <h1 class="post-title">git ignore 替代方案</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2020-05-01 </span>
         <div class="post-category">
-            <a href="/categories/ci/cd/"> CI/CD </a>
+            <a href="/categories/notes/"> Notes </a>
             </div>
         
       </div>
     </header>
 
-    <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">Contents</h2>
-  <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#發生原因">發生原因</a></li>
-    <li><a href="#解法">解法</a></li>
-    <li><a href="#reference">Reference</a></li>
-  </ul>
-</nav>
-  </div>
-</div>
+    
     <div class="post-content">
-      <p>用 Gitlab CI 建置自動化編譯 Unity 專案流程，在 <a href="https://docs.gitlab.com/runner/install/windows.html#installation" title="Install GitLab Runner on Windows">Runner 註冊為服務</a>時，若專案過大可能會發生任務卡住的問題</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">CD C:\GitLab-Runner
-.\gitlab-runner.exe install
-.\gitlab-runner.exe start
-</code></pre></td></tr></table>
-</div>
-</div><p>若用直接執行的方式執行 Job 就不會卡住</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">CD C:\GitLab-Runner
-.\gitlab-runner.exe run
-</code></pre></td></tr></table>
-</div>
-</div><p>卡住之後查看 Unity Editor Log，發現有異常訊息 <code>Failed to get socket connection from UnityShaderCompiler.exe shader compiler!</code></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">Failed to get socket connection from UnityShaderCompiler.exe shader compiler! C:/Program Files/Unity/Editor/Data/Tools/UnityShaderCompiler.exe
-UnityEditor.BuildPipeline:BuildPlayerInternalNoCheck(String[], String, String, BuildTargetGroup, BuildTarget, BuildOptions, Boolean)
-UnityEditor.BuildPipeline:BuildPlayerInternal(String[], String, String, BuildTargetGroup, BuildTarget, BuildOptions) (at C:\buildslave\unity\build\Editor\Mono\BuildPipeline.bindings.cs:358)
-UnityEditor.BuildPipeline:BuildPlayer(String[], String, String, BuildTargetGroup, BuildTarget, BuildOptions) (at C:\buildslave\unity\build\Editor\Mono\BuildPipeline.bindings.cs:257)
-UnityEditor.BuildPipeline:BuildPlayer(BuildPlayerOptions) (at C:\buildslave\unity\build\Editor\Mono\BuildPipeline.bindings.cs:240)
-
-[C:\buildslave\unity\build\Tools/UnityShaderCompiler/ShaderCompilerClient.cpp line 290] 
-(Filename: Assets/xxxx.cs Line: 218)
-
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="發生原因">發生原因</h2>
-<p>根據<a href="https://stackoverflow.com/questions/17472389/how-to-increase-the-maximum-number-of-child-processes-that-can-be-spawned-by-a-w/17472390#17472390" title="Services get smaller desktop heaps than interactive sessions">這邊</a>提到的，Service 的 Desktop heap 比較小，所以有可能在編譯大專案的時候資源不足讓程式卡住</p>
-<h2 id="解法">解法</h2>
-<p>調大 non-interactive (services) sessions 的 heap</p>
+      <p>當有某個檔案或資料夾會因為測試需求而異動，但又不想簽入到 git repo 裡面 (例如 config 檔)，通常將路徑加入專案的 <code>.gitignore</code> 做排除</p>
+<h1 id="git-忽略異動">git 忽略異動</h1>
+<h2 id="gitigore">.gitigore</h2>
+<p>就把不想要加到 git 的東西寫在 <code>.gitignore</code> 檔裡面</p>
+<h2 id="gitinfoexclude">.git/info/exclude</h2>
+<p>若不想修改專案的 <code>.gitignore</code>，又想排除異動的話，可以考慮放到 <code>.git/info/exclude</code>，語法與 <code>.gitignore</code> 相同</p>
+<p>but&hellip;</p>
+<p><code>.git/info/exclude</code> 失效的時候怎麼辦？</p>
+<h2 id="skip-worktree">skip-worktree</h2>
 <ol>
-<li>用 Administrator 執行 regedit.exe</li>
-<li>編輯 <code>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\SubSystems\Windows</code></li>
-<li>找到 <code>SharedSection=1024,20480,768</code>，調整第三組數字</li>
+<li>忽略追蹤異動</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-diff" data-lang="diff"><span class="gd">- SharedSection=1024,20480,768
-</span><span class="gd"></span><span class="gi">+ SharedSection=1024,20480,2048
-</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git update-index --skip-worktree [&lt;file&gt;...]
+</code></pre></td></tr></table>
 </div>
-</div><div class="admonition warning"><p class="admonition-title">Warning</p>
-  
-數值不要調太高避免影響原有桌面使用
-
+</div><ol start="2">
+<li>解除忽略</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git update-index --no-skip-worktree [&lt;file&gt;...]
+</code></pre></td></tr></table>
 </div>
-<h2 id="reference">Reference</h2>
+</div><h2 id="assume-unchanged">assume-unchanged</h2>
+<ol>
+<li>忽略追蹤異動</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git update-index --assume-unchanged [&lt;file&gt;...]
+</code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>解除忽略</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git update-index --no-assume-unchanged [&lt;file&gt;...]
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="reference">Reference</h2>
 <ul>
-<li><a href="https://answers.unity.com/questions/1430683/failed-to-get-socket-connection-from-unityshaderco-2.html">https://answers.unity.com/questions/1430683/failed-to-get-socket-connection-from-unityshaderco-2.html</a></li>
-<li><a href="https://stackoverflow.com/questions/17472389/how-to-increase-the-maximum-number-of-child-processes-that-can-be-spawned-by-a-w/17472390#17472390">https://stackoverflow.com/questions/17472389/how-to-increase-the-maximum-number-of-child-processes-that-can-be-spawned-by-a-w/17472390#17472390</a></li>
+<li><a href="https://clouding.city/git/ignore-tracked/">https://clouding.city/git/ignore-tracked/</a></li>
+<li><a href="https://blog.miniasp.com/post/2014/12/23/Git-Advanced-Assume-Unchanged-Skip-worktree">https://blog.miniasp.com/post/2014/12/23/Git-Advanced-Assume-Unchanged-Skip-worktree</a></li>
+<li><a href="https://hashrocket.com/blog/posts/ignore-specific-file-changes-only-on-current-machine-in-git">https://hashrocket.com/blog/posts/ignore-specific-file-changes-only-on-current-machine-in-git</a></li>
+<li><a href="https://stackoverflow.com/questions/1753070/how-do-i-configure-git-to-ignore-some-files-locally">https://stackoverflow.com/questions/1753070/how-do-i-configure-git-to-ignore-some-files-locally</a></li>
 </ul>
     </div>
 
@@ -239,19 +212,16 @@ UnityEditor.BuildPipeline:BuildPlayer(BuildPlayerOptions) (at C:\buildslave\unit
 </div>
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/unity3d/">Unity3D</a>
-          <a href="/tags/gitlab/">Gitlab</a>
-          <a href="/tags/ci/cd/">CI/CD</a>
-          <a href="/tags/gitlab-runner/">Gitlab Runner</a>
+          <a href="/tags/git/">git</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/job_sqlserver_mysql_murmur/">
+        <a class="prev" href="/2020/05/gitlab-runner-as-windows-service-freezed-when-building-unity-project/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">200504 工作碎唸</span>
+            <span class="prev-text nav-default">Gitlab Runner as Windows service freezed when building Unity project</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
-        <a class="next" href="/post/gitignore_alternate/">
-            <span class="next-text nav-default">git ignore 替代方案</span>
+        <a class="next" href="/2020/04/the-fisrt-post/">
+            <span class="next-text nav-default">The Fisrt post</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

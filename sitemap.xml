@@ -51,14 +51,14 @@
   </url>
   
   <url>
-    <loc>https://dxball.github.io/post/test_rtsp_stream/</loc>
+    <loc>https://dxball.github.io/2020/05/%E6%B8%AC%E8%A9%A6%E7%94%A8-rtsp-stream/</loc>
     <lastmod>2020-05-05T23:13:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://dxball.github.io/post/job_sqlserver_mysql_murmur/</loc>
+    <loc>https://dxball.github.io/2020/05/200504-%E5%B7%A5%E4%BD%9C%E7%A2%8E%E5%94%B8/</loc>
     <lastmod>2020-05-04T21:26:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -100,7 +100,7 @@
   </url>
   
   <url>
-    <loc>https://dxball.github.io/post/gitlab_runner_service_unity_build_failed/</loc>
+    <loc>https://dxball.github.io/2020/05/gitlab-runner-as-windows-service-freezed-when-building-unity-project/</loc>
     <lastmod>2020-05-01T23:51:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -114,14 +114,14 @@
   </url>
   
   <url>
-    <loc>https://dxball.github.io/post/gitignore_alternate/</loc>
+    <loc>https://dxball.github.io/2020/05/git-ignore-%E6%9B%BF%E4%BB%A3%E6%96%B9%E6%A1%88/</loc>
     <lastmod>2020-05-01T20:14:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://dxball.github.io/post/firstpost/</loc>
+    <loc>https://dxball.github.io/2020/04/the-fisrt-post/</loc>
     <lastmod>2020-04-30T00:49:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
