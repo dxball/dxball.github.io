@@ -3,14 +3,56 @@
   
   <url>
     <loc>https://dxball.github.io/categories/</loc>
-    <lastmod>2020-05-05T23:13:59+08:00</lastmod>
+    <lastmod>2020-05-07T22:05:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://dxball.github.io/</loc>
-    <lastmod>2020-05-05T23:13:59+08:00</lastmod>
+    <lastmod>2020-05-07T22:05:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://dxball.github.io/tags/git/</loc>
+    <lastmod>2020-05-07T22:05:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://dxball.github.io/tags/github/</loc>
+    <lastmod>2020-05-07T22:05:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://dxball.github.io/2020/05/github-codespaces-feature/</loc>
+    <lastmod>2020-05-07T22:05:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://dxball.github.io/categories/news/</loc>
+    <lastmod>2020-05-07T22:05:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://dxball.github.io/post/</loc>
+    <lastmod>2020-05-07T22:05:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://dxball.github.io/tags/</loc>
+    <lastmod>2020-05-07T22:05:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -30,21 +72,7 @@
   </url>
   
   <url>
-    <loc>https://dxball.github.io/post/</loc>
-    <lastmod>2020-05-05T23:13:59+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://dxball.github.io/tags/rtsp/</loc>
-    <lastmod>2020-05-05T23:13:59+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://dxball.github.io/tags/</loc>
     <lastmod>2020-05-05T23:13:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -74,13 +102,6 @@
   <url>
     <loc>https://dxball.github.io/tags/murmur/</loc>
     <lastmod>2020-05-04T21:26:38+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://dxball.github.io/tags/git/</loc>
-    <lastmod>2020-05-01T23:51:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
