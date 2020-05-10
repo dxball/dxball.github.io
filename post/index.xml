@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Dx&#39;s Monkey Life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 May 2020 22:05:02 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2020 17:26:43 +0800</lastBuildDate>
     
 	<atom:link href="https://dxball.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Logitect MX Vertical</title>
+      <link>https://dxball.github.io/2020/05/logi-mx-vertical/</link>
+      <pubDate>Sun, 10 May 2020 17:26:43 +0800</pubDate>
+      
+      <guid>https://dxball.github.io/2020/05/logi-mx-vertical/</guid>
+      <description>&lt;p&gt;新買一隻特別的滑鼠，準備要在日常工作的時候用看看&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Github Codespaces 🛰️</title>
@@ -22,37 +31,37 @@
     
     <item>
       <title>測試用 RTSP Stream</title>
-      <link>https://dxball.github.io/2020/05/test_rtsp_stream/</link>
+      <link>https://dxball.github.io/2020/05/test-rtsp-stream/</link>
       <pubDate>Tue, 05 May 2020 23:13:59 +0800</pubDate>
       
-      <guid>https://dxball.github.io/2020/05/test_rtsp_stream/</guid>
+      <guid>https://dxball.github.io/2020/05/test-rtsp-stream/</guid>
       <description>&lt;p&gt;記錄一下可能會用到的免費測試串流，未來就直接放在這篇了&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>200504 工作碎唸</title>
-      <link>https://dxball.github.io/2020/05/job_sqlserver_mysql_murmur/</link>
+      <link>https://dxball.github.io/2020/05/job-sqlserver-mysql-murmur/</link>
       <pubDate>Mon, 04 May 2020 21:26:38 +0800</pubDate>
       
-      <guid>https://dxball.github.io/2020/05/job_sqlserver_mysql_murmur/</guid>
+      <guid>https://dxball.github.io/2020/05/job-sqlserver-mysql-murmur/</guid>
       <description>&lt;p&gt;接手別人的專案實在 hen 痛苦 💔&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Gitlab Runner as Windows service freezed when building Unity project</title>
-      <link>https://dxball.github.io/2020/05/gitlab_runner_service_unity_build_failed/</link>
+      <link>https://dxball.github.io/2020/05/gitlab-runner-service-unity-build-failed/</link>
       <pubDate>Fri, 01 May 2020 23:51:04 +0800</pubDate>
       
-      <guid>https://dxball.github.io/2020/05/gitlab_runner_service_unity_build_failed/</guid>
+      <guid>https://dxball.github.io/2020/05/gitlab-runner-service-unity-build-failed/</guid>
       <description>&lt;p&gt;用 Gitlab CI 建置自動化編譯 Unity 專案流程，在 &lt;a href=&#34;https://docs.gitlab.com/runner/install/windows.html#installation&#34; title=&#34;Install GitLab Runner on Windows&#34;&gt;Runner 註冊為服務&lt;/a&gt;時，若專案過大可能會發生任務卡住的問題&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>git ignore 替代方案</title>
-      <link>https://dxball.github.io/2020/05/gitignore_alternate/</link>
+      <link>https://dxball.github.io/2020/05/gitignore-alternate/</link>
       <pubDate>Fri, 01 May 2020 20:14:12 +0800</pubDate>
       
-      <guid>https://dxball.github.io/2020/05/gitignore_alternate/</guid>
+      <guid>https://dxball.github.io/2020/05/gitignore-alternate/</guid>
       <description>&lt;p&gt;當有某個檔案或資料夾會因為測試需求而異動，但又不想簽入到 git repo 裡面 (例如 config 檔)，通常將路徑加入專案的 &lt;code&gt;.gitignore&lt;/code&gt; 做排除&lt;/p&gt;</description>
     </item>
     

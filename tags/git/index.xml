@@ -13,10 +13,10 @@
     
     <item>
       <title>git ignore 替代方案</title>
-      <link>https://dxball.github.io/2020/05/gitignore_alternate/</link>
+      <link>https://dxball.github.io/2020/05/gitignore-alternate/</link>
       <pubDate>Fri, 01 May 2020 20:14:12 +0800</pubDate>
       
-      <guid>https://dxball.github.io/2020/05/gitignore_alternate/</guid>
+      <guid>https://dxball.github.io/2020/05/gitignore-alternate/</guid>
       <description>&lt;p&gt;當有某個檔案或資料夾會因為測試需求而異動，但又不想簽入到 git repo 裡面 (例如 config 檔)，通常將路徑加入專案的 &lt;code&gt;.gitignore&lt;/code&gt; 做排除&lt;/p&gt;</description>
     </item>
     

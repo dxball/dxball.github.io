@@ -3,14 +3,56 @@
   
   <url>
     <loc>https://dxball.github.io/categories/</loc>
-    <lastmod>2020-05-07T22:05:02+08:00</lastmod>
+    <lastmod>2020-05-10T17:26:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://dxball.github.io/</loc>
-    <lastmod>2020-05-07T22:05:02+08:00</lastmod>
+    <lastmod>2020-05-10T17:26:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://dxball.github.io/2020/05/logi-mx-vertical/</loc>
+    <lastmod>2020-05-10T17:26:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://dxball.github.io/post/</loc>
+    <lastmod>2020-05-10T17:26:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://dxball.github.io/tags/shopping/</loc>
+    <lastmod>2020-05-10T17:26:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://dxball.github.io/tags/</loc>
+    <lastmod>2020-05-10T17:26:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://dxball.github.io/categories/unpacking/</loc>
+    <lastmod>2020-05-10T17:26:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://dxball.github.io/tags/%E9%96%8B%E7%AE%B1/</loc>
+    <lastmod>2020-05-10T17:26:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -44,20 +86,6 @@
   </url>
   
   <url>
-    <loc>https://dxball.github.io/post/</loc>
-    <lastmod>2020-05-07T22:05:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://dxball.github.io/tags/</loc>
-    <lastmod>2020-05-07T22:05:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://dxball.github.io/tags/livestream/</loc>
     <lastmod>2020-05-05T23:13:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -79,14 +107,14 @@
   </url>
   
   <url>
-    <loc>https://dxball.github.io/2020/05/test_rtsp_stream/</loc>
+    <loc>https://dxball.github.io/2020/05/test-rtsp-stream/</loc>
     <lastmod>2020-05-05T23:13:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://dxball.github.io/2020/05/job_sqlserver_mysql_murmur/</loc>
+    <loc>https://dxball.github.io/2020/05/job-sqlserver-mysql-murmur/</loc>
     <lastmod>2020-05-04T21:26:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -121,7 +149,7 @@
   </url>
   
   <url>
-    <loc>https://dxball.github.io/2020/05/gitlab_runner_service_unity_build_failed/</loc>
+    <loc>https://dxball.github.io/2020/05/gitlab-runner-service-unity-build-failed/</loc>
     <lastmod>2020-05-01T23:51:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -135,7 +163,7 @@
   </url>
   
   <url>
-    <loc>https://dxball.github.io/2020/05/gitignore_alternate/</loc>
+    <loc>https://dxball.github.io/2020/05/gitignore-alternate/</loc>
     <lastmod>2020-05-01T20:14:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -156,6 +184,12 @@
   
   <url>
     <loc>https://dxball.github.io/categories/ci/cd/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://dxball.github.io/tags/mouse/keyboard/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
