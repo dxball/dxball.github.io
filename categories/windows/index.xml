@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on Dx&#39;s Monkey Life</title>
+    <link>https://dxball.github.io/categories/windows/</link>
+    <description>Recent content in Windows on Dx&#39;s Monkey Life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 12 May 2020 23:15:26 +0800</lastBuildDate>
+    
+	<atom:link href="https://dxball.github.io/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Win10 常用快速鍵</title>
+      <link>https://dxball.github.io/2020/05/win10-useful-shortcuts/</link>
+      <pubDate>Tue, 12 May 2020 23:15:26 +0800</pubDate>
+      
+      <guid>https://dxball.github.io/2020/05/win10-useful-shortcuts/</guid>
+      <description>&lt;p&gt;紀錄一下升級到 Windows 10 之後我常用的快速鍵&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
