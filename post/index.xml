@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Dx&#39;s Monkey Life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 12 May 2020 23:15:26 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2020 23:54:04 +0800</lastBuildDate>
     
 	<atom:link href="https://dxball.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Visual Studio 奇怪的 Build error</title>
+      <link>https://dxball.github.io/2020/05/vs-wired-build-error/</link>
+      <pubDate>Tue, 19 May 2020 23:54:04 +0800</pubDate>
+      
+      <guid>https://dxball.github.io/2020/05/vs-wired-build-error/</guid>
+      <description>&lt;p&gt;在公司準備要建置一個平常的 .NET 專案時忽然跳了從沒看過的錯誤&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Win10 常用快速鍵</title>
