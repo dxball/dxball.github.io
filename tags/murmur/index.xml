@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Murmur on Dx&#39;s Monkey Life</title>
-    <link>https://dxball.github.io/tags/murmur/</link>
-    <description>Recent content in Murmur on Dx&#39;s Monkey Life</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-tw</language>
-    <lastBuildDate>Mon, 04 May 2020 21:26:38 +0800</lastBuildDate>
-    
-	<atom:link href="https://dxball.github.io/tags/murmur/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>200504 工作碎唸</title>
-      <link>https://dxball.github.io/2020/05/job-sqlserver-mysql-murmur/</link>
-      <pubDate>Mon, 04 May 2020 21:26:38 +0800</pubDate>
-      
-      <guid>https://dxball.github.io/2020/05/job-sqlserver-mysql-murmur/</guid>
-      <description>&lt;p&gt;接手別人的專案實在 hen 痛苦 💔&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Murmur - Tag - Dx&#39;s Monkey Life</title>
+        <link>https://dxball.github.io/tags/murmur/</link>
+        <description>Murmur - Tag - Dx&#39;s Monkey Life</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 04 May 2020 21:26:38 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/murmur/" rel="self" type="application/rss+xml" /><item>
+    <title>200504 工作碎唸</title>
+    <link>https://dxball.github.io/2020/05/job-sqlserver-mysql-murmur/</link>
+    <pubDate>Mon, 04 May 2020 21:26:38 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/05/job-sqlserver-mysql-murmur/</guid>
+    <description><![CDATA[<p>接手別人的專案實在 hen 痛苦 💔</p>]]></description>
+</item></channel>
 </rss>

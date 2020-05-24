@@ -1,96 +1,73 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Dx&#39;s Monkey Life</title>
-    <link>https://dxball.github.io/</link>
-    <description>Recent content on Dx&#39;s Monkey Life</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-tw</language>
-    <lastBuildDate>Tue, 19 May 2020 23:54:04 +0800</lastBuildDate>
-    
-	<atom:link href="https://dxball.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Visual Studio 奇怪的 Build error</title>
-      <link>https://dxball.github.io/2020/05/vs-wired-build-error/</link>
-      <pubDate>Tue, 19 May 2020 23:54:04 +0800</pubDate>
-      
-      <guid>https://dxball.github.io/2020/05/vs-wired-build-error/</guid>
-      <description>&lt;p&gt;在公司準備要建置一個平常的 .NET 專案時忽然跳了從沒看過的錯誤&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Win10 常用快速鍵</title>
-      <link>https://dxball.github.io/2020/05/win10-useful-shortcuts/</link>
-      <pubDate>Tue, 12 May 2020 23:15:26 +0800</pubDate>
-      
-      <guid>https://dxball.github.io/2020/05/win10-useful-shortcuts/</guid>
-      <description>&lt;p&gt;紀錄一下升級到 Windows 10 之後我常用的快速鍵&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Logitect MX Vertical</title>
-      <link>https://dxball.github.io/2020/05/logi-mx-vertical/</link>
-      <pubDate>Sun, 10 May 2020 17:26:43 +0800</pubDate>
-      
-      <guid>https://dxball.github.io/2020/05/logi-mx-vertical/</guid>
-      <description>&lt;p&gt;新買一隻特別的滑鼠，準備要在日常工作的時候用看看&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Github Codespaces 🛰️</title>
-      <link>https://dxball.github.io/2020/05/github-codespaces-feature/</link>
-      <pubDate>Thu, 07 May 2020 22:05:02 +0800</pubDate>
-      
-      <guid>https://dxball.github.io/2020/05/github-codespaces-feature/</guid>
-      <description>&lt;p&gt;Github 在 &lt;a href=&#34;https://github.blog/2020-05-06-new-from-satellite-2020-github-codespaces-github-discussions-securing-code-in-private-repositories-and-more/#codespaces&#34;&gt;satellite 🛰️ 公佈 Codespaces&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>測試用 RTSP Stream</title>
-      <link>https://dxball.github.io/2020/05/test-rtsp-stream/</link>
-      <pubDate>Tue, 05 May 2020 23:13:59 +0800</pubDate>
-      
-      <guid>https://dxball.github.io/2020/05/test-rtsp-stream/</guid>
-      <description>&lt;p&gt;記錄一下可能會用到的免費測試串流，未來就直接放在這篇了&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>200504 工作碎唸</title>
-      <link>https://dxball.github.io/2020/05/job-sqlserver-mysql-murmur/</link>
-      <pubDate>Mon, 04 May 2020 21:26:38 +0800</pubDate>
-      
-      <guid>https://dxball.github.io/2020/05/job-sqlserver-mysql-murmur/</guid>
-      <description>&lt;p&gt;接手別人的專案實在 hen 痛苦 💔&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Gitlab Runner as Windows service freezed when building Unity project</title>
-      <link>https://dxball.github.io/2020/05/gitlab-runner-service-unity-build-failed/</link>
-      <pubDate>Fri, 01 May 2020 23:51:04 +0800</pubDate>
-      
-      <guid>https://dxball.github.io/2020/05/gitlab-runner-service-unity-build-failed/</guid>
-      <description>&lt;p&gt;用 Gitlab CI 建置自動化編譯 Unity 專案流程，在 &lt;a href=&#34;https://docs.gitlab.com/runner/install/windows.html#installation&#34; title=&#34;Install GitLab Runner on Windows&#34;&gt;Runner 註冊為服務&lt;/a&gt;時，若專案過大可能會發生任務卡住的問題&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>git ignore 替代方案</title>
-      <link>https://dxball.github.io/2020/05/gitignore-alternate/</link>
-      <pubDate>Fri, 01 May 2020 20:14:12 +0800</pubDate>
-      
-      <guid>https://dxball.github.io/2020/05/gitignore-alternate/</guid>
-      <description>&lt;p&gt;當有某個檔案或資料夾會因為測試需求而異動，但又不想簽入到 git repo 裡面 (例如 config 檔)，通常將路徑加入專案的 &lt;code&gt;.gitignore&lt;/code&gt; 做排除&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>The Fisrt post</title>
-      <link>https://dxball.github.io/2020/04/firstpost/</link>
-      <pubDate>Thu, 30 Apr 2020 00:49:35 +0800</pubDate>
-      
-      <guid>https://dxball.github.io/2020/04/firstpost/</guid>
-      <description>值得紀念的首PO 這裡主要會放一些平常工作上遇到的問題或一些學習紀錄 希望能養成持續紀錄的習慣</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Dx&#39;s Monkey Life</title>
+        <link>https://dxball.github.io/</link>
+        <description>小時候覺得我要努力寫程式 然後它會大賣 然後我可以領到豐厚的獎金 - 後來才發現 程式會不會大賣 獎金多不多 跟我程式寫的好不好 根本沒個屁關係 - 這就是傳說中的初衷 以及初衷如何幻滅的真實案例 -</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 19 May 2020 23:54:04 &#43;0800</lastBuildDate>
+            <atom:link href="https://dxball.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Visual Studio 奇怪的 Build error</title>
+    <link>https://dxball.github.io/2020/05/vs-wired-build-error/</link>
+    <pubDate>Tue, 19 May 2020 23:54:04 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/05/vs-wired-build-error/</guid>
+    <description><![CDATA[<p>在公司準備要建置一個平常的 .NET 專案時忽然跳了從沒看過的錯誤</p>]]></description>
+</item><item>
+    <title>Win10 常用快速鍵</title>
+    <link>https://dxball.github.io/2020/05/win10-useful-shortcuts/</link>
+    <pubDate>Tue, 12 May 2020 23:15:26 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/05/win10-useful-shortcuts/</guid>
+    <description><![CDATA[<p>紀錄一下升級到 Windows 10 之後我常用的快速鍵</p>]]></description>
+</item><item>
+    <title>Logitect MX Vertical</title>
+    <link>https://dxball.github.io/2020/05/logi-mx-vertical/</link>
+    <pubDate>Sun, 10 May 2020 17:26:43 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/05/logi-mx-vertical/</guid>
+    <description><![CDATA[<p>新買一隻特別的滑鼠，準備要在日常工作的時候用看看</p>]]></description>
+</item><item>
+    <title>Github Codespaces 🛰️</title>
+    <link>https://dxball.github.io/2020/05/github-codespaces-feature/</link>
+    <pubDate>Thu, 07 May 2020 22:05:02 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/05/github-codespaces-feature/</guid>
+    <description><![CDATA[<p>Github 在 <a href="https://github.blog/2020-05-06-new-from-satellite-2020-github-codespaces-github-discussions-securing-code-in-private-repositories-and-more/#codespaces" target="_blank" rel="noopener noreffer">satellite 🛰️ 公佈 Codespaces</a></p>]]></description>
+</item><item>
+    <title>測試用 RTSP Stream</title>
+    <link>https://dxball.github.io/2020/05/test-rtsp-stream/</link>
+    <pubDate>Tue, 05 May 2020 23:13:59 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/05/test-rtsp-stream/</guid>
+    <description><![CDATA[<p>記錄一下可能會用到的免費測試串流，未來就直接放在這篇了</p>]]></description>
+</item><item>
+    <title>200504 工作碎唸</title>
+    <link>https://dxball.github.io/2020/05/job-sqlserver-mysql-murmur/</link>
+    <pubDate>Mon, 04 May 2020 21:26:38 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/05/job-sqlserver-mysql-murmur/</guid>
+    <description><![CDATA[<p>接手別人的專案實在 hen 痛苦 💔</p>]]></description>
+</item><item>
+    <title>Gitlab Runner as Windows service freezed when building Unity project</title>
+    <link>https://dxball.github.io/2020/05/gitlab-runner-service-unity-build-failed/</link>
+    <pubDate>Fri, 01 May 2020 23:51:04 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/05/gitlab-runner-service-unity-build-failed/</guid>
+    <description><![CDATA[<p>用 Gitlab CI 建置自動化編譯 Unity 專案流程，在 <a href="https://docs.gitlab.com/runner/install/windows.html#installation" title="Install GitLab Runner on Windows" target="_blank" rel="noopener noreffer">Runner 註冊為服務</a>時，若專案過大可能會發生任務卡住的問題</p>]]></description>
+</item><item>
+    <title>git ignore 替代方案</title>
+    <link>https://dxball.github.io/2020/05/gitignore-alternate/</link>
+    <pubDate>Fri, 01 May 2020 20:14:12 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/05/gitignore-alternate/</guid>
+    <description><![CDATA[<p>當有某個檔案或資料夾會因為測試需求而異動，但又不想簽入到 git repo 裡面 (例如 config 檔)，通常將路徑加入專案的 <code>.gitignore</code> 做排除</p>]]></description>
+</item><item>
+    <title>The Fisrt post</title>
+    <link>https://dxball.github.io/2020/04/firstpost/</link>
+    <pubDate>Thu, 30 Apr 2020 00:49:35 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/04/firstpost/</guid>
+    <description><![CDATA[值得紀念的首PO 這裡主要會放一些平常工作上遇到的問題或一些學習紀錄
+希望能養成持續紀錄的習慣]]></description>
+</item></channel>
 </rss>
