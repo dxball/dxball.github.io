@@ -5,37 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Visual Studio 奇怪的 Build error - Dx&#39;s Monkey Life</title><meta name="Description" content="建置 .NET 4.0 專案時遇到的奇怪錯誤"><meta property="og:title" content="Visual Studio 奇怪的 Build error" />
-<meta property="og:description" content="建置 .NET 4.0 專案時遇到的奇怪錯誤" />
+        <title>Visual Studio Code 針對各語言用不同編輯器設定的方法 - Dx&#39;s Monkey Life</title><meta name="Description" content="小時候覺得我要努力寫程式 然後它會大賣 然後我可以領到豐厚的獎金 - 後來才發現 程式會不會大賣 獎金多不多 跟我程式寫的好不好 根本沒個屁關係 - 這就是傳說中的初衷 以及初衷如何幻滅的真實案例 -"><meta property="og:title" content="Visual Studio Code 針對各語言用不同編輯器設定的方法" />
+<meta property="og:description" content="vscode 可以對不同語言用不同的設定，在某些情況下會比較方便" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dxball.github.io/2020/05/vs-wired-build-error/" />
+<meta property="og:url" content="https://dxball.github.io/2020/05/vscode-language-specific-editor-settings/" />
 <meta property="og:image" content="https://dxball.github.io/logo.png"/>
-<meta property="article:published_time" content="2020-05-19T23:54:04+08:00" />
-<meta property="article:modified_time" content="2020-05-19T23:54:04+08:00" />
+<meta property="article:published_time" content="2020-05-28T23:49:52+08:00" />
+<meta property="article:modified_time" content="2020-05-28T23:49:52+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dxball.github.io/logo.png"/>
 
-<meta name="twitter:title" content="Visual Studio 奇怪的 Build error"/>
-<meta name="twitter:description" content="建置 .NET 4.0 專案時遇到的奇怪錯誤"/>
+<meta name="twitter:title" content="Visual Studio Code 針對各語言用不同編輯器設定的方法"/>
+<meta name="twitter:description" content="vscode 可以對不同語言用不同的設定，在某些情況下會比較方便"/>
 <meta name="application-name" content="Dx&#39;s Monkey Life">
 <meta name="apple-mobile-web-app-title" content="Dx&#39;s Monkey Life"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://dxball.github.io/2020/05/vs-wired-build-error/" /><link rel="prev" href="https://dxball.github.io/2020/05/win10-useful-shortcuts/" /><link rel="next" href="https://dxball.github.io/2020/05/vscode-language-specific-editor-settings/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="google-site-verification" content="google9ef93b55acaac792" /><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://dxball.github.io/2020/05/vscode-language-specific-editor-settings/" /><link rel="prev" href="https://dxball.github.io/2020/05/vs-wired-build-error/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="google-site-verification" content="google9ef93b55acaac792" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Visual Studio 奇怪的 Build error",
+        "headline": "Visual Studio Code 針對各語言用不同編輯器設定的方法",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/dxball.github.io\/2020\/05\/vs-wired-build-error\/"
+            "@id": "https:\/\/dxball.github.io\/2020\/05\/vscode-language-specific-editor-settings\/"
         },"image": {
                 "@type": "ImageObject",
                 "url": "https:\/\/dxball.github.io\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","keywords": "Visual Studio, VS, .NET, dotnet","wordcount":  72 ,
-        "url": "https:\/\/dxball.github.io\/2020\/05\/vs-wired-build-error\/","datePublished": "2020-05-19T23:54:04+08:00","dateModified": "2020-05-19T23:54:04+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            },"genre": "posts","keywords": "vscode, Visual Studio Code","wordcount":  55 ,
+        "url": "https:\/\/dxball.github.io\/2020\/05\/vscode-language-specific-editor-settings\/","datePublished": "2020-05-28T23:49:52+08:00","dateModified": "2020-05-28T23:49:52+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
                 "@type": "Organization",
                 "name": "xxxx",
                 "logo": {
@@ -47,7 +47,7 @@
             },"author": {
                 "@type": "Person",
                 "name": "Dxball"
-            },"description": "建置 .NET 4.0 專案時遇到的奇怪錯誤"
+            },"description": ""
     }
     </script></head>
     <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -113,54 +113,87 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Visual Studio 奇怪的 Build error</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dxball</a></span>&nbsp;<span class="post-category">included in <a href="/categories/visual-studio/"><i class="far fa-folder fa-fw"></i>Visual Studio</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-05-19">2020-05-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;72 words&nbsp;
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Visual Studio Code 針對各語言用不同編輯器設定的方法</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dxball</a></span>&nbsp;<span class="post-category">included in <a href="/categories/vscode/"><i class="far fa-folder fa-fw"></i>VSCode</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-05-28">2020-05-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;55 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
-        </div><div class="content" id="content"><p>在公司準備要建置一個平常的 .NET 專案時忽然跳了從沒看過的錯誤</p>
-<p>這個 sln 專案裡面有 256 個 .NET 專案，之前都順利編譯，但前幾天突然跳建置失敗，其中某個專案跳了以下錯誤</p>
+        </div><div class="content" id="content"><p>vscode 可以對不同語言用不同的設定，在某些情況下會比較方便</p>
+<hr>
+<h2 id="設定方式-1">設定方式 1</h2>
+<p>在 vscode 中按 <code>Ctrl + Shift + P</code> 輸入 <code>Open Settings</code> 打開 vscode 的設定檔，針對各語系加入設定<br>
+<img
+        class="lazyload"
+        src="/svg/loading/small.min.svg"
+        data-src="/2020/05/vscode-language-specific-editor-settings/open_settings.png"
+        data-srcset="/2020/05/vscode-language-specific-editor-settings/open_settings.png, /2020/05/vscode-language-specific-editor-settings/open_settings.png 1.5x, /2020/05/vscode-language-specific-editor-settings/open_settings.png 2x"
+        data-sizes="auto"
+        alt="Open settings"
+        title="Open settings" /></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">error : Your project does not reference &#34;.NETFramework,Version=v4.0&#34; framework. Add a reference to &#34;.NETFramework,Version=v4.0&#34; in the &#34;TargetFrameworks&#34; property of your project file and then re-run NuGet restore.
+<pre class="chroma"><code class="language-json" data-lang="json">    <span class="s2">&#34;[csharp]&#34;</span><span class="err">:</span><span class="p">{</span>
+        <span class="nt">&#34;editor.tabSize&#34;</span><span class="p">:</span> <span class="mi">4</span>
+    <span class="p">}</span><span class="err">,</span>
+    <span class="s2">&#34;[markdown]&#34;</span><span class="err">:</span><span class="p">{</span>
+        <span class="nt">&#34;editor.wordWrap&#34;</span><span class="p">:</span> <span class="s2">&#34;on&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;editor.quickSuggestions&#34;</span><span class="p">:</span> <span class="kc">false</span>
+    <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>詢問其他同事，卻可以正常建置，所以問題應該不在專案上</p>
-<p>再嘗試過以下幾個動作，通通無效 🙄</p>
-<ol>
-<li>使用 rebuild</li>
-<li>重開 Visual Studio</li>
-<li>用不同版本的 Visual Studio 編譯 (VS2017, VS2019)</li>
-<li>刪掉 VS 的 cached (.vs 資料夾)</li>
-</ol>
-<p>最後將出問題的專案的 <code>bin</code> 及 <code>obj</code> 資料夾刪掉後，再重新 Build 就成功了 🎉</p>
-<p>推測是最近有升級 Windows 10 更新到 ver 2004&hellip;導致系統某些地方秀逗了</p></div><div class="post-footer" id="post-footer">
+</div><h2 id="設定方式-2">設定方式 2</h2>
+<p>在 vscode 中按 <code>Ctrl + Shift + P</code> 輸入 <code>Configure Language Specific Settings</code>，再選擇要設定的語系，vscode 會幫你打開 <code>settings.json</code> 並加入對應的語系，再自行加入所需設定就可以<br>
+<img
+        class="lazyload"
+        src="/svg/loading/small.min.svg"
+        data-src="/2020/05/vscode-language-specific-editor-settings/configure_lang_specific_settings.png"
+        data-srcset="/2020/05/vscode-language-specific-editor-settings/configure_lang_specific_settings.png, /2020/05/vscode-language-specific-editor-settings/configure_lang_specific_settings.png 1.5x, /2020/05/vscode-language-specific-editor-settings/configure_lang_specific_settings.png 2x"
+        data-sizes="auto"
+        alt="Lang Setting"
+        title="Lang Setting" /><br>
+<img
+        class="lazyload"
+        src="/svg/loading/small.min.svg"
+        data-src="/2020/05/vscode-language-specific-editor-settings/configure_lang_specific_settings_2.png"
+        data-srcset="/2020/05/vscode-language-specific-editor-settings/configure_lang_specific_settings_2.png, /2020/05/vscode-language-specific-editor-settings/configure_lang_specific_settings_2.png 1.5x, /2020/05/vscode-language-specific-editor-settings/configure_lang_specific_settings_2.png 2x"
+        data-sizes="auto"
+        alt="Lang Setting"
+        title="Lang Setting" /></p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://code.visualstudio.com/docs/getstarted/settings#_language-specific-editor-settings">https://code.visualstudio.com/docs/getstarted/settings#_language-specific-editor-settings</a></li>
+</ul></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2020-05-19</span>
+                <span>Updated on 2020-05-28</span>
             </div>
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://dxball.github.io/2020/05/vs-wired-build-error/" data-title="Visual Studio 奇怪的 Build error" data-via="xxxx" data-hashtags="Visual Studio,VS,.NET,dotnet"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://dxball.github.io/2020/05/vs-wired-build-error/" data-hashtag="Visual Studio"><i class="fab fa-facebook-square fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://dxball.github.io/2020/05/vscode-language-specific-editor-settings/" data-title="Visual Studio Code 針對各語言用不同編輯器設定的方法" data-via="xxxx" data-hashtags="vscode,Visual Studio Code"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://dxball.github.io/2020/05/vscode-language-specific-editor-settings/" data-hashtag="vscode"><i class="fab fa-facebook-square fa-fw"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/visual-studio/">Visual Studio</a>,&nbsp;<a href="/tags/vs/">VS</a>,&nbsp;<a href="/tags/.net/">.NET</a>,&nbsp;<a href="/tags/dotnet/">dotnet</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/vscode/">vscode</a>,&nbsp;<a href="/tags/visual-studio-code/">Visual Studio Code</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/2020/05/win10-useful-shortcuts/" class="prev" rel="prev" title="Win10 常用快速鍵"><i class="fas fa-angle-left fa-fw"></i>Win10 常用快速鍵</a>
-            <a href="/2020/05/vscode-language-specific-editor-settings/" class="next" rel="next" title="Visual Studio Code 針對各語言用不同編輯器設定的方法">Visual Studio Code 針對各語言用不同編輯器設定的方法<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/2020/05/vs-wired-build-error/" class="prev" rel="prev" title="Visual Studio 奇怪的 Build error"><i class="fas fa-angle-left fa-fw"></i>Visual Studio 奇怪的 Build error</a></div>
 </div>
 <div id="comments"><div id="disqus_thread" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://disqus.com/?ref_noscript">Disqus</a>.

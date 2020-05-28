@@ -3,9 +3,16 @@
         <title>Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/</link>
         <description>小時候覺得我要努力寫程式 然後它會大賣 然後我可以領到豐厚的獎金 - 後來才發現 程式會不會大賣 獎金多不多 跟我程式寫的好不好 根本沒個屁關係 - 這就是傳說中的初衷 以及初衷如何幻滅的真實案例 -</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 19 May 2020 23:54:04 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 28 May 2020 23:49:52 &#43;0800</lastBuildDate>
             <atom:link href="https://dxball.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Visual Studio Code 針對各語言用不同編輯器設定的方法</title>
+    <link>https://dxball.github.io/2020/05/vscode-language-specific-editor-settings/</link>
+    <pubDate>Thu, 28 May 2020 23:49:52 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/05/vscode-language-specific-editor-settings/</guid>
+    <description><![CDATA[<p>vscode 可以對不同語言用不同的設定，在某些情況下會比較方便</p>]]></description>
+</item><item>
     <title>Visual Studio 奇怪的 Build error</title>
     <link>https://dxball.github.io/2020/05/vs-wired-build-error/</link>
     <pubDate>Tue, 19 May 2020 23:54:04 &#43;0800</pubDate>
