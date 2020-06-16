@@ -3,7 +3,14 @@
         <title>All Posts - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/posts/</link>
         <description>All Posts | Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 28 May 2020 23:49:52 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 17 Jun 2020 00:41:16 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Win10 改回舊版相片檢視器</title>
+    <link>https://dxball.github.io/2020/06/win10-photoviewer/</link>
+    <pubDate>Wed, 17 Jun 2020 00:41:16 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/06/win10-photoviewer/</guid>
+    <description><![CDATA[<p>升級到 Win10 後，總覺得預設的圖片開啟程式<strong>相片</strong>不是很習慣，想換回 Win7 的<strong>相片檢視器</strong>該怎麼做？</p>]]></description>
+</item><item>
     <title>Visual Studio Code 針對各語言用不同編輯器設定的方法</title>
     <link>https://dxball.github.io/2020/05/vscode-language-specific-editor-settings/</link>
     <pubDate>Thu, 28 May 2020 23:49:52 &#43;0800</pubDate>
@@ -66,13 +73,5 @@
     <author>Author</author>
     <guid>https://dxball.github.io/2020/05/gitignore-alternate/</guid>
     <description><![CDATA[<p>當有某個檔案或資料夾會因為測試需求而異動，但又不想簽入到 git repo 裡面 (例如 config 檔)，通常將路徑加入專案的 <code>.gitignore</code> 做排除</p>]]></description>
-</item><item>
-    <title>The Fisrt post</title>
-    <link>https://dxball.github.io/2020/04/firstpost/</link>
-    <pubDate>Thu, 30 Apr 2020 00:49:35 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/04/firstpost/</guid>
-    <description><![CDATA[值得紀念的首PO 這裡主要會放一些平常工作上遇到的問題或一些學習紀錄
-希望能養成持續紀錄的習慣]]></description>
 </item></channel>
 </rss>
