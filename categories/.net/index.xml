@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>.NET - Category - Dx&#39;s Monkey Life</title>
+        <link>https://dxball.github.io/categories/.net/</link>
+        <description>.NET - Category - Dx&#39;s Monkey Life</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 20 Jun 2020 20:46:55 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/categories/.net/" rel="self" type="application/rss+xml" /><item>
+    <title>憑證 pem 檔轉換成 .NET 用的 pfx 檔 🔏</title>
+    <link>https://dxball.github.io/2020/06/dotnet-x509certificate-convert/</link>
+    <pubDate>Sat, 20 Jun 2020 20:46:55 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/06/dotnet-x509certificate-convert/</guid>
+    <description><![CDATA[<p>.NET 的 <code>X509Certificate2</code> 預設只能讀取 PFX/PKCS12 格式的檔案，手邊有專案產生的 <code>*.pem</code> 憑證，可以使用 openssl 轉換</p>]]></description>
+</item></channel>
+</rss>
