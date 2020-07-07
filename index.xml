@@ -3,9 +3,16 @@
         <title>Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/</link>
         <description>小時候覺得我要努力寫程式 然後它會大賣 然後我可以領到豐厚的獎金 - 後來才發現 程式會不會大賣 獎金多不多 跟我程式寫的好不好 根本沒個屁關係 - 這就是傳說中的初衷 以及初衷如何幻滅的真實案例 -</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 20 Jun 2020 20:46:55 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 07 Jul 2020 23:06:35 &#43;0800</lastBuildDate>
             <atom:link href="https://dxball.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Flutter enum 做 Json 序列化時指定整數值</title>
+    <link>https://dxball.github.io/2020/07/flutter-enum-json-serialize-to-int/</link>
+    <pubDate>Tue, 07 Jul 2020 23:06:35 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/07/flutter-enum-json-serialize-to-int/</guid>
+    <description><![CDATA[<p><a href="https://pub.dev/packages/json_serializable" target="_blank" rel="noopener noreffer"><code>json_serializable</code></a> 預設會把 enum 序列化為字串，有時候需要序列化為整數值</p>]]></description>
+</item><item>
     <title>憑證 pem 檔轉換成 .NET 用的 pfx 檔 🔏</title>
     <link>https://dxball.github.io/2020/06/dotnet-x509certificate-convert/</link>
     <pubDate>Sat, 20 Jun 2020 20:46:55 &#43;0800</pubDate>
@@ -68,12 +75,5 @@
     <author>Author</author>
     <guid>https://dxball.github.io/2020/05/job-sqlserver-mysql-murmur/</guid>
     <description><![CDATA[<p>接手別人的專案實在 hen 痛苦 💔</p>]]></description>
-</item><item>
-    <title>Gitlab Runner as Windows service freezed when building Unity project</title>
-    <link>https://dxball.github.io/2020/05/gitlab-runner-service-unity-build-failed/</link>
-    <pubDate>Fri, 01 May 2020 23:51:04 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/05/gitlab-runner-service-unity-build-failed/</guid>
-    <description><![CDATA[<p>用 Gitlab CI 建置自動化編譯 Unity 專案流程，在 <a href="https://docs.gitlab.com/runner/install/windows.html#installation" title="Install GitLab Runner on Windows" target="_blank" rel="noopener noreffer">Runner 註冊為服務</a>時，若專案過大可能會發生任務卡住的問題</p>]]></description>
 </item></channel>
 </rss>
