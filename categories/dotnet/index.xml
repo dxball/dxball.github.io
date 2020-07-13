@@ -3,7 +3,14 @@
         <title>dotnet - Category - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/categories/dotnet/</link>
         <description>dotnet - Category - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 20 Jun 2020 20:46:55 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/categories/dotnet/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 14 Jul 2020 00:06:26 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/categories/dotnet/" rel="self" type="application/rss+xml" /><item>
+    <title>Visual Studio 專案建置完成後取得組件版本號並輸出在文字檔中</title>
+    <link>https://dxball.github.io/2020/07/visual-studio-get-version-after-build/</link>
+    <pubDate>Tue, 14 Jul 2020 00:06:26 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/07/visual-studio-get-version-after-build/</guid>
+    <description><![CDATA[<p>接到一個需求，需要在專案編譯完成後，在執行檔同目錄下放一個文字檔 (version.txt)，內容為組件的版本號 (<code>AssemblyVersion</code>)</p>]]></description>
+</item><item>
     <title>憑證 pem 檔轉換成 .NET 用的 pfx 檔 🔏</title>
     <link>https://dxball.github.io/2020/06/dotnet-x509certificate-convert/</link>
     <pubDate>Sat, 20 Jun 2020 20:46:55 &#43;0800</pubDate>
