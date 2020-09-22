@@ -3,7 +3,14 @@
         <title>All Posts - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/posts/</link>
         <description>All Posts | Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 14 Jul 2020 00:06:26 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 23 Sep 2020 01:11:44 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Unity IL2CPP 中傳 deletage 給 Native plugin</title>
+    <link>https://dxball.github.io/2020/09/unity-il2cpp-native-plugin-invoke/</link>
+    <pubDate>Wed, 23 Sep 2020 01:11:44 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/09/unity-il2cpp-native-plugin-invoke/</guid>
+    <description><![CDATA[<p>在 C# 傳 callback method 到 native plugin 裡面，會先包裝成 delegate，這次在執行的時候遇到 <code>NotSupportedException</code></p>]]></description>
+</item><item>
     <title>Visual Studio 專案建置完成後取得組件版本號並輸出在文字檔中</title>
     <link>https://dxball.github.io/2020/07/visual-studio-get-version-after-build/</link>
     <pubDate>Tue, 14 Jul 2020 00:06:26 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>https://dxball.github.io/2020/05/github-codespaces-feature/</guid>
     <description><![CDATA[<p>Github 在 <a href="https://github.blog/2020-05-06-new-from-satellite-2020-github-codespaces-github-discussions-securing-code-in-private-repositories-and-more/#codespaces" target="_blank" rel="noopener noreffer">satellite 🛰️ 公佈 Codespaces</a></p>]]></description>
-</item><item>
-    <title>測試用 RTSP Stream</title>
-    <link>https://dxball.github.io/2020/05/test-rtsp-stream/</link>
-    <pubDate>Tue, 05 May 2020 23:13:59 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/05/test-rtsp-stream/</guid>
-    <description><![CDATA[<p>記錄一下可能會用到的免費測試串流，未來就直接放在這篇了</p>]]></description>
 </item></channel>
 </rss>
