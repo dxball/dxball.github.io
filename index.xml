@@ -3,9 +3,16 @@
         <title>Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/</link>
         <description>小時候覺得我要努力寫程式 然後它會大賣 然後我可以領到豐厚的獎金 - 後來才發現 程式會不會大賣 獎金多不多 跟我程式寫的好不好 根本沒個屁關係 - 這就是傳說中的初衷 以及初衷如何幻滅的真實案例 -</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 23 Sep 2020 01:11:44 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 04 Oct 2020 14:30:04 &#43;0800</lastBuildDate>
             <atom:link href="https://dxball.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>取得 SSH Session Client 的 IP</title>
+    <link>https://dxball.github.io/2020/10/ssh-client-session-ip/</link>
+    <pubDate>Sun, 04 Oct 2020 14:30:04 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/10/ssh-client-session-ip/</guid>
+    <description><![CDATA[<p>用 SSH 連到遠端 Server 後，有時候需要取得自己的 IP 來做某些事 (比如說設定 <code>DISPLAY</code> 環境變數)</p>]]></description>
+</item><item>
     <title>Unity IL2CPP 中傳 deletage 給 Native plugin</title>
     <link>https://dxball.github.io/2020/09/unity-il2cpp-native-plugin-invoke/</link>
     <pubDate>Wed, 23 Sep 2020 01:11:44 &#43;0800</pubDate>
@@ -68,12 +75,5 @@
     <author>Author</author>
     <guid>https://dxball.github.io/2020/05/logi-mx-vertical/</guid>
     <description><![CDATA[<p>新買一隻特別的滑鼠，準備要在日常工作的時候用看看</p>]]></description>
-</item><item>
-    <title>Github Codespaces 🛰️</title>
-    <link>https://dxball.github.io/2020/05/github-codespaces-feature/</link>
-    <pubDate>Thu, 07 May 2020 22:05:02 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/05/github-codespaces-feature/</guid>
-    <description><![CDATA[<p>Github 在 <a href="https://github.blog/2020-05-06-new-from-satellite-2020-github-codespaces-github-discussions-securing-code-in-private-repositories-and-more/#codespaces" target="_blank" rel="noopener noreffer">satellite 🛰️ 公佈 Codespaces</a></p>]]></description>
 </item></channel>
 </rss>
