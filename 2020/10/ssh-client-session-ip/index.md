@@ -24,7 +24,7 @@ $ echo $SSH_CLIENT | awk '{ print $1}'
 > 172.16.1.100
 ```
 
-設定 DIPSLAY 環境變數
+設定 DISPLAY 環境變數
 
 ```shell
 $ export DISPLAY=`echo $SSH_CLIENT | awk '{ print $1}'`:0.0
