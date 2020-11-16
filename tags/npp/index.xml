@@ -1,14 +1,1 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>NPP - Tag - Dx&#39;s Monkey Life</title>
-        <link>https://dxball.github.io/tags/npp/</link>
-        <description>NPP - Tag - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 20 Oct 2020 22:42:40 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/npp/" rel="self" type="application/rss+xml" /><item>
-    <title>Notepad&#43;&#43; 使用 Regex capture group 取代特定格式字串</title>
-    <link>https://dxball.github.io/2020/10/notepad-plus-plus-regex-replace/</link>
-    <pubDate>Tue, 20 Oct 2020 22:42:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/10/notepad-plus-plus-regex-replace/</guid>
-    <description><![CDATA[<p>有時候我們需要把文件中某些特定字串改成另外的格式，以前我都是另外寫一隻程式去做字串處理，最近突然想到部分文字編輯器軟體有支援 Regular Expression 取代功能 (Notepad++, VSCode&hellip;)，這篇文章用來記錄 Notepad++ 的 regex 取代字串功能。</p>]]></description>
-</item></channel>
-</rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>NPP - Tag - Dx's Monkey Life</title><link>https://dxball.github.io/tags/npp/</link><description>NPP - Tag - Dx's Monkey Life</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 20 Oct 2020 22:42:40 +0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/npp/" rel="self" type="application/rss+xml"/><item><title>Notepad++ 使用 Regex capture group 取代特定格式字串</title><link>https://dxball.github.io/2020/10/notepad-plus-plus-regex-replace/</link><pubDate>Tue, 20 Oct 2020 22:42:40 +0800</pubDate><author>Author</author><guid>https://dxball.github.io/2020/10/notepad-plus-plus-regex-replace/</guid><description>&lt;p>有時候我們需要把文件中某些特定字串改成另外的格式，以前我都是另外寫一隻程式去做字串處理，最近突然想到部分文字編輯器軟體有支援 Regular Expression 取代功能 (Notepad++, VSCode&amp;hellip;)，這篇文章用來記錄 Notepad++ 的 regex 取代字串功能。&lt;/p></description></item></channel></rss>

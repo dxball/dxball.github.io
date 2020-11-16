@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "D:/Dxball/Project/git/dxball_hugo/hugo_repo",
+	"sourceRoot": "/home/runner/work/HugoRepo/HugoRepo",
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/css/_variables.scss",

@@ -1,14 +1,1 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Visual Studio Code - Tag - Dx&#39;s Monkey Life</title>
-        <link>https://dxball.github.io/tags/visual-studio-code/</link>
-        <description>Visual Studio Code - Tag - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 28 May 2020 23:49:52 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/visual-studio-code/" rel="self" type="application/rss+xml" /><item>
-    <title>Visual Studio Code 針對各語言用不同編輯器設定的方法</title>
-    <link>https://dxball.github.io/2020/05/vscode-language-specific-editor-settings/</link>
-    <pubDate>Thu, 28 May 2020 23:49:52 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/05/vscode-language-specific-editor-settings/</guid>
-    <description><![CDATA[<p>vscode 可以對不同語言用不同的設定，在某些情況下會比較方便</p>]]></description>
-</item></channel>
-</rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Visual Studio Code - Tag - Dx's Monkey Life</title><link>https://dxball.github.io/tags/visual-studio-code/</link><description>Visual Studio Code - Tag - Dx's Monkey Life</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 28 May 2020 23:49:52 +0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/visual-studio-code/" rel="self" type="application/rss+xml"/><item><title>Visual Studio Code 針對各語言用不同編輯器設定的方法</title><link>https://dxball.github.io/2020/05/vscode-language-specific-editor-settings/</link><pubDate>Thu, 28 May 2020 23:49:52 +0800</pubDate><author>Author</author><guid>https://dxball.github.io/2020/05/vscode-language-specific-editor-settings/</guid><description>&lt;p>vscode 可以對不同語言用不同的設定，在某些情況下會比較方便&lt;/p></description></item></channel></rss>
