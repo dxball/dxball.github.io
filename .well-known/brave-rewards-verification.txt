@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: dxball.github.io
+Token: 6a611839d14c211b884b001b50e71f7fa3667cc1e82e5e2f5a549a78dc30de66
