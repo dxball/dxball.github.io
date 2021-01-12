@@ -1,7 +1,7 @@
 # 用 GitHub Codespaces 來操作 Hugo 網站
 
 
-GitHub 在今年的 GitHub satellite [公佈了 Codespaces](/posts/2020/05/github-codespaces-feature.md)，經過一段時間的等待終於申請到試用了
+GitHub 在今年的 GitHub satellite [公佈了 Codespaces]({{< ref "/posts/2020/05/github-codespaces-feature.md" >}})，經過一段時間的等待終於申請到試用了
 
 <!--more-->
 
