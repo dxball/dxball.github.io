@@ -1,1 +1,14 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Flutter - Category - Dx's Monkey Life</title><link>https://dxball.github.io/categories/flutter/</link><description>Flutter - Category - Dx's Monkey Life</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 07 Jul 2020 23:06:35 +0800</lastBuildDate><atom:link href="https://dxball.github.io/categories/flutter/" rel="self" type="application/rss+xml"/><item><title>Flutter enum 做 Json 序列化時指定整數值</title><link>https://dxball.github.io/2020/07/flutter-enum-json-serialize-to-int/</link><pubDate>Tue, 07 Jul 2020 23:06:35 +0800</pubDate><author>Author</author><guid>https://dxball.github.io/2020/07/flutter-enum-json-serialize-to-int/</guid><description><![CDATA[<p><a href="https://pub.dev/packages/json_serializable" target="_blank" rel="noopener noreffer"><code>json_serializable</code></a> 預設會把 enum 序列化為字串，有時候需要序列化為整數值</p>]]></description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Flutter - Category - Dx&#39;s Monkey Life</title>
+        <link>https://dxball.github.io/categories/flutter/</link>
+        <description>Flutter - Category - Dx&#39;s Monkey Life</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 07 Jul 2020 23:06:35 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/categories/flutter/" rel="self" type="application/rss+xml" /><item>
+    <title>Flutter enum 做 Json 序列化時指定整數值</title>
+    <link>https://dxball.github.io/2020/07/flutter-enum-json-serialize-to-int/</link>
+    <pubDate>Tue, 07 Jul 2020 23:06:35 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/07/flutter-enum-json-serialize-to-int/</guid>
+    <description><![CDATA[<p><a href="https://pub.dev/packages/json_serializable" target="_blank" rel="noopener noreffer"><code>json_serializable</code></a> 預設會把 enum 序列化為字串，有時候需要序列化為整數值</p>]]></description>
+</item></channel>
+</rss>

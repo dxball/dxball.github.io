@@ -1,1 +1,21 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>dotnet - Category - Dx's Monkey Life</title><link>https://dxball.github.io/categories/dotnet/</link><description>dotnet - Category - Dx's Monkey Life</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 14 Jul 2020 00:06:26 +0800</lastBuildDate><atom:link href="https://dxball.github.io/categories/dotnet/" rel="self" type="application/rss+xml"/><item><title>Visual Studio 專案建置完成後取得組件版本號並輸出在文字檔中</title><link>https://dxball.github.io/2020/07/visual-studio-get-version-after-build/</link><pubDate>Tue, 14 Jul 2020 00:06:26 +0800</pubDate><author>Author</author><guid>https://dxball.github.io/2020/07/visual-studio-get-version-after-build/</guid><description>&lt;p>接到一個需求，需要在專案編譯完成後，在執行檔同目錄下放一個文字檔 (version.txt)，內容為組件的版本號 (&lt;code>AssemblyVersion&lt;/code>)&lt;/p></description></item><item><title>憑證 pem 檔轉換成 .NET 用的 pfx 檔 🔏</title><link>https://dxball.github.io/2020/06/dotnet-x509certificate-convert/</link><pubDate>Sat, 20 Jun 2020 20:46:55 +0800</pubDate><author>Author</author><guid>https://dxball.github.io/2020/06/dotnet-x509certificate-convert/</guid><description><![CDATA[<p>.NET 的 <code>X509Certificate2</code> 預設只能讀取 PFX/PKCS12 格式的檔案，手邊有專案產生的 <code>*.pem</code> 憑證，可以使用 openssl 轉換</p>]]></description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>dotnet - Category - Dx&#39;s Monkey Life</title>
+        <link>https://dxball.github.io/categories/dotnet/</link>
+        <description>dotnet - Category - Dx&#39;s Monkey Life</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 14 Jul 2020 00:06:26 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/categories/dotnet/" rel="self" type="application/rss+xml" /><item>
+    <title>Visual Studio 專案建置完成後取得組件版本號並輸出在文字檔中</title>
+    <link>https://dxball.github.io/2020/07/visual-studio-get-version-after-build/</link>
+    <pubDate>Tue, 14 Jul 2020 00:06:26 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/07/visual-studio-get-version-after-build/</guid>
+    <description><![CDATA[<p>接到一個需求，需要在專案編譯完成後，在執行檔同目錄下放一個文字檔 (version.txt)，內容為組件的版本號 (<code>AssemblyVersion</code>)</p>]]></description>
+</item><item>
+    <title>憑證 pem 檔轉換成 .NET 用的 pfx 檔 🔏</title>
+    <link>https://dxball.github.io/2020/06/dotnet-x509certificate-convert/</link>
+    <pubDate>Sat, 20 Jun 2020 20:46:55 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/06/dotnet-x509certificate-convert/</guid>
+    <description><![CDATA[<p>.NET 的 <code>X509Certificate2</code> 預設只能讀取 PFX/PKCS12 格式的檔案，手邊有專案產生的 <code>*.pem</code> 憑證，可以使用 openssl 轉換</p>]]></description>
+</item></channel>
+</rss>

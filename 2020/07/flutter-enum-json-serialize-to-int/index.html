@@ -1,60 +1,241 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta http-equiv=x-ua-compatible content="IE=edge, chrome=1"><title>Flutter enum 做 Json 序列化時指定整數值 - Dx's Monkey Life</title><meta name=Description content="json_serializable 預設會把 enum 序列化為字串，有時候需要序列化為整數值，使用 @JsonValue 指定列舉值"><meta property="og:title" content="Flutter enum 做 Json 序列化時指定整數值"><meta property="og:description" content="json_serializable 預設會把 enum 序列化為字串，有時候需要序列化為整數值，使用 @JsonValue 指定列舉值"><meta property="og:type" content="article"><meta property="og:url" content="https://dxball.github.io/2020/07/flutter-enum-json-serialize-to-int/"><meta property="og:image" content="https://dxball.github.io/logo.png"><meta property="article:published_time" content="2020-07-07T23:06:35+08:00"><meta property="article:modified_time" content="2020-07-07T23:06:35+08:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://dxball.github.io/logo.png"><meta name=twitter:title content="Flutter enum 做 Json 序列化時指定整數值"><meta name=twitter:description content="json_serializable 預設會把 enum 序列化為字串，有時候需要序列化為整數值，使用 @JsonValue 指定列舉值"><meta name=application-name content="Dx's Monkey Life"><meta name=apple-mobile-web-app-title content="Dx's Monkey Life"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://dxball.github.io/2020/07/flutter-enum-json-serialize-to-int/><link rel=prev href=https://dxball.github.io/2020/06/dotnet-x509certificate-convert/><link rel=next href=https://dxball.github.io/2020/07/visual-studio-get-version-after-build/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css><meta name=google-site-verification content="google9ef93b55acaac792"><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Flutter enum 做 Json 序列化時指定整數值","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/dxball.github.io\/2020\/07\/flutter-enum-json-serialize-to-int\/"},"image":["https:\/\/dxball.github.io\/images\/Apple-Devices-Preview.png"],"genre":"posts","keywords":"Flutter, dart, json, Serialize","wordcount":168,"url":"https:\/\/dxball.github.io\/2020\/07\/flutter-enum-json-serialize-to-int\/","datePublished":"2020-07-07T23:06:35+08:00","dateModified":"2020-07-07T23:06:35+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":"https:\/\/dxball.github.io\/images\/avatar.png"},"author":{"@type":"Person","name":"Dxball"},"description":"json_serializable 預設會把 enum 序列化為字串，有時候需要序列化為整數值，使用 @JsonValue 指定列舉值"}</script></head><body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':('dark'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'dark'==='dark'))&&document.body.setAttribute('theme','dark');</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="Dx's Monkey Life"><span class=header-title-pre><i class="fas fa-dog"></i></span>Dx's Monkey Life</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/posts/>Posts </a><a class=menu-item href=/tags/>Tags </a><a class=menu-item href=/categories/>Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop><input type=text placeholder="Search titles or contents..." id=search-input-desktop>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search><i class="fas fa-search fa-fw"></i></a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear><i class="fas fa-times-circle fa-fw"></i></a><span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin"></i></span></span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme"><i class="fas fa-adjust fa-fw"></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="Dx's Monkey Life"><span class=header-title-pre><i class="fas fa-dog"></i></span>Dx's Monkey Life</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder="Search titles or contents..." id=search-input-mobile>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search><i class="fas fa-search fa-fw"></i></a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear><i class="fas fa-times-circle fa-fw"></i></a><span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin"></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>Cancel</a></div><a class=menu-item href=/posts/>Posts</a><a class=menu-item href=/tags/>Tags</a><a class=menu-item href=/categories/>Categories</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
-<i class="fas fa-adjust fa-fw"></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><article class="page single"><h1 class="single-title animated flipInX">Flutter enum 做 Json 序列化時指定整數值</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Dxball</a></span>&nbsp;<span class=post-category>included in <a href=/categories/flutter/><i class="far fa-folder fa-fw"></i>Flutter</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2020-07-07>2020-07-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;168 words&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div></div><div class=content id=content><p><a href=https://pub.dev/packages/json_serializable target=_blank rel="noopener noreffer"><code>json_serializable</code></a> 預設會把 enum 序列化為字串，有時候需要序列化為整數值</p><p>假設有個 class 定義如下</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span><span class=lnt>16
-</span><span class=lnt>17
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-dart data-lang=dart><span class=k>import</span> <span class=s1>&#39;package:json_annotation/json_annotation.dart&#39;</span><span class=p>;</span>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Flutter enum 做 Json 序列化時指定整數值 - Dx&#39;s Monkey Life</title><meta name="Description" content="json_serializable 預設會把 enum 序列化為字串，有時候需要序列化為整數值，使用 @JsonValue 指定列舉值"><meta property="og:title" content="Flutter enum 做 Json 序列化時指定整數值" />
+<meta property="og:description" content="json_serializable 預設會把 enum 序列化為字串，有時候需要序列化為整數值，使用 @JsonValue 指定列舉值" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dxball.github.io/2020/07/flutter-enum-json-serialize-to-int/" />
+<meta property="og:image" content="https://dxball.github.io/logo.png"/>
+<meta property="article:published_time" content="2020-07-07T23:06:35+08:00" />
+<meta property="article:modified_time" content="2020-07-07T23:06:35+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dxball.github.io/logo.png"/>
 
-<span class=k>part</span> <span class=s1>&#39;fruit.g.dart&#39;</span><span class=p>;</span>
+<meta name="twitter:title" content="Flutter enum 做 Json 序列化時指定整數值"/>
+<meta name="twitter:description" content="json_serializable 預設會把 enum 序列化為字串，有時候需要序列化為整數值，使用 @JsonValue 指定列舉值"/>
+<meta name="application-name" content="Dx&#39;s Monkey Life">
+<meta name="apple-mobile-web-app-title" content="Dx&#39;s Monkey Life"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://dxball.github.io/2020/07/flutter-enum-json-serialize-to-int/" /><link rel="prev" href="https://dxball.github.io/2020/06/dotnet-x509certificate-convert/" /><link rel="next" href="https://dxball.github.io/2020/07/visual-studio-get-version-after-build/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="google-site-verification" content="google9ef93b55acaac792" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Flutter enum 做 Json 序列化時指定整數值",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/dxball.github.io\/2020\/07\/flutter-enum-json-serialize-to-int\/"
+        },"image": ["https:\/\/dxball.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Flutter, dart, json, Serialize","wordcount":  168 ,
+        "url": "https:\/\/dxball.github.io\/2020\/07\/flutter-enum-json-serialize-to-int\/","datePublished": "2020-07-07T23:06:35+08:00","dateModified": "2020-07-07T23:06:35+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/dxball.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Dxball"
+            },"description": "json_serializable 預設會把 enum 序列化為字串，有時候需要序列化為整數值，使用 @JsonValue 指定列舉值"
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
-<span class=n>enum</span> <span class=n>Fruit</span> <span class=p>{</span>
-  <span class=n>apple</span><span class=p>,</span>
-  <span class=n>banana</span><span class=p>,</span>
-  <span class=n>orange</span><span class=p>,</span>
-<span class=p>}</span>
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Dx&#39;s Monkey Life"><span class="header-title-pre"><i class='fas fa-dog'></i></span>Dx&#39;s Monkey Life</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Dx&#39;s Monkey Life"><span class="header-title-pre"><i class='fas fa-dog'></i></span>Dx&#39;s Monkey Life</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Flutter enum 做 Json 序列化時指定整數值</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dxball</a></span>&nbsp;<span class="post-category">included in <a href="/categories/flutter/"><i class="far fa-folder fa-fw"></i>Flutter</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-07-07">2020-07-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;168 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="content" id="content"><p><a href="https://pub.dev/packages/json_serializable" target="_blank" rel="noopener noreffer"><code>json_serializable</code></a> 預設會把 enum 序列化為字串，有時候需要序列化為整數值</p>
+<p>假設有個 class 定義如下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-dart" data-lang="dart"><span class="k">import</span> <span class="s1">&#39;package:json_annotation/json_annotation.dart&#39;</span><span class="p">;</span>
 
-<span class=err>@</span><span class=n>JsonSerializable</span><span class=p>()</span>
-<span class=kd>class</span> <span class=nc>Test</span> <span class=p>{</span>
-  <span class=kd>final</span> <span class=n>Fruit</span> <span class=n>fruit</span><span class=p>;</span>
-  <span class=n>Test</span><span class=p>({</span><span class=k>this</span><span class=p>.</span><span class=n>fruit</span><span class=p>});</span>
-  <span class=kd>factory</span> <span class=n>Test</span><span class=p>.</span><span class=n>fromJson</span><span class=p>(</span><span class=n>Map</span><span class=o>&lt;</span><span class=kt>String</span><span class=p>,</span> <span class=kt>dynamic</span><span class=o>&gt;</span> <span class=n>json</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=n>_$TestFromJson</span><span class=p>(</span><span class=n>json</span><span class=p>);</span>
-  <span class=n>Map</span><span class=o>&lt;</span><span class=kt>String</span><span class=p>,</span> <span class=kt>dynamic</span><span class=o>&gt;</span> <span class=n>toJson</span><span class=p>()</span> <span class=o>=&gt;</span> <span class=n>_$TestToJson</span><span class=p>(</span><span class=k>this</span><span class=p>);</span>
-<span class=p>}</span>
-</code></pre></td></tr></table></div></div><p>序列化為 json 結果</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-dart data-lang=dart><span class=n>print</span><span class=p>(</span><span class=n>jsonEncode</span><span class=p>(</span><span class=n>Test</span><span class=p>(</span><span class=nl>fruit:</span> <span class=n>Fruit</span><span class=p>.</span><span class=n>apple</span><span class=p>)));</span> <span class=c1>// {&#34;fruit&#34;:&#34;apple&#34;}
-</span></code></pre></td></tr></table></div></div><p>如果想要讓 enum 表示為整數值，可以用 <code>@JsonValue</code> 指定列舉值</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span><span class=lnt>4
-</span><span class=lnt>5
-</span><span class=lnt>6
-</span><span class=lnt>7
-</span><span class=lnt>8
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-dart data-lang=dart><span class=n>enum</span> <span class=n>Fruit</span> <span class=p>{</span>
-  <span class=err>@</span><span class=n>JsonValue</span><span class=p>(</span><span class=m>0</span><span class=p>)</span>
-  <span class=n>apple</span><span class=p>,</span>
-  <span class=err>@</span><span class=n>JsonValue</span><span class=p>(</span><span class=m>1</span><span class=p>)</span>
-  <span class=n>banana</span><span class=p>,</span>
-  <span class=err>@</span><span class=n>JsonValue</span><span class=p>(</span><span class=m>2</span><span class=p>)</span>
-  <span class=n>orange</span><span class=p>,</span>
-<span class=p>}</span>
-</code></pre></td></tr></table></div></div><p>這樣結果會變成</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-dart data-lang=dart><span class=n>print</span><span class=p>(</span><span class=n>jsonEncode</span><span class=p>(</span><span class=n>Test</span><span class=p>(</span><span class=nl>fruit:</span> <span class=n>Fruit</span><span class=p>.</span><span class=n>apple</span><span class=p>)));</span> <span class=c1>// {&#34;fruit&#34;:0}
-</span></code></pre></td></tr></table></div></div><p>json_serializable 的 <a href=https://github.com/google/json_serializable.dart/tree/master/example target=_blank rel="noopener noreffer">example</a> 裡面似乎沒寫到 <code>JsonValue</code> 🤣</p><h3 id=reference>Reference</h3><ul><li><a href=https://stackoverflow.com/a/60820407/1568102 target=_blank rel="noopener noreffer">json_serializable enum values in dart</a></li><li><a href=https://pub.dev/documentation/json_annotation/latest/ target=_blank rel="noopener noreffer">json_annotation package</a></li><li><a href=https://pub.dev/packages/json_serializable target=_blank rel="noopener noreffer">json_serializable package</a></li></ul></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2020-07-07</span></div><div class=post-info-license></div></div><div class=post-info-line><div class=post-info-md></div><div class=post-info-share><span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=https://dxball.github.io/2020/07/flutter-enum-json-serialize-to-int/ data-title="Flutter enum 做 Json 序列化時指定整數值" data-via=xxxx data-hashtags=Flutter,dart,json,Serialize><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=https://dxball.github.io/2020/07/flutter-enum-json-serialize-to-int/ data-hashtag=Flutter><i class="fab fa-facebook-square fa-fw"></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/flutter/>Flutter</a>,&nbsp;<a href=/tags/dart/>dart</a>,&nbsp;<a href=/tags/json/>json</a>,&nbsp;<a href=/tags/serialize/>Serialize</a></section><section><span><a href=javascript:void(0); onclick=window.history.back();>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/2020/06/dotnet-x509certificate-convert/ class=prev rel=prev title="憑證 pem 檔轉換成 .NET 用的 pfx 檔 🔏"><i class="fas fa-angle-left fa-fw"></i>憑證 pem 檔轉換成 .NET 用的 pfx 檔 🔏</a>
-<a href=/2020/07/visual-studio-get-version-after-build/ class=next rel=next title="Visual Studio 專案建置完成後取得組件版本號並輸出在文字檔中">Visual Studio 專案建置完成後取得組件版本號並輸出在文字檔中<i class="fas fa-angle-right fa-fw"></i></a></div></div><div id=comments><div id=disqus_thread class=comment></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://disqus.com/?ref_noscript>Disqus</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i>LoveIt</a></div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2020 - 2021</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Dxball</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw"></i></a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw"></i></a></div><script type=text/javascript src=https://dxs-monkey-life-plus.disqus.com/embed.js defer></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js></script><script type=text/javascript>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type=text/javascript src=/js/theme.min.js></script><script type=text/javascript>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','UA-3998330-11',{'anonymize_ip':true});</script><script type=text/javascript src="https://www.googletagmanager.com/gtag/js?id=UA-3998330-11" async></script></body></html>
+<span class="k">part</span> <span class="s1">&#39;fruit.g.dart&#39;</span><span class="p">;</span>
+
+<span class="n">enum</span> <span class="n">Fruit</span> <span class="p">{</span>
+  <span class="n">apple</span><span class="p">,</span>
+  <span class="n">banana</span><span class="p">,</span>
+  <span class="n">orange</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="err">@</span><span class="n">JsonSerializable</span><span class="p">()</span>
+<span class="kd">class</span> <span class="nc">Test</span> <span class="p">{</span>
+  <span class="kd">final</span> <span class="n">Fruit</span> <span class="n">fruit</span><span class="p">;</span>
+  <span class="n">Test</span><span class="p">({</span><span class="k">this</span><span class="p">.</span><span class="n">fruit</span><span class="p">});</span>
+  <span class="kd">factory</span> <span class="n">Test</span><span class="p">.</span><span class="n">fromJson</span><span class="p">(</span><span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">dynamic</span><span class="o">&gt;</span> <span class="n">json</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">_$TestFromJson</span><span class="p">(</span><span class="n">json</span><span class="p">);</span>
+  <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">dynamic</span><span class="o">&gt;</span> <span class="n">toJson</span><span class="p">()</span> <span class="o">=&gt;</span> <span class="n">_$TestToJson</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>序列化為 json 結果</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-dart" data-lang="dart"><span class="n">print</span><span class="p">(</span><span class="n">jsonEncode</span><span class="p">(</span><span class="n">Test</span><span class="p">(</span><span class="nl">fruit:</span> <span class="n">Fruit</span><span class="p">.</span><span class="n">apple</span><span class="p">)));</span> <span class="c1">// {&#34;fruit&#34;:&#34;apple&#34;}
+</span></code></pre></td></tr></table>
+</div>
+</div><p>如果想要讓 enum 表示為整數值，可以用 <code>@JsonValue</code> 指定列舉值</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-dart" data-lang="dart"><span class="n">enum</span> <span class="n">Fruit</span> <span class="p">{</span>
+  <span class="err">@</span><span class="n">JsonValue</span><span class="p">(</span><span class="m">0</span><span class="p">)</span>
+  <span class="n">apple</span><span class="p">,</span>
+  <span class="err">@</span><span class="n">JsonValue</span><span class="p">(</span><span class="m">1</span><span class="p">)</span>
+  <span class="n">banana</span><span class="p">,</span>
+  <span class="err">@</span><span class="n">JsonValue</span><span class="p">(</span><span class="m">2</span><span class="p">)</span>
+  <span class="n">orange</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>這樣結果會變成</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-dart" data-lang="dart"><span class="n">print</span><span class="p">(</span><span class="n">jsonEncode</span><span class="p">(</span><span class="n">Test</span><span class="p">(</span><span class="nl">fruit:</span> <span class="n">Fruit</span><span class="p">.</span><span class="n">apple</span><span class="p">)));</span> <span class="c1">// {&#34;fruit&#34;:0}
+</span></code></pre></td></tr></table>
+</div>
+</div><p>json_serializable 的 <a href="https://github.com/google/json_serializable.dart/tree/master/example" target="_blank" rel="noopener noreffer">example</a> 裡面似乎沒寫到 <code>JsonValue</code> 🤣</p>
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="https://stackoverflow.com/a/60820407/1568102" target="_blank" rel="noopener noreffer">json_serializable enum values in dart</a></li>
+<li><a href="https://pub.dev/documentation/json_annotation/latest/" target="_blank" rel="noopener noreffer">json_annotation package</a></li>
+<li><a href="https://pub.dev/packages/json_serializable" target="_blank" rel="noopener noreffer">json_serializable package</a></li>
+</ul></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2020-07-07</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://dxball.github.io/2020/07/flutter-enum-json-serialize-to-int/" data-title="Flutter enum 做 Json 序列化時指定整數值" data-via="xxxx" data-hashtags="Flutter,dart,json,Serialize"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://dxball.github.io/2020/07/flutter-enum-json-serialize-to-int/" data-hashtag="Flutter"><i class="fab fa-facebook-square fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/flutter/">Flutter</a>,&nbsp;<a href="/tags/dart/">dart</a>,&nbsp;<a href="/tags/json/">json</a>,&nbsp;<a href="/tags/serialize/">Serialize</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2020/06/dotnet-x509certificate-convert/" class="prev" rel="prev" title="憑證 pem 檔轉換成 .NET 用的 pfx 檔 🔏"><i class="fas fa-angle-left fa-fw"></i>憑證 pem 檔轉換成 .NET 用的 pfx 檔 🔏</a>
+            <a href="/2020/07/visual-studio-get-version-after-build/" class="next" rel="next" title="Visual Studio 專案建置完成後取得組件版本號並輸出在文字檔中">Visual Studio 專案建置完成後取得組件版本號並輸出在文字檔中<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="disqus_thread" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://disqus.com/?ref_noscript">Disqus</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="https://dxs-monkey-life-plus.disqus.com/embed.js" defer></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'UA-3998330-11', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-3998330-11" async></script></body>
+</html>

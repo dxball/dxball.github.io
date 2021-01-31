@@ -1,1 +1,21 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Visual Studio - Tag - Dx's Monkey Life</title><link>https://dxball.github.io/tags/visual-studio/</link><description>Visual Studio - Tag - Dx's Monkey Life</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 14 Jul 2020 00:06:26 +0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/visual-studio/" rel="self" type="application/rss+xml"/><item><title>Visual Studio 專案建置完成後取得組件版本號並輸出在文字檔中</title><link>https://dxball.github.io/2020/07/visual-studio-get-version-after-build/</link><pubDate>Tue, 14 Jul 2020 00:06:26 +0800</pubDate><author>Author</author><guid>https://dxball.github.io/2020/07/visual-studio-get-version-after-build/</guid><description>&lt;p>接到一個需求，需要在專案編譯完成後，在執行檔同目錄下放一個文字檔 (version.txt)，內容為組件的版本號 (&lt;code>AssemblyVersion&lt;/code>)&lt;/p></description></item><item><title>Visual Studio 奇怪的 Build error</title><link>https://dxball.github.io/2020/05/vs-wired-build-error/</link><pubDate>Tue, 19 May 2020 23:54:04 +0800</pubDate><author>Author</author><guid>https://dxball.github.io/2020/05/vs-wired-build-error/</guid><description>&lt;p>在公司準備要建置一個平常的 .NET 專案時忽然跳了從沒看過的錯誤&lt;/p></description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Visual Studio - Tag - Dx&#39;s Monkey Life</title>
+        <link>https://dxball.github.io/tags/visual-studio/</link>
+        <description>Visual Studio - Tag - Dx&#39;s Monkey Life</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 14 Jul 2020 00:06:26 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/visual-studio/" rel="self" type="application/rss+xml" /><item>
+    <title>Visual Studio 專案建置完成後取得組件版本號並輸出在文字檔中</title>
+    <link>https://dxball.github.io/2020/07/visual-studio-get-version-after-build/</link>
+    <pubDate>Tue, 14 Jul 2020 00:06:26 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/07/visual-studio-get-version-after-build/</guid>
+    <description><![CDATA[<p>接到一個需求，需要在專案編譯完成後，在執行檔同目錄下放一個文字檔 (version.txt)，內容為組件的版本號 (<code>AssemblyVersion</code>)</p>]]></description>
+</item><item>
+    <title>Visual Studio 奇怪的 Build error</title>
+    <link>https://dxball.github.io/2020/05/vs-wired-build-error/</link>
+    <pubDate>Tue, 19 May 2020 23:54:04 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2020/05/vs-wired-build-error/</guid>
+    <description><![CDATA[<p>在公司準備要建置一個平常的 .NET 專案時忽然跳了從沒看過的錯誤</p>]]></description>
+</item></channel>
+</rss>

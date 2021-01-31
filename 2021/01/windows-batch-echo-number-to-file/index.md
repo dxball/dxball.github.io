@@ -23,7 +23,7 @@ echo set NUMBER=4>file.txt
 > - STDIN  = 0  Keyboard input
 > - STDOUT = 1  Text output
 > - STDERR = 2  Error text output
-> - UNDEFINED = 3-9 
+> - UNDEFINED = 3-9
 
 ## 解法
 
