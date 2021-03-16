@@ -7,7 +7,7 @@
     <title>git checkout 排除指定目錄/檔案</title>
     <link>https://dxball.github.io/2021/01/git-checkout-exclude-files/</link>
     <pubDate>Mon, 11 Jan 2021 22:56:36 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>Dxball</author>
     <guid>https://dxball.github.io/2021/01/git-checkout-exclude-files/</guid>
     <description><![CDATA[<p>跟別人共用的專案，有時候 checkout 的時候不需要把部分的東西一併取出來，可以節省 compile 時間，git 有提供 sparse checkout 的功能，可以指定或排除特定目錄/檔案</p>]]></description>
 </item></channel>

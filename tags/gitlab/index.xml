@@ -7,14 +7,14 @@
     <title>GitLab Runner fetch 專案時保留指定目錄不被刪除</title>
     <link>https://dxball.github.io/2020/11/gitlab-runner-fetch-clean-exclude/</link>
     <pubDate>Wed, 18 Nov 2020 00:13:39 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>Dxball</author>
     <guid>https://dxball.github.io/2020/11/gitlab-runner-fetch-clean-exclude/</guid>
     <description><![CDATA[<p>GitLab Runner 在 fetch 專案時，預設會在 fetch 後執行 <code>git clean -ffdx</code> 命令，讓專案目錄維持在乾淨的狀態</p>]]></description>
 </item><item>
     <title>Gitlab Runner as Windows service freezed when building Unity project</title>
     <link>https://dxball.github.io/2020/05/gitlab-runner-service-unity-build-failed/</link>
     <pubDate>Fri, 01 May 2020 23:51:04 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>Dxball</author>
     <guid>https://dxball.github.io/2020/05/gitlab-runner-service-unity-build-failed/</guid>
     <description><![CDATA[<p>用 Gitlab CI 建置自動化編譯 Unity 專案流程，在 <a href="https://docs.gitlab.com/runner/install/windows.html#installation" title="Install GitLab Runner on Windows" target="_blank" rel="noopener noreffer">Runner 註冊為服務</a>時，若專案過大可能會發生任務卡住的問題</p>]]></description>
 </item></channel>

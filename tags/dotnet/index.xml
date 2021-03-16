@@ -7,28 +7,28 @@
     <title>Unity IL2CPP 中傳 deletage 給 Native plugin</title>
     <link>https://dxball.github.io/2020/09/unity-il2cpp-native-plugin-invoke/</link>
     <pubDate>Wed, 23 Sep 2020 01:11:44 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>Dxball</author>
     <guid>https://dxball.github.io/2020/09/unity-il2cpp-native-plugin-invoke/</guid>
     <description><![CDATA[<p>在 C# 傳 callback method 到 native plugin 裡面，會先包裝成 delegate，這次在執行的時候遇到 <code>NotSupportedException</code></p>]]></description>
 </item><item>
     <title>Visual Studio 專案建置完成後取得組件版本號並輸出在文字檔中</title>
     <link>https://dxball.github.io/2020/07/visual-studio-get-version-after-build/</link>
     <pubDate>Tue, 14 Jul 2020 00:06:26 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>Dxball</author>
     <guid>https://dxball.github.io/2020/07/visual-studio-get-version-after-build/</guid>
     <description><![CDATA[<p>接到一個需求，需要在專案編譯完成後，在執行檔同目錄下放一個文字檔 (version.txt)，內容為組件的版本號 (<code>AssemblyVersion</code>)</p>]]></description>
 </item><item>
     <title>憑證 pem 檔轉換成 .NET 用的 pfx 檔 🔏</title>
     <link>https://dxball.github.io/2020/06/dotnet-x509certificate-convert/</link>
     <pubDate>Sat, 20 Jun 2020 20:46:55 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>Dxball</author>
     <guid>https://dxball.github.io/2020/06/dotnet-x509certificate-convert/</guid>
     <description><![CDATA[<p>.NET 的 <code>X509Certificate2</code> 預設只能讀取 PFX/PKCS12 格式的檔案，手邊有專案產生的 <code>*.pem</code> 憑證，可以使用 openssl 轉換</p>]]></description>
 </item><item>
     <title>Visual Studio 奇怪的 Build error</title>
     <link>https://dxball.github.io/2020/05/vs-wired-build-error/</link>
     <pubDate>Tue, 19 May 2020 23:54:04 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>Dxball</author>
     <guid>https://dxball.github.io/2020/05/vs-wired-build-error/</guid>
     <description><![CDATA[<p>在公司準備要建置一個平常的 .NET 專案時忽然跳了從沒看過的錯誤</p>]]></description>
 </item></channel>

@@ -7,7 +7,7 @@
     <title>Flutter enum 做 Json 序列化時指定整數值</title>
     <link>https://dxball.github.io/2020/07/flutter-enum-json-serialize-to-int/</link>
     <pubDate>Tue, 07 Jul 2020 23:06:35 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>Dxball</author>
     <guid>https://dxball.github.io/2020/07/flutter-enum-json-serialize-to-int/</guid>
     <description><![CDATA[<p><a href="https://pub.dev/packages/json_serializable" target="_blank" rel="noopener noreffer"><code>json_serializable</code></a> 預設會把 enum 序列化為字串，有時候需要序列化為整數值</p>]]></description>
 </item></channel>

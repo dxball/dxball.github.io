@@ -7,7 +7,7 @@
     <title>MacOSX 上的 VSCode 開啟 mono 專案，C# Extension 跑出找不到 .NET Framework 4.7.1 的錯誤</title>
     <link>https://dxball.github.io/2020/11/macos-vscode-mono-project-dotnet471-error/</link>
     <pubDate>Sun, 22 Nov 2020 21:30:49 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>Dxball</author>
     <guid>https://dxball.github.io/2020/11/macos-vscode-mono-project-dotnet471-error/</guid>
     <description><![CDATA[<p>MacOS 上要先安裝 .NET Core SDK 及 Mono 才能使用 VSCode 打開 mono/.NET 專案，但安裝後 VSCode 的 C# Extension 還是跳錯誤訊息</p>]]></description>
 </item></channel>
