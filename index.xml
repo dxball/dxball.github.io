@@ -9,70 +9,70 @@
     <title>Visual Studio 2019 16.9 打開專案跳錯誤</title>
     <link>https://dxball.github.io/2021/03/vs2019-open-proj-error/</link>
     <pubDate>Tue, 16 Mar 2021 22:46:59 &#43;0800</pubDate>
-    <author>Dxball</author>
+    <author>Author</author>
     <guid>https://dxball.github.io/2021/03/vs2019-open-proj-error/</guid>
     <description><![CDATA[<p>更新至 Visual Studio 2019 16.9 之後，打開專案會跳出 <code>The 'CascadePackage' package did not load correctly</code> 的錯誤</p>]]></description>
 </item><item>
     <title>Windows Batch 取得桌面路徑的方法</title>
     <link>https://dxball.github.io/2021/02/windows-batch-get-desktop-path/</link>
     <pubDate>Mon, 01 Feb 2021 00:04:00 &#43;0800</pubDate>
-    <author>Dxball</author>
+    <author>Author</author>
     <guid>https://dxball.github.io/2021/02/windows-batch-get-desktop-path/</guid>
     <description><![CDATA[<p>有個需求是要用 Batch file 在桌面上建立一些檔案，遍尋不著桌面路徑的環境變數，只好透過其他方式來取得桌面路徑</p>]]></description>
 </item><item>
     <title>Windows Batch echo 數字到檔案</title>
     <link>https://dxball.github.io/2021/01/windows-batch-echo-number-to-file/</link>
     <pubDate>Thu, 28 Jan 2021 00:33:01 &#43;0800</pubDate>
-    <author>Dxball</author>
+    <author>Author</author>
     <guid>https://dxball.github.io/2021/01/windows-batch-echo-number-to-file/</guid>
     <description><![CDATA[<p>寫 batch 腳本時遇到的怪問題，將某些數字 echo redirect 到檔案時會消失不見</p>]]></description>
 </item><item>
     <title>git checkout 排除指定目錄/檔案</title>
     <link>https://dxball.github.io/2021/01/git-checkout-exclude-files/</link>
     <pubDate>Mon, 11 Jan 2021 22:56:36 &#43;0800</pubDate>
-    <author>Dxball</author>
+    <author>Author</author>
     <guid>https://dxball.github.io/2021/01/git-checkout-exclude-files/</guid>
     <description><![CDATA[<p>跟別人共用的專案，有時候 checkout 的時候不需要把部分的東西一併取出來，可以節省 compile 時間，git 有提供 sparse checkout 的功能，可以指定或排除特定目錄/檔案</p>]]></description>
 </item><item>
     <title>用 GitHub Codespaces 來操作 Hugo 網站</title>
     <link>https://dxball.github.io/2020/12/hugo-with-github-codespaces/</link>
     <pubDate>Tue, 08 Dec 2020 05:07:16 &#43;0000</pubDate>
-    <author>Dxball</author>
+    <author>Author</author>
     <guid>https://dxball.github.io/2020/12/hugo-with-github-codespaces/</guid>
     <description><![CDATA[<p>GitHub 在今年的 GitHub satellite <a href="https://dxball.github.io/2020/05/github-codespaces-feature/" rel="">公佈了 Codespaces</a>，經過一段時間的等待終於申請到試用了</p>]]></description>
 </item><item>
     <title>MacOSX 上的 VSCode 開啟 mono 專案，C# Extension 跑出找不到 .NET Framework 4.7.1 的錯誤</title>
     <link>https://dxball.github.io/2020/11/macos-vscode-mono-project-dotnet471-error/</link>
     <pubDate>Sun, 22 Nov 2020 21:30:49 &#43;0800</pubDate>
-    <author>Dxball</author>
+    <author>Author</author>
     <guid>https://dxball.github.io/2020/11/macos-vscode-mono-project-dotnet471-error/</guid>
     <description><![CDATA[<p>MacOS 上要先安裝 .NET Core SDK 及 Mono 才能使用 VSCode 打開 mono/.NET 專案，但安裝後 VSCode 的 C# Extension 還是跳錯誤訊息</p>]]></description>
 </item><item>
     <title>GitLab Runner fetch 專案時保留指定目錄不被刪除</title>
     <link>https://dxball.github.io/2020/11/gitlab-runner-fetch-clean-exclude/</link>
     <pubDate>Wed, 18 Nov 2020 00:13:39 &#43;0800</pubDate>
-    <author>Dxball</author>
+    <author>Author</author>
     <guid>https://dxball.github.io/2020/11/gitlab-runner-fetch-clean-exclude/</guid>
     <description><![CDATA[<p>GitLab Runner 在 fetch 專案時，預設會在 fetch 後執行 <code>git clean -ffdx</code> 命令，讓專案目錄維持在乾淨的狀態</p>]]></description>
 </item><item>
     <title>Microsoft Store 打不開</title>
     <link>https://dxball.github.io/2020/11/ms-store-reinstall/</link>
     <pubDate>Mon, 16 Nov 2020 23:10:37 &#43;0800</pubDate>
-    <author>Dxball</author>
+    <author>Author</author>
     <guid>https://dxball.github.io/2020/11/ms-store-reinstall/</guid>
     <description><![CDATA[<p>某次更新 Windows 10 後，Microsoft Store 怎麼點他都打不開，嘗試了一些方法都失敗，記錄一下有效的方法</p>]]></description>
 </item><item>
     <title>Notepad&#43;&#43; 使用 Regex capture group 取代特定格式字串</title>
     <link>https://dxball.github.io/2020/10/notepad-plus-plus-regex-replace/</link>
     <pubDate>Tue, 20 Oct 2020 22:42:40 &#43;0800</pubDate>
-    <author>Dxball</author>
+    <author>Author</author>
     <guid>https://dxball.github.io/2020/10/notepad-plus-plus-regex-replace/</guid>
     <description><![CDATA[<p>有時候我們需要把文件中某些特定字串改成另外的格式，以前我都是另外寫一隻程式去做字串處理，最近突然想到部分文字編輯器軟體有支援 Regular Expression 取代功能 (Notepad++, VSCode&hellip;)，這篇文章用來記錄 Notepad++ 的 regex 取代字串功能。</p>]]></description>
 </item><item>
     <title>取得 SSH Session Client 的 IP</title>
     <link>https://dxball.github.io/2020/10/ssh-client-session-ip/</link>
     <pubDate>Sun, 04 Oct 2020 14:30:04 &#43;0800</pubDate>
-    <author>Dxball</author>
+    <author>Author</author>
     <guid>https://dxball.github.io/2020/10/ssh-client-session-ip/</guid>
     <description><![CDATA[<p>用 SSH 連到遠端 Server 後，有時候需要取得自己的 IP 來做某些事 (比如說設定 <code>DISPLAY</code> 環境變數)</p>]]></description>
 </item></channel>

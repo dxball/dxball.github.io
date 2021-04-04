@@ -7,7 +7,7 @@
     <title>憑證 pem 檔轉換成 .NET 用的 pfx 檔 🔏</title>
     <link>https://dxball.github.io/2020/06/dotnet-x509certificate-convert/</link>
     <pubDate>Sat, 20 Jun 2020 20:46:55 &#43;0800</pubDate>
-    <author>Dxball</author>
+    <author>Author</author>
     <guid>https://dxball.github.io/2020/06/dotnet-x509certificate-convert/</guid>
     <description><![CDATA[<p>.NET 的 <code>X509Certificate2</code> 預設只能讀取 PFX/PKCS12 格式的檔案，手邊有專案產生的 <code>*.pem</code> 憑證，可以使用 openssl 轉換</p>]]></description>
 </item></channel>

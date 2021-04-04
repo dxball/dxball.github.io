@@ -7,14 +7,14 @@
     <title>Visual Studio 2019 16.9 打開專案跳錯誤</title>
     <link>https://dxball.github.io/2021/03/vs2019-open-proj-error/</link>
     <pubDate>Tue, 16 Mar 2021 22:46:59 &#43;0800</pubDate>
-    <author>Dxball</author>
+    <author>Author</author>
     <guid>https://dxball.github.io/2021/03/vs2019-open-proj-error/</guid>
     <description><![CDATA[<p>更新至 Visual Studio 2019 16.9 之後，打開專案會跳出 <code>The 'CascadePackage' package did not load correctly</code> 的錯誤</p>]]></description>
 </item><item>
     <title>Visual Studio 奇怪的 Build error</title>
     <link>https://dxball.github.io/2020/05/vs-wired-build-error/</link>
     <pubDate>Tue, 19 May 2020 23:54:04 &#43;0800</pubDate>
-    <author>Dxball</author>
+    <author>Author</author>
     <guid>https://dxball.github.io/2020/05/vs-wired-build-error/</guid>
     <description><![CDATA[<p>在公司準備要建置一個平常的 .NET 專案時忽然跳了從沒看過的錯誤</p>]]></description>
 </item></channel>

@@ -7,7 +7,7 @@
     <title>Unity IL2CPP 中傳 deletage 給 Native plugin</title>
     <link>https://dxball.github.io/2020/09/unity-il2cpp-native-plugin-invoke/</link>
     <pubDate>Wed, 23 Sep 2020 01:11:44 &#43;0800</pubDate>
-    <author>Dxball</author>
+    <author>Author</author>
     <guid>https://dxball.github.io/2020/09/unity-il2cpp-native-plugin-invoke/</guid>
     <description><![CDATA[<p>在 C# 傳 callback method 到 native plugin 裡面，會先包裝成 delegate，這次在執行的時候遇到 <code>NotSupportedException</code></p>]]></description>
 </item></channel>
