@@ -3,9 +3,16 @@
         <title>Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/</link>
         <description>小時候覺得我要努力寫程式 然後它會大賣 然後我可以領到豐厚的獎金 - 後來才發現 程式會不會大賣 獎金多不多 跟我程式寫的好不好 根本沒個屁關係 - 這就是傳說中的初衷 以及初衷如何幻滅的真實案例 -</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 16 Mar 2021 22:46:59 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 20 May 2021 22:39:33 &#43;0800</lastBuildDate>
             <atom:link href="https://dxball.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>OBS GStreamer 筆記</title>
+    <link>https://dxball.github.io/2021/05/obs-gstreamer-note/</link>
+    <pubDate>Thu, 20 May 2021 22:39:33 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2021/05/obs-gstreamer-note/</guid>
+    <description><![CDATA[<p>有需求要在 OBS 中加入 RTSP 的來源，用 VLC source 或是內建的 Media Source 延遲都滿高的，找了一下發現有人做了 GStreamer 的 plugin，Latency 可以降到很低</p>]]></description>
+</item><item>
     <title>Visual Studio 2019 16.9 打開專案跳錯誤</title>
     <link>https://dxball.github.io/2021/03/vs2019-open-proj-error/</link>
     <pubDate>Tue, 16 Mar 2021 22:46:59 &#43;0800</pubDate>
@@ -68,12 +75,5 @@
     <author>Author</author>
     <guid>https://dxball.github.io/2020/10/notepad-plus-plus-regex-replace/</guid>
     <description><![CDATA[<p>有時候我們需要把文件中某些特定字串改成另外的格式，以前我都是另外寫一隻程式去做字串處理，最近突然想到部分文字編輯器軟體有支援 Regular Expression 取代功能 (Notepad++, VSCode&hellip;)，這篇文章用來記錄 Notepad++ 的 regex 取代字串功能。</p>]]></description>
-</item><item>
-    <title>取得 SSH Session Client 的 IP</title>
-    <link>https://dxball.github.io/2020/10/ssh-client-session-ip/</link>
-    <pubDate>Sun, 04 Oct 2020 14:30:04 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/10/ssh-client-session-ip/</guid>
-    <description><![CDATA[<p>用 SSH 連到遠端 Server 後，有時候需要取得自己的 IP 來做某些事 (比如說設定 <code>DISPLAY</code> 環境變數)</p>]]></description>
 </item></channel>
 </rss>
