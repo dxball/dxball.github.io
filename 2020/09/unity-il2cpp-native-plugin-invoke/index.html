@@ -9,8 +9,8 @@
 <meta property="og:description" content="Unity IL2CPP 中傳 deletage 給 Native plugin 遇到的錯誤" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dxball.github.io/2020/09/unity-il2cpp-native-plugin-invoke/" /><meta property="og:image" content="https://dxball.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-09-23T01:11:44&#43;08:00" />
-<meta property="article:modified_time" content="2020-09-23T01:11:44&#43;08:00" />
+<meta property="article:published_time" content="2020-09-23T01:11:44+08:00" />
+<meta property="article:modified_time" content="2020-09-23T01:11:44+08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dxball.github.io/logo.png"/>
@@ -113,7 +113,7 @@
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -122,7 +122,7 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span> <span class="n">CallbackFunc</span><span class="p">)(</span><span class="kt">int</span> <span class="n">val</span><span class="p">);</span>
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span> <span class="n">CallbackFunc</span><span class="p">)(</span><span class="kt">int</span> <span class="n">val</span><span class="p">);</span>
 <span class="k">extern</span> <span class="s">&#34;C&#34;</span><span class="p">{</span>
     <span class="kt">void</span> <span class="nf">PowOf2</span><span class="p">(</span><span class="kt">int</span> <span class="n">val</span><span class="p">,</span> <span class="n">CallbackFunc</span> <span class="n">callback</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">val</span> <span class="o">*=</span> <span class="n">val</span><span class="p">;</span>
@@ -136,7 +136,7 @@
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -149,7 +149,7 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">delegate</span> <span class="k">void</span> <span class="n">PowOf2Delegate</span><span class="p">(</span><span class="kt">int</span> <span class="n">val</span><span class="p">);</span>
+<pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">delegate</span> <span class="k">void</span> <span class="n">PowOf2Delegate</span><span class="p">(</span><span class="kt">int</span> <span class="n">val</span><span class="p">);</span>
 <span class="na">[DllImport(&#34;somelib&#34;)]</span>
 <span class="k">extern</span> <span class="k">static</span> <span class="k">void</span> <span class="n">PowOf2</span><span class="p">(</span><span class="kt">int</span> <span class="n">val</span><span class="p">,</span> <span class="n">PowOf2Delegate</span> <span class="n">callback</span><span class="p">);</span>
 
@@ -165,23 +165,23 @@
 </div><p>Script backend 選 mono 的時候可正常執行，但選擇 IL2CPP 的時候，執行到 <code>PowOf2</code> 的時候會丟出 <code>NotSupportedException</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-txt" data-lang="txt">NotSupportedException: To marshal a managed method, please add an attribute named &#39;MonoPInvokeCallback&#39; to the method definition.
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt">NotSupportedException: To marshal a managed method, please add an attribute named &#39;MonoPInvokeCallback&#39; to the method definition.
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="解法">解法</h2>
 <p>把 callback method 改成 static，並在前面加上 <code>MonoPInvokeCallback</code> 宣告</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="na">[MonoPInvokeCallback(typeof(PowOf2Delegate))]</span>
+<pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="na">[MonoPInvokeCallback(typeof(PowOf2Delegate))]</span>
 <span class="k">private</span> <span class="k">static</span> <span class="k">void</span> <span class="n">PowOf2Callback</span><span class="p">(</span><span class="kt">int</span> <span class="n">val</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
 <span class="p">}</span>
@@ -189,9 +189,9 @@
 </div>
 </div><h2 id="reference">Reference</h2>
 <ul>
-<li><a href="https://forum.unity.com/threads/making-calls-from-c-to-c-with-il2cpp-instead-of-mono_runtime_invoke.295697/">https://forum.unity.com/threads/making-calls-from-c-to-c-with-il2cpp-instead-of-mono_runtime_invoke.295697/</a></li>
-<li><a href="https://forum.unity.com/threads/help-with-aot-compilation-with-monopinvokecallback.717917/">https://forum.unity.com/threads/help-with-aot-compilation-with-monopinvokecallback.717917/</a></li>
-<li><a href="https://shunzhitang.github.io/2019/03/iOS-iosRecord-Note/">https://shunzhitang.github.io/2019/03/iOS-iosRecord-Note/</a></li>
+<li><a href="https://forum.unity.com/threads/making-calls-from-c-to-c-with-il2cpp-instead-of-mono_runtime_invoke.295697/" target="_blank" rel="noopener noreffer">https://forum.unity.com/threads/making-calls-from-c-to-c-with-il2cpp-instead-of-mono_runtime_invoke.295697/</a></li>
+<li><a href="https://forum.unity.com/threads/help-with-aot-compilation-with-monopinvokecallback.717917/" target="_blank" rel="noopener noreffer">https://forum.unity.com/threads/help-with-aot-compilation-with-monopinvokecallback.717917/</a></li>
+<li><a href="https://shunzhitang.github.io/2019/03/iOS-iosRecord-Note/" target="_blank" rel="noopener noreffer">https://shunzhitang.github.io/2019/03/iOS-iosRecord-Note/</a></li>
 </ul></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -222,7 +222,7 @@
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.83.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.88.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

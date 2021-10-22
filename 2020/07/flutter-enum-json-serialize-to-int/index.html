@@ -9,8 +9,8 @@
 <meta property="og:description" content="json_serializable 預設會把 enum 序列化為字串，有時候需要序列化為整數值，使用 @JsonValue 指定列舉值" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dxball.github.io/2020/07/flutter-enum-json-serialize-to-int/" /><meta property="og:image" content="https://dxball.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-07-07T23:06:35&#43;08:00" />
-<meta property="article:modified_time" content="2020-07-07T23:06:35&#43;08:00" />
+<meta property="article:published_time" content="2020-07-07T23:06:35+08:00" />
+<meta property="article:modified_time" content="2020-07-07T23:06:35+08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dxball.github.io/logo.png"/>
@@ -109,7 +109,7 @@
 <p>假設有個 class 定義如下</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -128,7 +128,7 @@
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-dart" data-lang="dart"><span class="k">import</span> <span class="s1">&#39;package:json_annotation/json_annotation.dart&#39;</span><span class="p">;</span>
+<pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="k">import</span> <span class="s1">&#39;package:json_annotation/json_annotation.dart&#39;</span><span class="p">;</span>
 
 <span class="k">part</span> <span class="s1">&#39;fruit.g.dart&#39;</span><span class="p">;</span>
 
@@ -150,16 +150,16 @@
 </div><p>序列化為 json 結果</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-dart" data-lang="dart"><span class="n">print</span><span class="p">(</span><span class="n">jsonEncode</span><span class="p">(</span><span class="n">Test</span><span class="p">(</span><span class="nl">fruit:</span> <span class="n">Fruit</span><span class="p">.</span><span class="n">apple</span><span class="p">)));</span> <span class="c1">// {&#34;fruit&#34;:&#34;apple&#34;}
+<pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="n">print</span><span class="p">(</span><span class="n">jsonEncode</span><span class="p">(</span><span class="n">Test</span><span class="p">(</span><span class="nl">fruit:</span> <span class="n">Fruit</span><span class="p">.</span><span class="n">apple</span><span class="p">)));</span> <span class="c1">// {&#34;fruit&#34;:&#34;apple&#34;}
 </span></code></pre></td></tr></table>
 </div>
 </div><p>如果想要讓 enum 表示為整數值，可以用 <code>@JsonValue</code> 指定列舉值</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -169,7 +169,7 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-dart" data-lang="dart"><span class="n">enum</span> <span class="n">Fruit</span> <span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="n">enum</span> <span class="n">Fruit</span> <span class="p">{</span>
   <span class="err">@</span><span class="n">JsonValue</span><span class="p">(</span><span class="m">0</span><span class="p">)</span>
   <span class="n">apple</span><span class="p">,</span>
   <span class="err">@</span><span class="n">JsonValue</span><span class="p">(</span><span class="m">1</span><span class="p">)</span>
@@ -182,10 +182,10 @@
 </div><p>這樣結果會變成</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-dart" data-lang="dart"><span class="n">print</span><span class="p">(</span><span class="n">jsonEncode</span><span class="p">(</span><span class="n">Test</span><span class="p">(</span><span class="nl">fruit:</span> <span class="n">Fruit</span><span class="p">.</span><span class="n">apple</span><span class="p">)));</span> <span class="c1">// {&#34;fruit&#34;:0}
+<pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="n">print</span><span class="p">(</span><span class="n">jsonEncode</span><span class="p">(</span><span class="n">Test</span><span class="p">(</span><span class="nl">fruit:</span> <span class="n">Fruit</span><span class="p">.</span><span class="n">apple</span><span class="p">)));</span> <span class="c1">// {&#34;fruit&#34;:0}
 </span></code></pre></td></tr></table>
 </div>
 </div><p>json_serializable 的 <a href="https://github.com/google/json_serializable.dart/tree/master/example" target="_blank" rel="noopener noreffer">example</a> 裡面似乎沒寫到 <code>JsonValue</code> 🤣</p>
@@ -224,7 +224,7 @@
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.83.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.88.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

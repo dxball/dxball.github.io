@@ -9,8 +9,8 @@
 <meta property="og:description" content="OBS GStreamer source" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dxball.github.io/2021/05/obs-gstreamer-note/" /><meta property="og:image" content="https://dxball.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-05-20T22:39:33&#43;08:00" />
-<meta property="article:modified_time" content="2021-05-20T22:39:33&#43;08:00" />
+<meta property="article:published_time" content="2021-05-20T22:39:33+08:00" />
+<meta property="article:modified_time" content="2021-05-20T22:39:33+08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dxball.github.io/logo.png"/>
@@ -20,7 +20,7 @@
 <meta name="application-name" content="Dx&#39;s Monkey Life">
 <meta name="apple-mobile-web-app-title" content="Dx&#39;s Monkey Life"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://dxball.github.io/2021/05/obs-gstreamer-note/" /><link rel="prev" href="https://dxball.github.io/2021/03/vs2019-open-proj-error/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="google-site-verification" content="google9ef93b55acaac792" /><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://dxball.github.io/2021/05/obs-gstreamer-note/" /><link rel="prev" href="https://dxball.github.io/2021/03/vs2019-open-proj-error/" /><link rel="next" href="https://dxball.github.io/2021/10/calc-hash-in-win10/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="google-site-verification" content="google9ef93b55acaac792" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -122,10 +122,10 @@
 <p>使用 decodebin</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-txt" data-lang="txt">rtspsrc location=rtsp://192.168.1.168:554/stream latency=0 protocols=tcp ! rtpjitterbuffer latency=0 ! watchdog timeout=10000 ! decodebin ! queue ! video.
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt">rtspsrc location=rtsp://192.168.1.168:554/stream latency=0 protocols=tcp ! rtpjitterbuffer latency=0 ! watchdog timeout=10000 ! decodebin ! queue ! video.
 </code></pre></td></tr></table>
 </div>
 </div></li>
@@ -136,10 +136,10 @@
 <p>使用自定 decoder，使用前需用 <code>rtph264depay</code> 及 <code>h264parse</code> 處理</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-txt" data-lang="txt">rtspsrc location=rtsp://192.168.1.168:554/stream latency=0 protocols=tcp ! rtpjitterbuffer latency=0 ! rtph264depay ! h264parse ! avdec_h264 ! video.
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt">rtspsrc location=rtsp://192.168.1.168:554/stream latency=0 protocols=tcp ! rtpjitterbuffer latency=0 ! rtph264depay ! h264parse ! avdec_h264 ! video.
 </code></pre></td></tr></table>
 </div>
 </div><p>其中 <code>avdec_h264</code> 可使用其他 decoder 替換，目前測試可以用的有</p>
@@ -173,13 +173,14 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/2021/03/vs2019-open-proj-error/" class="prev" rel="prev" title="Visual Studio 2019 16.9 打開專案跳錯誤"><i class="fas fa-angle-left fa-fw"></i>Visual Studio 2019 16.9 打開專案跳錯誤</a></div>
+    <div class="post-nav"><a href="/2021/03/vs2019-open-proj-error/" class="prev" rel="prev" title="Visual Studio 2019 16.9 打開專案跳錯誤"><i class="fas fa-angle-left fa-fw"></i>Visual Studio 2019 16.9 打開專案跳錯誤</a>
+            <a href="/2021/10/calc-hash-in-win10/" class="next" rel="next" title="在 Win10 中計算檔案 hash 值">在 Win10 中計算檔案 hash 值<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"><div id="utterances"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.83.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.88.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

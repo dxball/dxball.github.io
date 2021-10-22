@@ -9,8 +9,8 @@
 <meta property="og:description" content="Get desktop path using Windows Batch" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dxball.github.io/2021/02/windows-batch-get-desktop-path/" /><meta property="og:image" content="https://dxball.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-02-01T00:04:00&#43;08:00" />
-<meta property="article:modified_time" content="2021-02-01T00:04:00&#43;08:00" />
+<meta property="article:published_time" content="2021-02-01T00:04:00+08:00" />
+<meta property="article:modified_time" content="2021-02-01T00:04:00+08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dxball.github.io/logo.png"/>
@@ -111,13 +111,13 @@
 <h2 id="使用-regedit-取得桌面路徑">使用 Regedit 取得桌面路徑</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-batch" data-lang="batch"><span class="k">FOR</span> <span class="k">/f</span> <span class="s2">&#34;usebackq tokens=1,2,*&#34;</span> <span class="se">%%</span>B <span class="k">IN</span> <span class="p">(</span><span class="sb">`REG QUERY &#34;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders&#34; /v Desktop`</span><span class="p">)</span> <span class="k">DO</span> <span class="k">SET</span> <span class="nv">DESKTOPDIR</span><span class="p">=</span><span class="se">%%</span>D
+<pre tabindex="0" class="chroma"><code class="language-batch" data-lang="batch"><span class="k">FOR</span> <span class="k">/f</span> <span class="s2">&#34;usebackq tokens=1,2,*&#34;</span> <span class="se">%%</span>B <span class="k">IN</span> <span class="p">(</span><span class="sb">`REG QUERY &#34;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders&#34; /v Desktop`</span><span class="p">)</span> <span class="k">DO</span> <span class="k">SET</span> <span class="nv">DESKTOPDIR</span><span class="p">=</span><span class="se">%%</span>D
 <span class="k">FOR</span> <span class="k">/F</span> <span class="s2">&#34;usebackq delims=&#34;</span> <span class="se">%%</span>i <span class="k">in</span> <span class="p">(</span><span class="sb">`ECHO </span><span class="nv">%DESKTOPDIR%</span><span class="sb">`</span><span class="p">)</span> <span class="k">DO</span> <span class="k">SET</span> <span class="nv">DESKTOPDIR</span><span class="p">=</span><span class="se">%%</span>i
 
 <span class="k">ECHO</span> <span class="nv">%DESKTOPDIR%</span>
@@ -127,12 +127,12 @@
 <h2 id="使用-powershell-取得桌面路徑">使用 Powershell 取得桌面路徑</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-batch" data-lang="batch"><span class="k">FOR</span> <span class="k">/F</span> <span class="s2">&#34;usebackq delims=&#34;</span> <span class="se">%%</span>i <span class="k">in</span> <span class="p">(</span><span class="sb">`powershell -Command &#34;&amp; {[Environment]::GetFolderPath(&#39;Desktop&#39;)}&#34;`</span><span class="p">)</span> <span class="k">DO</span> <span class="k">SET</span> <span class="nv">DESKTOPDIR</span><span class="p">=</span><span class="se">%%</span>i
+<pre tabindex="0" class="chroma"><code class="language-batch" data-lang="batch"><span class="k">FOR</span> <span class="k">/F</span> <span class="s2">&#34;usebackq delims=&#34;</span> <span class="se">%%</span>i <span class="k">in</span> <span class="p">(</span><span class="sb">`powershell -Command &#34;&amp; {[Environment]::GetFolderPath(&#39;Desktop&#39;)}&#34;`</span><span class="p">)</span> <span class="k">DO</span> <span class="k">SET</span> <span class="nv">DESKTOPDIR</span><span class="p">=</span><span class="se">%%</span>i
 
 <span class="k">ECHO</span> <span class="nv">%DESKTOPDIR%</span>
 </code></pre></td></tr></table>
@@ -141,7 +141,7 @@
 <h2 id="使用-vbscript-取得桌面路徑">使用 VBScript 取得桌面路徑</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -153,7 +153,7 @@
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-batch" data-lang="batch"><span class="k">SET</span> <span class="nv">FIND_DESKTOP_SCRIPT</span><span class="p">=</span><span class="nv">%TEMP%</span>\<span class="nv">%RANDOM%</span>-<span class="nv">%RANDOM%</span>-<span class="nv">%RANDOM%</span>-<span class="nv">%RANDOM%</span>.vbs
+<pre tabindex="0" class="chroma"><code class="language-batch" data-lang="batch"><span class="k">SET</span> <span class="nv">FIND_DESKTOP_SCRIPT</span><span class="p">=</span><span class="nv">%TEMP%</span>\<span class="nv">%RANDOM%</span>-<span class="nv">%RANDOM%</span>-<span class="nv">%RANDOM%</span>-<span class="nv">%RANDOM%</span>.vbs
 <span class="p">&gt;</span><span class="s2">&#34;</span><span class="nv">%FIND_DESKTOP_SCRIPT%</span><span class="s2">&#34;</span> <span class="p">(</span>
     <span class="k">ECHO</span> set WshShell = WScript.CreateObject<span class="se">^(</span><span class="s2">&#34;WScript.Shell&#34;</span><span class="se">^)</span>
     <span class="k">ECHO</span> strDesktop = WshShell.SpecialFolders<span class="se">^(</span><span class="s2">&#34;Desktop&#34;</span><span class="se">^)</span>
@@ -168,10 +168,10 @@
 </div><p>在 temp 目錄建立一個暫存的 VBScript 檔，用 VBScript 查詢桌面路徑後再刪除，注意輸出 vbs 檔的時候要 escape <code>(</code> <code>)</code> 字元</p>
 <h2 id="reference">Reference</h2>
 <ul>
-<li><a href="https://docs.microsoft.com/en-US/dotnet/api/system.environment.getfolderpath">https://docs.microsoft.com/en-US/dotnet/api/system.environment.getfolderpath</a></li>
-<li><a href="https://ss64.com/vb/special.html">https://ss64.com/vb/special.html</a></li>
-<li><a href="https://stackoverflow.com/a/34706178/1568102">https://stackoverflow.com/a/34706178/1568102</a></li>
-<li><a href="https://stackoverflow.com/a/2643817/1568102">https://stackoverflow.com/a/2643817/1568102</a></li>
+<li><a href="https://docs.microsoft.com/en-US/dotnet/api/system.environment.getfolderpath" target="_blank" rel="noopener noreffer">https://docs.microsoft.com/en-US/dotnet/api/system.environment.getfolderpath</a></li>
+<li><a href="https://ss64.com/vb/special.html" target="_blank" rel="noopener noreffer">https://ss64.com/vb/special.html</a></li>
+<li><a href="https://stackoverflow.com/a/34706178/1568102" target="_blank" rel="noopener noreffer">https://stackoverflow.com/a/34706178/1568102</a></li>
+<li><a href="https://stackoverflow.com/a/2643817/1568102" target="_blank" rel="noopener noreffer">https://stackoverflow.com/a/2643817/1568102</a></li>
 </ul></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -202,7 +202,7 @@
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.83.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.88.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

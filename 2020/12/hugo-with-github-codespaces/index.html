@@ -9,8 +9,8 @@
 <meta property="og:description" content="GitHub 在今年的 GitHub satellite 公佈了 Codespaces，經過一段時間的等待終於申請到試用了" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dxball.github.io/2020/12/hugo-with-github-codespaces/" /><meta property="og:image" content="https://dxball.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-12-08T05:07:16&#43;00:00" />
-<meta property="article:modified_time" content="2020-12-08T05:07:16&#43;00:00" />
+<meta property="article:published_time" content="2020-12-08T05:07:16+00:00" />
+<meta property="article:modified_time" content="2020-12-08T05:07:16+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dxball.github.io/logo.png"/>
@@ -109,14 +109,14 @@
 <p>拿來測試 Hugo 的 repository，結果居然有內建 Hugo XD</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">$ uname -a
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ uname -a
 Linux codespaces_93f23e 5.4.0-1031-azure <span class="c1">#32~18.04.1-Ubuntu SMP Tue Oct 6 10:03:22 UTC 2020 x86_64 GNU/Linux</span>
 
 $ hugo version
@@ -126,7 +126,7 @@ Hugo Static Site Generator v0.71.0-06150C87/extended linux/amd64 BuildDate: 2020
 </div><p>想要測試 hugo 內建 server，預設會用 <code>localhost</code> 來建立網站，但外面連不到</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -141,7 +141,7 @@ Hugo Static Site Generator v0.71.0-06150C87/extended linux/amd64 BuildDate: 2020
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-txt" data-lang="txt">$ hugo server -D
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt">$ hugo server -D
 .
 .
 .
@@ -159,16 +159,16 @@ Press Ctrl+C to stop
 </div><p>可以透過指定 baseURL 到 <code>https://${CLOUDENV_ENVIRONMENT_ID}-1313.apps.codespaces.githubusercontent.com</code>，就可以進行測試了</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">hugo server -D --baseURL https://<span class="si">${</span><span class="nv">CLOUDENV_ENVIRONMENT_ID</span><span class="si">}</span>-1313.apps.codespaces.githubusercontent.com --appendPort<span class="o">=</span><span class="nb">false</span>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">hugo server -D --baseURL https://<span class="si">${</span><span class="nv">CLOUDENV_ENVIRONMENT_ID</span><span class="si">}</span>-1313.apps.codespaces.githubusercontent.com --appendPort<span class="o">=</span><span class="nb">false</span>
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="reference">Reference</h2>
 <ul>
-<li><a href="https://ddulic.dev/github-codespaces-on-ipad">https://ddulic.dev/github-codespaces-on-ipad</a></li>
-<li><a href="https://www.isaaclevin.com/post/github-codespaces/">https://www.isaaclevin.com/post/github-codespaces/</a></li>
+<li><a href="https://ddulic.dev/github-codespaces-on-ipad" target="_blank" rel="noopener noreffer">https://ddulic.dev/github-codespaces-on-ipad</a></li>
+<li><a href="https://www.isaaclevin.com/post/github-codespaces/" target="_blank" rel="noopener noreffer">https://www.isaaclevin.com/post/github-codespaces/</a></li>
 </ul></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -199,7 +199,7 @@ Press Ctrl+C to stop
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.83.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.88.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

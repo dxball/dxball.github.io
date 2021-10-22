@@ -9,8 +9,8 @@
 <meta property="og:description" content="Windows Batch echo number redirect to file" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dxball.github.io/2021/01/windows-batch-echo-number-to-file/" /><meta property="og:image" content="https://dxball.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-01-28T00:33:01&#43;08:00" />
-<meta property="article:modified_time" content="2021-01-28T00:33:01&#43;08:00" />
+<meta property="article:published_time" content="2021-01-28T00:33:01+08:00" />
+<meta property="article:modified_time" content="2021-01-28T00:33:01+08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dxball.github.io/logo.png"/>
@@ -110,10 +110,10 @@
 <p>有個需求是要用 batch 將指定的字串寫入檔案</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-batch" data-lang="batch"><span class="k">echo</span> set NUMBER=<span class="mi">4</span><span class="p">&gt;</span>file.txt
+<pre tabindex="0" class="chroma"><code class="language-batch" data-lang="batch"><span class="k">echo</span> set NUMBER=<span class="mi">4</span><span class="p">&gt;</span>file.txt
 </code></pre></td></tr></table>
 </div>
 </div><p>最後得到的 file.txt 是空的</p>
@@ -132,23 +132,23 @@
 <p>把 command 用 <code>()</code> 包起來後再 redirect 到檔案就可以了</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-batch" data-lang="batch"><span class="p">(</span><span class="k">echo</span> set NUMBER=4<span class="p">)&gt;</span>file.txt
+<pre tabindex="0" class="chroma"><code class="language-batch" data-lang="batch"><span class="p">(</span><span class="k">echo</span> set NUMBER=4<span class="p">)&gt;</span>file.txt
 </code></pre></td></tr></table>
 </div>
 </div><p>另外還學到可以一次 echo 多行，腳本看起來比較漂亮</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-batch" data-lang="batch"><span class="p">(</span>
+<pre tabindex="0" class="chroma"><code class="language-batch" data-lang="batch"><span class="p">(</span>
     <span class="k">echo</span> set NUMBER=4
     <span class="k">echo</span> set TYPE=test
     <span class="k">echo</span> set BUILD_PATH=D:\output\
@@ -158,14 +158,14 @@
 </div><p>或是</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-batch" data-lang="batch"><span class="p">&gt;</span>file.txt(
+<pre tabindex="0" class="chroma"><code class="language-batch" data-lang="batch"><span class="p">&gt;</span>file.txt(
     <span class="k">echo</span> set NUMBER=4
     <span class="k">echo</span> set TYPE=test
     <span class="k">echo</span> set BUILD_PATH=D:\output\
@@ -174,8 +174,8 @@
 </div>
 </div><h2 id="reference">Reference</h2>
 <ul>
-<li><a href="https://stackoverflow.com/a/37731008/1568102">https://stackoverflow.com/a/37731008/1568102</a></li>
-<li><a href="https://ss64.com/nt/syntax-redirection.html">https://ss64.com/nt/syntax-redirection.html</a></li>
+<li><a href="https://stackoverflow.com/a/37731008/1568102" target="_blank" rel="noopener noreffer">https://stackoverflow.com/a/37731008/1568102</a></li>
+<li><a href="https://ss64.com/nt/syntax-redirection.html" target="_blank" rel="noopener noreffer">https://ss64.com/nt/syntax-redirection.html</a></li>
 </ul></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -206,7 +206,7 @@
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.83.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.88.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
