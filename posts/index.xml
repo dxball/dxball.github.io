@@ -3,7 +3,14 @@
         <title>All Posts - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/posts/</link>
         <description>All Posts | Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 22 Oct 2021 22:58:08 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 30 Oct 2021 02:57:01 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Cocos Component Circular Reference 警告</title>
+    <link>https://dxball.github.io/2021/10/cocos-component-circular-reference/</link>
+    <pubDate>Sat, 30 Oct 2021 02:57:01 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2021/10/cocos-component-circular-reference/</guid>
+    <description><![CDATA[<p>用之前 Unity 經驗在寫 cocos 元件的時候遇到一堆警告，搞了老半天才發現是怎麼回事</p>]]></description>
+</item><item>
     <title>在 Win10 中計算檔案 hash 值</title>
     <link>https://dxball.github.io/2021/10/calc-hash-in-win10/</link>
     <pubDate>Fri, 22 Oct 2021 22:58:08 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>https://dxball.github.io/2020/11/gitlab-runner-fetch-clean-exclude/</guid>
     <description><![CDATA[<p>GitLab Runner 在 fetch 專案時，預設會在 fetch 後執行 <code>git clean -ffdx</code> 命令，讓專案目錄維持在乾淨的狀態</p>]]></description>
-</item><item>
-    <title>Microsoft Store 打不開</title>
-    <link>https://dxball.github.io/2020/11/ms-store-reinstall/</link>
-    <pubDate>Mon, 16 Nov 2020 23:10:37 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/11/ms-store-reinstall/</guid>
-    <description><![CDATA[<p>某次更新 Windows 10 後，Microsoft Store 怎麼點他都打不開，嘗試了一些方法都失敗，記錄一下有效的方法</p>]]></description>
 </item></channel>
 </rss>

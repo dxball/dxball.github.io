@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>cocos - Tag - Dx&#39;s Monkey Life</title>
+        <link>https://dxball.github.io/tags/cocos/</link>
+        <description>cocos - Tag - Dx&#39;s Monkey Life</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 30 Oct 2021 02:57:01 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/cocos/" rel="self" type="application/rss+xml" /><item>
+    <title>Cocos Component Circular Reference 警告</title>
+    <link>https://dxball.github.io/2021/10/cocos-component-circular-reference/</link>
+    <pubDate>Sat, 30 Oct 2021 02:57:01 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2021/10/cocos-component-circular-reference/</guid>
+    <description><![CDATA[<p>用之前 Unity 經驗在寫 cocos 元件的時候遇到一堆警告，搞了老半天才發現是怎麼回事</p>]]></description>
+</item></channel>
+</rss>
