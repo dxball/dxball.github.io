@@ -3,9 +3,16 @@
         <title>Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/</link>
         <description>life.tasks.find(&#39;target&#39;) === undefined</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 30 Oct 2021 02:57:01 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 16 Feb 2022 16:55:46 &#43;0800</lastBuildDate>
             <atom:link href="https://dxball.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Visual Studio 2019 使用系統管理員身分打開方案檔 (*.sln)</title>
+    <link>https://dxball.github.io/2022/02/context-menu-open-sln-as-admin/</link>
+    <pubDate>Wed, 16 Feb 2022 16:55:46 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2022/02/context-menu-open-sln-as-admin/</guid>
+    <description><![CDATA[<p>有些專案的程式需要用系統管理員權限才能執行，以往都是先用系統管理員身分打開 Visual Studio，再手動打開方案，查了之後才發現有方法可以直接對方案檔以系統管理員身分打開</p>]]></description>
+</item><item>
     <title>Cocos Component Circular Reference 警告</title>
     <link>https://dxball.github.io/2021/10/cocos-component-circular-reference/</link>
     <pubDate>Sat, 30 Oct 2021 02:57:01 &#43;0800</pubDate>
@@ -68,12 +75,5 @@
     <author>Author</author>
     <guid>https://dxball.github.io/2020/11/macos-vscode-mono-project-dotnet471-error/</guid>
     <description><![CDATA[<p>MacOS 上要先安裝 .NET Core SDK 及 Mono 才能使用 VSCode 打開 mono/.NET 專案，但安裝後 VSCode 的 C# Extension 還是跳錯誤訊息</p>]]></description>
-</item><item>
-    <title>GitLab Runner fetch 專案時保留指定目錄不被刪除</title>
-    <link>https://dxball.github.io/2020/11/gitlab-runner-fetch-clean-exclude/</link>
-    <pubDate>Wed, 18 Nov 2020 00:13:39 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/11/gitlab-runner-fetch-clean-exclude/</guid>
-    <description><![CDATA[<p>GitLab Runner 在 fetch 專案時，預設會在 fetch 後執行 <code>git clean -ffdx</code> 命令，讓專案目錄維持在乾淨的狀態</p>]]></description>
 </item></channel>
 </rss>

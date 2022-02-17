@@ -3,7 +3,14 @@
         <title>Visual Studio - Category - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/categories/visual-studio/</link>
         <description>Visual Studio - Category - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 16 Mar 2021 22:46:59 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/categories/visual-studio/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 16 Feb 2022 16:55:46 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/categories/visual-studio/" rel="self" type="application/rss+xml" /><item>
+    <title>Visual Studio 2019 使用系統管理員身分打開方案檔 (*.sln)</title>
+    <link>https://dxball.github.io/2022/02/context-menu-open-sln-as-admin/</link>
+    <pubDate>Wed, 16 Feb 2022 16:55:46 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2022/02/context-menu-open-sln-as-admin/</guid>
+    <description><![CDATA[<p>有些專案的程式需要用系統管理員權限才能執行，以往都是先用系統管理員身分打開 Visual Studio，再手動打開方案，查了之後才發現有方法可以直接對方案檔以系統管理員身分打開</p>]]></description>
+</item><item>
     <title>Visual Studio 2019 16.9 打開專案跳錯誤</title>
     <link>https://dxball.github.io/2021/03/vs2019-open-proj-error/</link>
     <pubDate>Tue, 16 Mar 2021 22:46:59 &#43;0800</pubDate>
