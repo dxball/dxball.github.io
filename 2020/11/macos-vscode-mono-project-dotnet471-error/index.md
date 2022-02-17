@@ -17,7 +17,7 @@ VSCode 錯誤訊息如下
 ## 解法
 VSCode 的延伸模組設定(Extension)，搜尋 `Omnisharp: Use Global Mono`，設定改為 `always`，重啟 OmniSharp 即可
 
-![error_msg](/2020/11/macos-vscode-mono-project-dotnet471-error/error.png)
+![error_msg](error.png)
 
 ## Reference
 - https://github.com/OmniSharp/omnisharp-vscode/issues/3063#issuecomment-678223360

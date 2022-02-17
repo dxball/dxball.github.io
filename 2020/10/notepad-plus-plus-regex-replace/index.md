@@ -30,21 +30,23 @@
 4. 尋找內容輸入 `(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2}).(\d{3}) [|]`
 5. 取代為輸入 `\1/\2/\3 \4:\5:\6.\7 |`
 6. 按下全部取代  
-![Replace window](/2020/10/notepad-plus-plus-regex-replace/notepad_plus_1.png)
+![Replace window](notepad_plus_1.png)
 
 ## 結果
 - 取代前  
-![Before Replace](/2020/10/notepad-plus-plus-regex-replace/notepad_plus_2.png)
+![Before Replace](notepad_plus_2.png)
 - 取代後  
-![After Replace](/2020/10/notepad-plus-plus-regex-replace/notepad_plus_3.png)
+![After Replace](notepad_plus_3.png)
 
 ## 說明
 使用 Regular Expression 的 group 把搜尋字串拆解開來，再用參考變數取代
-```
+
+```text
 group    (\d{2})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2}).(\d{3})
 格式       yy     MM     dd     HH     mm     ss      fff
 代表變數    \1     \2     \3     \4     \5     \6      \7
 ```
+
 其中變數 `\n` 也可以寫成 `\{n}`、`$n`、`${n}`
 
 ## Reference

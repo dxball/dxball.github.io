@@ -6,7 +6,7 @@
 <!--more-->
 
 ## 症狀
-![error](/2021/03/cacadepackage_load_error.png)
+![error](cacadepackage_load_error.png)
 ([圖片來源](https://stackoverflow.com/q/66493827/1568102))
 
 ## 解決方式

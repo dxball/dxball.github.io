@@ -9,7 +9,7 @@
 
 可以從這個選單打開工作管理員、設定、事件檢視器等視窗
 
-![quick link menu](/2020/05/win10-useful-shortcuts/images/quick_link_menu.png)
+![quick link menu](images/quick_link_menu.png)
 
 ## 螢幕擷取畫面 **`Windows + Shift + S`**
 
@@ -19,17 +19,17 @@ Win10 有新增一個區域擷圖的功能，快速鍵為 `Windows + Shift + S`
 
 擷圖完成後會直接放到剪貼簿裡面，並會跳一個系統通知，如果要編輯的話，點一下系統通知就會直接進到編輯器
 
-![sub prtsc](/2020/05/win10-useful-shortcuts/images/sub_prtsc.gif)
+![sub prtsc](images/sub_prtsc.gif)
 
 ## 剪貼簿歷程記錄 **`Windows + V`**
 
 這個功能要先去設定開啟**剪貼簿歷程記錄**
 
-![clipboard setting](/2020/05/win10-useful-shortcuts/images/clipboard_setting.png)
+![clipboard setting](images/clipboard_setting.png)
 
 然後按 `Windows + V` 就可以打開剪貼簿歷程記錄了
 
-![clipboard history](/2020/05/win10-useful-shortcuts/images/clipboard_history.png)
+![clipboard history](images/clipboard_history.png)
 
 ## 虛擬桌面
 
@@ -48,7 +48,7 @@ Windows 終於內建虛擬桌面了
 
 就是開一個 Emoji 快速輸入表出來😎
 
-![emoji](/2020/05/win10-useful-shortcuts/images/emoji.png)
+![emoji](images/emoji.png)
 
 ## Reference
 - https://support.microsoft.com/zh-tw/help/12445

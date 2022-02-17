@@ -22,8 +22,8 @@ vscode 可以對不同語言用不同的設定，在某些情況下會比較方�
 
 ## 設定方式 2
 在 vscode 中按 `Ctrl + Shift + P` 輸入 `Configure Language Specific Settings`，再選擇要設定的語系，vscode 會幫你打開 `settings.json` 並加入對應的語系，再自行加入所需設定就可以  
-![Lang Setting](/2020/05/vscode-language-specific-editor-settings/configure_lang_specific_settings.png)  
-![Lang Setting](/2020/05/vscode-language-specific-editor-settings/configure_lang_specific_settings_2.png)
+![Lang Setting](configure_lang_specific_settings.png)  
+![Lang Setting](configure_lang_specific_settings_2.png)
 
 ## Reference
 - https://code.visualstudio.com/docs/getstarted/settings#_language-specific-editor-settings

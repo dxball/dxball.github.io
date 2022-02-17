@@ -7,7 +7,7 @@
 
 ## 症狀
 Windows 動態磚上面顯示 Microsoft Store 的圖示變成這樣  
-![msstore](/2020/11/ms_store_reinstall/msstore_disabled.png)
+![msstore](msstore_disabled.png)
 
 ## 解法
 

@@ -15,7 +15,7 @@ certutil -hashfile <FileName> [HashAlgorithm]
 
 ## 範例
 
-![certutil](/2021/10/certutil_example.png)
+![certutil](certutil_example.png)
 
 ## Reference
 - https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/certutil#-hashfile

@@ -8,6 +8,7 @@
 ## 需求
 
 目前專案的版本號是直接定義在 AssemblyInfo.cs 中的 `AssemblyVersion`
+
 無腦做法就是直接把 version.txt 加到專案裡面並設定為 Always output，每次要更新版號時，除了更新 AseesmblyInfo.cs，也要一併變更 version.txt 的內容
 
 為了避免版本號分散在不同檔案中，所以就找了一個方法可以讓這個動作自動化
@@ -39,7 +40,7 @@
 
 {{< admonition info >}}
 可以在`專案屬性`->`建置事件`，編輯`建置後事件命令列`，修改為自行需要的動作
-![Build Action](/2020/07/visual-studio-get-version-after-build/build_action.png)
+![Build Action](build_action.png)
 
 {{< /admonition >}}
 
