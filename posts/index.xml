@@ -3,7 +3,14 @@
         <title>All Posts - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/posts/</link>
         <description>All Posts | Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 23 Feb 2022 10:30:50 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 23 Feb 2022 06:43:32 &#43;0000</lastBuildDate><atom:link href="https://dxball.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>C#不使用 &#34;;&#34; 實作 Hello World</title>
+    <link>https://dxball.github.io/2022/02/csharp-hello-world-without-semicolon/</link>
+    <pubDate>Wed, 23 Feb 2022 06:43:32 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2022/02/csharp-hello-world-without-semicolon/</guid>
+    <description><![CDATA[<p>看到<a href="https://github.com/JacobLinCool/without-semicolon" target="_blank" rel="noopener noreffer">別的語言</a>的實作，也來試試看C#版的</p>]]></description>
+</item><item>
     <title>Git 遠端操作出現 warning: auto-detection of host provider took too long</title>
     <link>https://dxball.github.io/2022/02/git-remote-operation-warning/</link>
     <pubDate>Wed, 23 Feb 2022 10:30:50 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>https://dxball.github.io/2021/01/windows-batch-echo-number-to-file/</guid>
     <description><![CDATA[<p>寫 batch 腳本時遇到的怪問題，將某些數字 echo redirect 到檔案時會消失不見</p>]]></description>
-</item><item>
-    <title>git checkout 排除指定目錄/檔案</title>
-    <link>https://dxball.github.io/2021/01/git-checkout-exclude-files/</link>
-    <pubDate>Mon, 11 Jan 2021 22:56:36 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2021/01/git-checkout-exclude-files/</guid>
-    <description><![CDATA[<p>跟別人共用的專案，有時候 checkout 的時候不需要把部分的東西一併取出來，可以節省 compile 時間，git 有提供 sparse checkout 的功能，可以指定或排除特定目錄/檔案</p>]]></description>
 </item></channel>
 </rss>
