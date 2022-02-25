@@ -3,7 +3,14 @@
         <title>All Posts - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/posts/</link>
         <description>All Posts | Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 23 Feb 2022 06:43:32 &#43;0000</lastBuildDate><atom:link href="https://dxball.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 25 Feb 2022 17:02:33 &#43;0000</lastBuildDate><atom:link href="https://dxball.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>GitLab Runner 在 Windows cmd 環境沒辦法執行兩句以上的 npm 指令</title>
+    <link>https://dxball.github.io/2022/02/gitlab-cant-npm-on-windows/</link>
+    <pubDate>Fri, 25 Feb 2022 17:02:33 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2022/02/gitlab-cant-npm-on-windows/</guid>
+    <description><![CDATA[<p>使用 GitLab 跑 nodejs 專案遇到 script 執行不完全的問題</p>]]></description>
+</item><item>
     <title>C#不使用 &#34;;&#34; 實作 Hello World</title>
     <link>https://dxball.github.io/2022/02/csharp-hello-world-without-semicolon/</link>
     <pubDate>Wed, 23 Feb 2022 06:43:32 &#43;0000</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>https://dxball.github.io/2021/02/windows-batch-get-desktop-path/</guid>
     <description><![CDATA[<p>有個需求是要用 Batch file 在桌面上建立一些檔案，遍尋不著桌面路徑的環境變數，只好透過其他方式來取得桌面路徑</p>]]></description>
-</item><item>
-    <title>Windows Batch echo 數字到檔案</title>
-    <link>https://dxball.github.io/2021/01/windows-batch-echo-number-to-file/</link>
-    <pubDate>Thu, 28 Jan 2021 00:33:01 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2021/01/windows-batch-echo-number-to-file/</guid>
-    <description><![CDATA[<p>寫 batch 腳本時遇到的怪問題，將某些數字 echo redirect 到檔案時會消失不見</p>]]></description>
 </item></channel>
 </rss>
