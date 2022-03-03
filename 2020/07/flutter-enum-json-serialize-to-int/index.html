@@ -128,24 +128,24 @@
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="k">import</span> <span class="s1">&#39;package:json_annotation/json_annotation.dart&#39;</span><span class="p">;</span>
-
-<span class="k">part</span> <span class="s1">&#39;fruit.g.dart&#39;</span><span class="p">;</span>
-
-<span class="n">enum</span> <span class="n">Fruit</span> <span class="p">{</span>
-  <span class="n">apple</span><span class="p">,</span>
-  <span class="n">banana</span><span class="p">,</span>
-  <span class="n">orange</span><span class="p">,</span>
-<span class="p">}</span>
-
-<span class="err">@</span><span class="n">JsonSerializable</span><span class="p">()</span>
-<span class="kd">class</span> <span class="nc">Test</span> <span class="p">{</span>
-  <span class="kd">final</span> <span class="n">Fruit</span> <span class="n">fruit</span><span class="p">;</span>
-  <span class="n">Test</span><span class="p">({</span><span class="k">this</span><span class="p">.</span><span class="n">fruit</span><span class="p">});</span>
-  <span class="kd">factory</span> <span class="n">Test</span><span class="p">.</span><span class="n">fromJson</span><span class="p">(</span><span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">dynamic</span><span class="o">&gt;</span> <span class="n">json</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">_$TestFromJson</span><span class="p">(</span><span class="n">json</span><span class="p">);</span>
-  <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">dynamic</span><span class="o">&gt;</span> <span class="n">toJson</span><span class="p">()</span> <span class="o">=&gt;</span> <span class="n">_$TestToJson</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="k">import</span> <span class="s1">&#39;package:json_annotation/json_annotation.dart&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">part</span> <span class="s1">&#39;fruit.g.dart&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">enum</span> <span class="n">Fruit</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">apple</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="n">banana</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="n">orange</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">@</span><span class="n">JsonSerializable</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Test</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">final</span> <span class="n">Fruit</span> <span class="n">fruit</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Test</span><span class="p">({</span><span class="k">this</span><span class="p">.</span><span class="n">fruit</span><span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">factory</span> <span class="n">Test</span><span class="p">.</span><span class="n">fromJson</span><span class="p">(</span><span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">dynamic</span><span class="o">&gt;</span> <span class="n">json</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">_$TestFromJson</span><span class="p">(</span><span class="n">json</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">dynamic</span><span class="o">&gt;</span> <span class="n">toJson</span><span class="p">()</span> <span class="o">=&gt;</span> <span class="n">_$TestToJson</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>序列化為 json 結果</p>
 <div class="highlight"><div class="chroma">
@@ -153,8 +153,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="n">print</span><span class="p">(</span><span class="n">jsonEncode</span><span class="p">(</span><span class="n">Test</span><span class="p">(</span><span class="nl">fruit:</span> <span class="n">Fruit</span><span class="p">.</span><span class="n">apple</span><span class="p">)));</span> <span class="c1">// {&#34;fruit&#34;:&#34;apple&#34;}
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">jsonEncode</span><span class="p">(</span><span class="n">Test</span><span class="p">(</span><span class="nl">fruit:</span> <span class="n">Fruit</span><span class="p">.</span><span class="n">apple</span><span class="p">)));</span> <span class="c1">// {&#34;fruit&#34;:&#34;apple&#34;}
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果想要讓 enum 表示為整數值，可以用 <code>@JsonValue</code> 指定列舉值</p>
 <div class="highlight"><div class="chroma">
@@ -169,15 +169,15 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="n">enum</span> <span class="n">Fruit</span> <span class="p">{</span>
-  <span class="err">@</span><span class="n">JsonValue</span><span class="p">(</span><span class="m">0</span><span class="p">)</span>
-  <span class="n">apple</span><span class="p">,</span>
-  <span class="err">@</span><span class="n">JsonValue</span><span class="p">(</span><span class="m">1</span><span class="p">)</span>
-  <span class="n">banana</span><span class="p">,</span>
-  <span class="err">@</span><span class="n">JsonValue</span><span class="p">(</span><span class="m">2</span><span class="p">)</span>
-  <span class="n">orange</span><span class="p">,</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">enum</span> <span class="n">Fruit</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="err">@</span><span class="n">JsonValue</span><span class="p">(</span><span class="m">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">apple</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="err">@</span><span class="n">JsonValue</span><span class="p">(</span><span class="m">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">banana</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="err">@</span><span class="n">JsonValue</span><span class="p">(</span><span class="m">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">orange</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>這樣結果會變成</p>
 <div class="highlight"><div class="chroma">
@@ -185,8 +185,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="n">print</span><span class="p">(</span><span class="n">jsonEncode</span><span class="p">(</span><span class="n">Test</span><span class="p">(</span><span class="nl">fruit:</span> <span class="n">Fruit</span><span class="p">.</span><span class="n">apple</span><span class="p">)));</span> <span class="c1">// {&#34;fruit&#34;:0}
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">jsonEncode</span><span class="p">(</span><span class="n">Test</span><span class="p">(</span><span class="nl">fruit:</span> <span class="n">Fruit</span><span class="p">.</span><span class="n">apple</span><span class="p">)));</span> <span class="c1">// {&#34;fruit&#34;:0}
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>json_serializable 的 <a href="https://github.com/google/json_serializable.dart/tree/master/example" target="_blank" rel="noopener noreffer">example</a> 裡面似乎沒寫到 <code>JsonValue</code> 🤣</p>
 <h3 id="reference">Reference</h3>
@@ -224,7 +224,7 @@
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.93.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

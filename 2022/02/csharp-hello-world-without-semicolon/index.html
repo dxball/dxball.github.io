@@ -120,14 +120,14 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">class</span> <span class="nc">Program</span> <span class="p">{</span>
-    <span class="k">static</span> <span class="kt">int</span> <span class="n">Main</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">if</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Console</span><span class="p">).</span><span class="n">GetMethod</span><span class="p">(</span><span class="n">nameof</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">),</span>
-            <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Type</span><span class="p">[]</span> <span class="p">{</span> <span class="k">typeof</span><span class="p">(</span><span class="kt">string</span><span class="p">)</span> <span class="p">}).</span><span class="n">Invoke</span><span class="p">(</span><span class="k">null</span><span class="p">,</span>
-                <span class="k">new</span> <span class="kt">object</span><span class="p">[]</span> <span class="p">{</span> <span class="s">&#34;Hello World&#34;</span> <span class="p">}))</span> <span class="p">{}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Program</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">static</span> <span class="kt">int</span> <span class="n">Main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Console</span><span class="p">).</span><span class="n">GetMethod</span><span class="p">(</span><span class="n">nameof</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Type</span><span class="p">[]</span> <span class="p">{</span> <span class="k">typeof</span><span class="p">(</span><span class="kt">string</span><span class="p">)</span> <span class="p">}).</span><span class="n">Invoke</span><span class="p">(</span><span class="k">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="k">new</span> <span class="kt">object</span><span class="p">[]</span> <span class="p">{</span> <span class="s">&#34;Hello World&#34;</span> <span class="p">}))</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="2-使用-asyncwaithandlewaitone">2. 使用 AsyncWaitHandle.WaitOne</h2>
 <p>轉成 <code>System.Action&lt;string&gt;</code> 後，用非同步的方式執行，再用 <code>WaitOne</code> 等待他執行完</p>
@@ -141,13 +141,13 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">class</span> <span class="nc">Program</span> <span class="p">{</span>
-    <span class="k">static</span> <span class="kt">int</span> <span class="n">Main</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">if</span><span class="p">(((</span><span class="n">System</span><span class="p">.</span><span class="n">Action</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;)</span><span class="n">System</span><span class="p">.</span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">)</span>
-            <span class="p">.</span><span class="n">BeginInvoke</span><span class="p">(</span><span class="s">&#34;Hello World&#34;</span><span class="p">,</span> <span class="k">null</span><span class="p">,</span> <span class="k">null</span><span class="p">).</span><span class="n">AsyncWaitHandle</span><span class="p">.</span><span class="n">WaitOne</span><span class="p">())</span> <span class="p">{}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Program</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">static</span> <span class="kt">int</span> <span class="n">Main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(((</span><span class="n">System</span><span class="p">.</span><span class="n">Action</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;)</span><span class="n">System</span><span class="p">.</span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="n">BeginInvoke</span><span class="p">(</span><span class="s">&#34;Hello World&#34;</span><span class="p">,</span> <span class="k">null</span><span class="p">,</span> <span class="k">null</span><span class="p">).</span><span class="n">AsyncWaitHandle</span><span class="p">.</span><span class="n">WaitOne</span><span class="p">())</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="3-使用-is-檢查">3. 使用 <code>is</code> 檢查</h2>
 <p>這個是<a href="https://stackoverflow.com/a/32358864/1568102" target="_blank" rel="noopener noreffer">網路上查到</a>的，我覺得最直覺的方法 XD，缺點是會跳 <code>CS0184</code> 警告，可以用 <code>#pragma warning disable CS0184</code> 隱藏起來</p>
@@ -161,13 +161,13 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="cp">#pragma warning disable CS0184
-</span><span class="cp"></span><span class="k">class</span> <span class="nc">Program</span> <span class="p">{</span>
-    <span class="k">static</span> <span class="kt">int</span> <span class="n">Main</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Hello World&#34;</span><span class="p">)</span> <span class="k">is</span> <span class="kt">object</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="cp">#pragma warning disable CS0184</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Program</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">static</span> <span class="kt">int</span> <span class="n">Main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Hello World&#34;</span><span class="p">)</span> <span class="k">is</span> <span class="kt">object</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
@@ -199,7 +199,7 @@
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.93.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

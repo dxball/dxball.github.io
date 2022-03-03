@@ -20,7 +20,7 @@
 <meta name="application-name" content="Dx&#39;s Monkey Life">
 <meta name="apple-mobile-web-app-title" content="Dx&#39;s Monkey Life"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://dxball.github.io/2022/02/context-menu-open-sln-as-admin/" /><link rel="prev" href="https://dxball.github.io/2021/10/cocos-component-circular-reference/" /><link rel="next" href="https://dxball.github.io/2022/02/android-emulator-no-respose/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="google-site-verification" content="google9ef93b55acaac792" /><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://dxball.github.io/2022/02/context-menu-open-sln-as-admin/" /><link rel="prev" href="https://dxball.github.io/2021/10/cocos-component-circular-reference/" /><link rel="next" href="https://dxball.github.io/2022/02/android-emulator-no-response/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="google-site-verification" content="google9ef93b55acaac792" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -118,12 +118,12 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-reg" data-lang="reg">Windows Registry Editor Version 5.00
-
-<span class="k">[</span><span class="nb">HKEY_CLASSES_ROOT</span><span class="k">\VisualStudio.sln.267dcece\shell\RunAs]</span>
-<span class="k">[</span><span class="nb">HKEY_CLASSES_ROOT</span><span class="k">\VisualStudio.sln.267dcece\shell\RunAs\command]</span>
-<span class="na">@</span><span class="o">=</span><span class="s">&#34;\&#34;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\devenv.exe\&#34; \&#34;%1\&#34;&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-reg" data-lang="reg"><span class="line"><span class="cl">Windows Registry Editor Version 5.00
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">[</span><span class="nb">HKEY_CLASSES_ROOT</span><span class="k">\VisualStudio.sln.267dcece\shell\RunAs]</span>
+</span></span><span class="line"><span class="cl"><span class="k">[</span><span class="nb">HKEY_CLASSES_ROOT</span><span class="k">\VisualStudio.sln.267dcece\shell\RunAs\command]</span>
+</span></span><span class="line"><span class="cl"><span class="na">@</span><span class="o">=</span><span class="s">&#34;\&#34;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\devenv.exe\&#34; \&#34;%1\&#34;&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>重新開機後，工作列對 Visual Studio Icon 按右鍵的專案選單，或是檔案總管對 <code>.sln</code> 檔按右鍵的選單都會出現 <code>以系統管理員身分執行</code></p>
 <p>Explorer 右鍵選單<br>
@@ -171,13 +171,13 @@
     </div>
 
     <div class="post-nav"><a href="/2021/10/cocos-component-circular-reference/" class="prev" rel="prev" title="Cocos Component Circular Reference 警告"><i class="fas fa-angle-left fa-fw"></i>Cocos Component Circular Reference 警告</a>
-            <a href="/2022/02/android-emulator-no-respose/" class="next" rel="next" title="Android Emulator 啟動無回應">Android Emulator 啟動無回應<i class="fas fa-angle-right fa-fw"></i></a></div>
+            <a href="/2022/02/android-emulator-no-response/" class="next" rel="next" title="Android Emulator 啟動無回應">Android Emulator 啟動無回應<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"><div id="utterances"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.93.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

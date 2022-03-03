@@ -122,18 +122,18 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt">201013165206.637 |BOT|{Recv Command} 93;026;
-201013165206.644 |BOT|{Send Command} 93;100;
-201013165206.677 |DEBUG|[Manager] Save Image: /var/log/image/201013/xxx.img
-201013165209.726 |BOT|Buffer=ABBCCDDDEEFFFGGG
-201013165209.726 |BOT|{Recv Command} 94;021 ...
-201013165209.741 |BOT|{Send Command} 94;100;
-201013165209.742 |DEBUG|[Warning][10130010] Something error
-201013165209.742 |DEBUG|[Manager] Clear Empty 4
-201013165209.743 |DEBUG|[Manager] Clear complete
-201013165209.779 |DEBUG|[Manager] Delete: /var/log/image/201012
-201013165209.829 |DEBUG|[Manager] End Clear Old Data
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">201013165206.637 |BOT|{Recv Command} 93;026;
+</span></span><span class="line"><span class="cl">201013165206.644 |BOT|{Send Command} 93;100;
+</span></span><span class="line"><span class="cl">201013165206.677 |DEBUG|[Manager] Save Image: /var/log/image/201013/xxx.img
+</span></span><span class="line"><span class="cl">201013165209.726 |BOT|Buffer=ABBCCDDDEEFFFGGG
+</span></span><span class="line"><span class="cl">201013165209.726 |BOT|{Recv Command} 94;021 ...
+</span></span><span class="line"><span class="cl">201013165209.741 |BOT|{Send Command} 94;100;
+</span></span><span class="line"><span class="cl">201013165209.742 |DEBUG|[Warning][10130010] Something error
+</span></span><span class="line"><span class="cl">201013165209.742 |DEBUG|[Manager] Clear Empty 4
+</span></span><span class="line"><span class="cl">201013165209.743 |DEBUG|[Manager] Clear complete
+</span></span><span class="line"><span class="cl">201013165209.779 |DEBUG|[Manager] Delete: /var/log/image/201012
+</span></span><span class="line"><span class="cl">201013165209.829 |DEBUG|[Manager] End Clear Old Data
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>其中每一列的最前面數字表示日期時間，格式為 <code>yyMMddHHmmss.fff</code>，需要把日期時間改為 <code>yy/MM/dd HH:mm:ss.fff</code></p>
 <h2 id="操作">操作</h2>
@@ -183,10 +183,10 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">group    (\d{2})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2}).(\d{3})
-格式       yy     MM     dd     HH     mm     ss      fff
-代表變數    \1     \2     \3     \4     \5     \6      \7
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">group    (\d{2})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2}).(\d{3})
+</span></span><span class="line"><span class="cl">格式       yy     MM     dd     HH     mm     ss      fff
+</span></span><span class="line"><span class="cl">代表變數    \1     \2     \3     \4     \5     \6      \7
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>其中變數 <code>\n</code> 也可以寫成 <code>\{n}</code>、<code>$n</code>、<code>${n}</code></p>
 <h2 id="reference">Reference</h2>
@@ -225,7 +225,7 @@
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.93.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

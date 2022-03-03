@@ -30,6 +30,9 @@ bcdedit /set hypervisorlaunchtype off
 ### Android Emulator 可以開但 WSL 打不開
 WSL 需要 Hyper-V 啟用，目前測試再把 Hyper-V 重新啟用後，也可以正常開 WSL 跟 Android Emulator
 
+## 20220303 更新
+後來似乎只要 dart 或 flutter 有更新，就會再次發生，目前測試只要先把 Hyper-V 停用 -> 重開機，就可以打開 Android 模擬器，然後再重新打開 Hyper-V 就好了
+
 ```powershell
 bcdedit /set hypervisorlaunchtype auto
 ```

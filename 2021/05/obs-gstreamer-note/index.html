@@ -125,8 +125,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt">rtspsrc location=rtsp://192.168.1.168:554/stream latency=0 protocols=tcp ! rtpjitterbuffer latency=0 ! watchdog timeout=10000 ! decodebin ! queue ! video.
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">rtspsrc location=rtsp://192.168.1.168:554/stream latency=0 protocols=tcp ! rtpjitterbuffer latency=0 ! watchdog timeout=10000 ! decodebin ! queue ! video.
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
@@ -139,8 +139,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt">rtspsrc location=rtsp://192.168.1.168:554/stream latency=0 protocols=tcp ! rtpjitterbuffer latency=0 ! rtph264depay ! h264parse ! avdec_h264 ! video.
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">rtspsrc location=rtsp://192.168.1.168:554/stream latency=0 protocols=tcp ! rtpjitterbuffer latency=0 ! rtph264depay ! h264parse ! avdec_h264 ! video.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>其中 <code>avdec_h264</code> 可使用其他 decoder 替換，目前測試可以用的有</p>
 <ul>
@@ -180,7 +180,7 @@
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.93.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

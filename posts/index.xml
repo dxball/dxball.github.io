@@ -26,10 +26,10 @@
     <description><![CDATA[<p>最近更新 git for windows 到 2.34.1 之後，執行 fetch/pull/push 等遠端操作都會出現警告訊息，執行時間也變久，紀錄一下怎麼處理這個問題的</p>]]></description>
 </item><item>
     <title>Android Emulator 啟動無回應</title>
-    <link>https://dxball.github.io/2022/02/android-emulator-no-respose/</link>
+    <link>https://dxball.github.io/2022/02/android-emulator-no-response/</link>
     <pubDate>Wed, 23 Feb 2022 09:45:35 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://dxball.github.io/2022/02/android-emulator-no-respose/</guid>
+    <guid>https://dxball.github.io/2022/02/android-emulator-no-response/</guid>
     <description><![CDATA[<p>升級 Flutter 後，要啟動 Android 模擬器，卻無回應，記錄一下怎麼處理這個問題的</p>]]></description>
 </item><item>
     <title>Visual Studio 2019 使用系統管理員身分打開方案檔 (*.sln)</title>

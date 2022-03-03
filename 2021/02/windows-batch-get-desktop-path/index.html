@@ -117,11 +117,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-batch" data-lang="batch"><span class="k">FOR</span> <span class="k">/f</span> <span class="s2">&#34;usebackq tokens=1,2,*&#34;</span> <span class="se">%%</span>B <span class="k">IN</span> <span class="p">(</span><span class="sb">`REG QUERY &#34;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders&#34; /v Desktop`</span><span class="p">)</span> <span class="k">DO</span> <span class="k">SET</span> <span class="nv">DESKTOPDIR</span><span class="p">=</span><span class="se">%%</span>D
-<span class="k">FOR</span> <span class="k">/F</span> <span class="s2">&#34;usebackq delims=&#34;</span> <span class="se">%%</span>i <span class="k">in</span> <span class="p">(</span><span class="sb">`ECHO </span><span class="nv">%DESKTOPDIR%</span><span class="sb">`</span><span class="p">)</span> <span class="k">DO</span> <span class="k">SET</span> <span class="nv">DESKTOPDIR</span><span class="p">=</span><span class="se">%%</span>i
-
-<span class="k">ECHO</span> <span class="nv">%DESKTOPDIR%</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-batch" data-lang="batch"><span class="line"><span class="cl"><span class="k">FOR</span> <span class="k">/f</span> <span class="s2">&#34;usebackq tokens=1,2,*&#34;</span> <span class="se">%%</span>B <span class="k">IN</span> <span class="p">(</span><span class="sb">`REG QUERY &#34;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders&#34; /v Desktop`</span><span class="p">)</span> <span class="k">DO</span> <span class="k">SET</span> <span class="nv">DESKTOPDIR</span><span class="p">=</span><span class="se">%%</span>D
+</span></span><span class="line"><span class="cl"><span class="k">FOR</span> <span class="k">/F</span> <span class="s2">&#34;usebackq delims=&#34;</span> <span class="se">%%</span>i <span class="k">in</span> <span class="p">(</span><span class="sb">`ECHO </span><span class="nv">%DESKTOPDIR%</span><span class="sb">`</span><span class="p">)</span> <span class="k">DO</span> <span class="k">SET</span> <span class="nv">DESKTOPDIR</span><span class="p">=</span><span class="se">%%</span>i
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">ECHO</span> <span class="nv">%DESKTOPDIR%</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>系統桌面路徑會記錄在 <code>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders</code> 裡面，先查詢出 Desktop 的值後再把路徑展開來</p>
 <h2 id="使用-powershell-取得桌面路徑">使用 Powershell 取得桌面路徑</h2>
@@ -132,10 +132,10 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-batch" data-lang="batch"><span class="k">FOR</span> <span class="k">/F</span> <span class="s2">&#34;usebackq delims=&#34;</span> <span class="se">%%</span>i <span class="k">in</span> <span class="p">(</span><span class="sb">`powershell -Command &#34;&amp; {[Environment]::GetFolderPath(&#39;Desktop&#39;)}&#34;`</span><span class="p">)</span> <span class="k">DO</span> <span class="k">SET</span> <span class="nv">DESKTOPDIR</span><span class="p">=</span><span class="se">%%</span>i
-
-<span class="k">ECHO</span> <span class="nv">%DESKTOPDIR%</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-batch" data-lang="batch"><span class="line"><span class="cl"><span class="k">FOR</span> <span class="k">/F</span> <span class="s2">&#34;usebackq delims=&#34;</span> <span class="se">%%</span>i <span class="k">in</span> <span class="p">(</span><span class="sb">`powershell -Command &#34;&amp; {[Environment]::GetFolderPath(&#39;Desktop&#39;)}&#34;`</span><span class="p">)</span> <span class="k">DO</span> <span class="k">SET</span> <span class="nv">DESKTOPDIR</span><span class="p">=</span><span class="se">%%</span>i
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">ECHO</span> <span class="nv">%DESKTOPDIR%</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>執行 powershell 命令 <code>[Environment]::GetFolderPath('Desktop')</code> 取得桌面路徑</p>
 <h2 id="使用-vbscript-取得桌面路徑">使用 VBScript 取得桌面路徑</h2>
@@ -153,17 +153,17 @@
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-batch" data-lang="batch"><span class="k">SET</span> <span class="nv">FIND_DESKTOP_SCRIPT</span><span class="p">=</span><span class="nv">%TEMP%</span>\<span class="nv">%RANDOM%</span>-<span class="nv">%RANDOM%</span>-<span class="nv">%RANDOM%</span>-<span class="nv">%RANDOM%</span>.vbs
-<span class="p">&gt;</span><span class="s2">&#34;</span><span class="nv">%FIND_DESKTOP_SCRIPT%</span><span class="s2">&#34;</span> <span class="p">(</span>
-    <span class="k">ECHO</span> set WshShell = WScript.CreateObject<span class="se">^(</span><span class="s2">&#34;WScript.Shell&#34;</span><span class="se">^)</span>
-    <span class="k">ECHO</span> strDesktop = WshShell.SpecialFolders<span class="se">^(</span><span class="s2">&#34;Desktop&#34;</span><span class="se">^)</span>
-    <span class="k">ECHO</span> WScript.Echo<span class="se">^(</span>strDesktop<span class="se">^)</span>
-<span class="p">)</span>
-<span class="k">FOR</span> <span class="k">/F</span> <span class="s2">&#34;usebackq delims=&#34;</span> <span class="se">%%</span>i <span class="k">in</span> <span class="p">(</span><span class="sb">`cscript //nologo &#34;</span><span class="nv">%FIND_DESKTOP_SCRIPT%</span><span class="sb">&#34;`</span><span class="p">)</span> <span class="k">DO</span> <span class="k">SET</span> <span class="nv">DESKTOPDIR</span><span class="p">=</span><span class="se">%%</span>i
-<span class="k">DEL</span> <span class="s2">&#34;</span><span class="nv">%FIND_DESKTOP_SCRIPT%</span><span class="s2">&#34;</span>
-
-<span class="k">ECHO</span> <span class="nv">%DESKTOPDIR%</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-batch" data-lang="batch"><span class="line"><span class="cl"><span class="k">SET</span> <span class="nv">FIND_DESKTOP_SCRIPT</span><span class="p">=</span><span class="nv">%TEMP%</span>\<span class="nv">%RANDOM%</span>-<span class="nv">%RANDOM%</span>-<span class="nv">%RANDOM%</span>-<span class="nv">%RANDOM%</span>.vbs
+</span></span><span class="line"><span class="cl"><span class="p">&gt;</span><span class="s2">&#34;</span><span class="nv">%FIND_DESKTOP_SCRIPT%</span><span class="s2">&#34;</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="k">ECHO</span> set WshShell = WScript.CreateObject<span class="se">^(</span><span class="s2">&#34;WScript.Shell&#34;</span><span class="se">^)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">ECHO</span> strDesktop = WshShell.SpecialFolders<span class="se">^(</span><span class="s2">&#34;Desktop&#34;</span><span class="se">^)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">ECHO</span> WScript.Echo<span class="se">^(</span>strDesktop<span class="se">^)</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">FOR</span> <span class="k">/F</span> <span class="s2">&#34;usebackq delims=&#34;</span> <span class="se">%%</span>i <span class="k">in</span> <span class="p">(</span><span class="sb">`cscript //nologo &#34;</span><span class="nv">%FIND_DESKTOP_SCRIPT%</span><span class="sb">&#34;`</span><span class="p">)</span> <span class="k">DO</span> <span class="k">SET</span> <span class="nv">DESKTOPDIR</span><span class="p">=</span><span class="se">%%</span>i
+</span></span><span class="line"><span class="cl"><span class="k">DEL</span> <span class="s2">&#34;</span><span class="nv">%FIND_DESKTOP_SCRIPT%</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">ECHO</span> <span class="nv">%DESKTOPDIR%</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>在 temp 目錄建立一個暫存的 VBScript 檔，用 VBScript 查詢桌面路徑後再刪除，注意輸出 vbs 檔的時候要 escape <code>(</code> <code>)</code> 字元</p>
 <h2 id="reference">Reference</h2>
@@ -202,7 +202,7 @@
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.93.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

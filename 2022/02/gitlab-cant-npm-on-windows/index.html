@@ -124,18 +124,18 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="nt">build_job</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l">build</span><span class="w">
-</span><span class="w">  </span><span class="nt">script</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span>- <span class="l">npm install</span><span class="w">
-</span><span class="w">    </span>- <span class="l">npm run build</span><span class="w">
-</span><span class="w">  </span><span class="nt">cache</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">paths</span><span class="p">:</span><span class="w">
-</span><span class="w">      </span>- <span class="l">node_modules/</span><span class="w">
-</span><span class="w">  </span><span class="nt">artifacts</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">paths</span><span class="p">:</span><span class="w">
-</span><span class="w">      </span>- <span class="l">build/*</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="nt">build_job</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l">build</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">script</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">npm install</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">npm run build</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">cache</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">paths</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">node_modules/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">artifacts</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">paths</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">build/*</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>執行 Log</p>
 <div class="highlight"><div class="chroma">
@@ -164,29 +164,29 @@
 </span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt">Executing &#34;step_script&#34; stage of the job script
-$ npm install
-up to date, audited 234 packages in 978ms
-17 packages are looking for funding
-  run `npm fund` for details
-found 0 vulnerabilities
-Saving cache for successful job
-00:03
-Creating cache default...
-Runtime platform                                    arch=amd64 os=windows pid=12496 revision=4aae0f02 version=13.9.0~beta.104.g4aae0f02
-node_modules/: found 4295 matching files and directories 
-No URL provided, cache will be not uploaded to shared cache server. Cache will be stored only locally. 
-Created cache
-Uploading artifacts for successful job
-00:00
-Uploading artifacts...
-Runtime platform                                    arch=amd64 os=windows pid=9576 revision=4aae0f02 version=13.9.0~beta.104.g4aae0f02
-WARNING: build/*: no matching files                
-ERROR: No files to upload                          
-Cleaning up file based variables
-00:01
-Job succeeded
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">Executing &#34;step_script&#34; stage of the job script
+</span></span><span class="line"><span class="cl">$ npm install
+</span></span><span class="line"><span class="cl">up to date, audited 234 packages in 978ms
+</span></span><span class="line"><span class="cl">17 packages are looking for funding
+</span></span><span class="line"><span class="cl">  run `npm fund` for details
+</span></span><span class="line"><span class="cl">found 0 vulnerabilities
+</span></span><span class="line"><span class="cl">Saving cache for successful job
+</span></span><span class="line"><span class="cl">00:03
+</span></span><span class="line"><span class="cl">Creating cache default...
+</span></span><span class="line"><span class="cl">Runtime platform                                    arch=amd64 os=windows pid=12496 revision=4aae0f02 version=13.9.0~beta.104.g4aae0f02
+</span></span><span class="line"><span class="cl">node_modules/: found 4295 matching files and directories 
+</span></span><span class="line"><span class="cl">No URL provided, cache will be not uploaded to shared cache server. Cache will be stored only locally. 
+</span></span><span class="line"><span class="cl">Created cache
+</span></span><span class="line"><span class="cl">Uploading artifacts for successful job
+</span></span><span class="line"><span class="cl">00:00
+</span></span><span class="line"><span class="cl">Uploading artifacts...
+</span></span><span class="line"><span class="cl">Runtime platform                                    arch=amd64 os=windows pid=9576 revision=4aae0f02 version=13.9.0~beta.104.g4aae0f02
+</span></span><span class="line"><span class="cl">WARNING: build/*: no matching files                
+</span></span><span class="line"><span class="cl">ERROR: No files to upload                          
+</span></span><span class="line"><span class="cl">Cleaning up file based variables
+</span></span><span class="line"><span class="cl">00:01
+</span></span><span class="line"><span class="cl">Job succeeded
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以看到只執行了 <code>npm install</code> 就結束工作了，搜尋了一下發現也有人遇到<a href="https://gitlab.com/gitlab-org/gitlab-runner/-/issues/2730" target="_blank" rel="noopener noreffer">一樣的問題</a></p>
 <p>目前的 workaround 是用 <code>call</code> 去呼叫 <code>npm</code></p>
@@ -198,11 +198,11 @@ Job succeeded
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="nt">build_job</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">script</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span>- <span class="l">call npm install</span><span class="w">
-</span><span class="w">    </span>- <span class="l">call npm run build</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="nt">build_job</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">script</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">call npm install</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">call npm run build</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="後記">後記</h2>
 <p>Windows Batch 已經被 Gitlab Runner <a href="https://docs.gitlab.com/runner/shells/#windows-batch" target="_blank" rel="noopener noreffer">標記為 deprecated</a> 了，不過因為環境的關係我們還是暫時用 cmd 來執行 runner，之後有機會的話再把環境改成 powershell</p>
@@ -241,7 +241,7 @@ Job succeeded
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.93.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

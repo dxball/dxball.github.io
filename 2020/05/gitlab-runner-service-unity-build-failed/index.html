@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/dxball.github.io\/2020\/05\/gitlab-runner-service-unity-build-failed\/"
-        },"image": ["https:\/\/dxball.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Unity3D, GitLab, CI\/CD, GitLab Runner","wordcount":  287 ,
+        },"image": ["https:\/\/dxball.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Unity3D, GitLab, CI\/CD, GitLab Runner","wordcount":  286 ,
         "url": "https:\/\/dxball.github.io\/2020\/05\/gitlab-runner-service-unity-build-failed\/","datePublished": "2020-05-01T23:51:04+08:00","dateModified": "2020-05-01T23:51:04+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/dxball.github.io\/images\/avatar.png"},"author": {
@@ -106,7 +106,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Gitlab Runner as Windows service freezed when building Unity project</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dxball</a></span>&nbsp;<span class="post-category">included in <a href="/categories/ci/cd/"><i class="far fa-folder fa-fw"></i>CI/CD</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-05-01">2020-05-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;287 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-05-01">2020-05-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;286 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -128,10 +128,10 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">CD C:\GitLab-Runner
-.\gitlab-runner.exe install
-.\gitlab-runner.exe start
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CD C:\GitLab-Runner
+</span></span><span class="line"><span class="cl">.\gitlab-runner.exe install
+</span></span><span class="line"><span class="cl">.\gitlab-runner.exe start
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>若用直接執行的方式執行 Job 就不會卡住</p>
 <div class="highlight"><div class="chroma">
@@ -140,9 +140,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">CD C:\GitLab-Runner
-.\gitlab-runner.exe run
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CD C:\GitLab-Runner
+</span></span><span class="line"><span class="cl">.\gitlab-runner.exe run
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>卡住之後查看 Unity Editor Log，發現有異常訊息 <code>Failed to get socket connection from UnityShaderCompiler.exe shader compiler!</code></p>
 <div class="highlight"><div class="chroma">
@@ -155,19 +155,17 @@
 </span><span class="lnt">6
 </span><span class="lnt">7
 </span><span class="lnt">8
-</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Failed to get socket connection from UnityShaderCompiler.exe shader compiler! C:/Program Files/Unity/Editor/Data/Tools/UnityShaderCompiler.exe
-UnityEditor.BuildPipeline:BuildPlayerInternalNoCheck(String[], String, String, BuildTargetGroup, BuildTarget, BuildOptions, Boolean)
-UnityEditor.BuildPipeline:BuildPlayerInternal(String[], String, String, BuildTargetGroup, BuildTarget, BuildOptions) (at C:\buildslave\unity\build\Editor\Mono\BuildPipeline.bindings.cs:358)
-UnityEditor.BuildPipeline:BuildPlayer(String[], String, String, BuildTargetGroup, BuildTarget, BuildOptions) (at C:\buildslave\unity\build\Editor\Mono\BuildPipeline.bindings.cs:257)
-UnityEditor.BuildPipeline:BuildPlayer(BuildPlayerOptions) (at C:\buildslave\unity\build\Editor\Mono\BuildPipeline.bindings.cs:240)
-
-[C:\buildslave\unity\build\Tools/UnityShaderCompiler/ShaderCompilerClient.cpp line 290] 
-(Filename: Assets/xxxx.cs Line: 218)
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Failed to get socket connection from UnityShaderCompiler.exe shader compiler! C:/Program Files/Unity/Editor/Data/Tools/UnityShaderCompiler.exe
+</span></span><span class="line"><span class="cl">UnityEditor.BuildPipeline:BuildPlayerInternalNoCheck(String[], String, String, BuildTargetGroup, BuildTarget, BuildOptions, Boolean)
+</span></span><span class="line"><span class="cl">UnityEditor.BuildPipeline:BuildPlayerInternal(String[], String, String, BuildTargetGroup, BuildTarget, BuildOptions) (at C:\buildslave\unity\build\Editor\Mono\BuildPipeline.bindings.cs:358)
+</span></span><span class="line"><span class="cl">UnityEditor.BuildPipeline:BuildPlayer(String[], String, String, BuildTargetGroup, BuildTarget, BuildOptions) (at C:\buildslave\unity\build\Editor\Mono\BuildPipeline.bindings.cs:257)
+</span></span><span class="line"><span class="cl">UnityEditor.BuildPipeline:BuildPlayer(BuildPlayerOptions) (at C:\buildslave\unity\build\Editor\Mono\BuildPipeline.bindings.cs:240)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[C:\buildslave\unity\build\Tools/UnityShaderCompiler/ShaderCompilerClient.cpp line 290] 
+</span></span><span class="line"><span class="cl">(Filename: Assets/xxxx.cs Line: 218)
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="發生原因">發生原因</h2>
 <p>根據<a href="https://stackoverflow.com/questions/17472389/how-to-increase-the-maximum-number-of-child-processes-that-can-be-spawned-by-a-w/17472390#17472390" title="Services get smaller desktop heaps than interactive sessions" target="_blank" rel="noopener noreffer">這邊</a>提到的，Service 的 Desktop heap 比較小，所以有可能在編譯大專案的時候資源不足讓程式卡住</p>
@@ -184,9 +182,9 @@ UnityEditor.BuildPipeline:BuildPlayer(BuildPlayerOptions) (at C:\buildslave\unit
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="gd">- SharedSection=1024,20480,768
-</span><span class="gd"></span><span class="gi">+ SharedSection=1024,20480,2048
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl"><span class="gd">- SharedSection=1024,20480,768
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+ SharedSection=1024,20480,2048
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><div class="details admonition warning open">
         <div class="details-summary admonition-title">
@@ -230,7 +228,7 @@ UnityEditor.BuildPipeline:BuildPlayer(BuildPlayerOptions) (at C:\buildslave\unit
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.93.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

@@ -116,12 +116,12 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ uname -a
-Linux codespaces_93f23e 5.4.0-1031-azure <span class="c1">#32~18.04.1-Ubuntu SMP Tue Oct 6 10:03:22 UTC 2020 x86_64 GNU/Linux</span>
-
-$ hugo version
-Hugo Static Site Generator v0.71.0-06150C87/extended linux/amd64 BuildDate: 2020-05-18T16:15:29Z
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ uname -a
+</span></span><span class="line"><span class="cl">Linux codespaces_93f23e 5.4.0-1031-azure <span class="c1">#32~18.04.1-Ubuntu SMP Tue Oct 6 10:03:22 UTC 2020 x86_64 GNU/Linux</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ hugo version
+</span></span><span class="line"><span class="cl">Hugo Static Site Generator v0.71.0-06150C87/extended linux/amd64 BuildDate: 2020-05-18T16:15:29Z
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>想要測試 hugo 內建 server，預設會用 <code>localhost</code> 來建立網站，但外面連不到</p>
 <div class="highlight"><div class="chroma">
@@ -141,20 +141,20 @@ Hugo Static Site Generator v0.71.0-06150C87/extended linux/amd64 BuildDate: 2020
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt">$ hugo server -D
-.
-.
-.
-.
-Built in 620 ms
-Watching for changes in /home/codespace/workspace/HugoRepo/{archetypes,content,data,static,themes}
-Watching for config changes in /home/codespace/workspace/HugoRepo/config.toml
-Environment: &#34;development&#34;
-Serving pages from memory
-Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Press Ctrl+C to stop
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">$ hugo server -D
+</span></span><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">Built in 620 ms
+</span></span><span class="line"><span class="cl">Watching for changes in /home/codespace/workspace/HugoRepo/{archetypes,content,data,static,themes}
+</span></span><span class="line"><span class="cl">Watching for config changes in /home/codespace/workspace/HugoRepo/config.toml
+</span></span><span class="line"><span class="cl">Environment: &#34;development&#34;
+</span></span><span class="line"><span class="cl">Serving pages from memory
+</span></span><span class="line"><span class="cl">Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+</span></span><span class="line"><span class="cl">Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+</span></span><span class="line"><span class="cl">Press Ctrl+C to stop
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以透過指定 baseURL 到 <code>https://${CLOUDENV_ENVIRONMENT_ID}-1313.apps.codespaces.githubusercontent.com</code>，就可以進行測試了</p>
 <div class="highlight"><div class="chroma">
@@ -162,8 +162,8 @@ Press Ctrl+C to stop
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">hugo server -D --baseURL https://<span class="si">${</span><span class="nv">CLOUDENV_ENVIRONMENT_ID</span><span class="si">}</span>-1313.apps.codespaces.githubusercontent.com --appendPort<span class="o">=</span><span class="nb">false</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo server -D --baseURL https://<span class="si">${</span><span class="nv">CLOUDENV_ENVIRONMENT_ID</span><span class="si">}</span>-1313.apps.codespaces.githubusercontent.com --appendPort<span class="o">=</span><span class="nb">false</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="reference">Reference</h2>
 <ul>
@@ -199,7 +199,7 @@ Press Ctrl+C to stop
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.93.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

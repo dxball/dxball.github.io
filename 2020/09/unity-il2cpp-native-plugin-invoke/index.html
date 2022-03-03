@@ -122,14 +122,14 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span> <span class="n">CallbackFunc</span><span class="p">)(</span><span class="kt">int</span> <span class="n">val</span><span class="p">);</span>
-<span class="k">extern</span> <span class="s">&#34;C&#34;</span><span class="p">{</span>
-    <span class="kt">void</span> <span class="nf">PowOf2</span><span class="p">(</span><span class="kt">int</span> <span class="n">val</span><span class="p">,</span> <span class="n">CallbackFunc</span> <span class="n">callback</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">val</span> <span class="o">*=</span> <span class="n">val</span><span class="p">;</span>
-        <span class="n">callback</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span> <span class="n">CallbackFunc</span><span class="p">)(</span><span class="kt">int</span> <span class="n">val</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">extern</span> <span class="s">&#34;C&#34;</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">PowOf2</span><span class="p">(</span><span class="kt">int</span> <span class="n">val</span><span class="p">,</span> <span class="n">CallbackFunc</span> <span class="n">callback</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">val</span> <span class="o">*=</span> <span class="n">val</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">callback</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>C# side</li>
@@ -149,18 +149,18 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">delegate</span> <span class="k">void</span> <span class="n">PowOf2Delegate</span><span class="p">(</span><span class="kt">int</span> <span class="n">val</span><span class="p">);</span>
-<span class="na">[DllImport(&#34;somelib&#34;)]</span>
-<span class="k">extern</span> <span class="k">static</span> <span class="k">void</span> <span class="n">PowOf2</span><span class="p">(</span><span class="kt">int</span> <span class="n">val</span><span class="p">,</span> <span class="n">PowOf2Delegate</span> <span class="n">callback</span><span class="p">);</span>
-
-<span class="k">private</span> <span class="k">void</span> <span class="n">Start</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">PowOf2</span><span class="p">(</span><span class="m">10</span><span class="p">,</span> <span class="n">PowOf2Callback</span><span class="p">);</span>    <span class="c1">// &lt;&lt; NotSupportedException
-</span><span class="c1"></span><span class="p">}</span>
-
-<span class="k">private</span> <span class="k">void</span> <span class="n">PowOf2Callback</span><span class="p">(</span><span class="kt">int</span> <span class="n">val</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">delegate</span> <span class="k">void</span> <span class="n">PowOf2Delegate</span><span class="p">(</span><span class="kt">int</span> <span class="n">val</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="na">[DllImport(&#34;somelib&#34;)]</span>
+</span></span><span class="line"><span class="cl"><span class="k">extern</span> <span class="k">static</span> <span class="k">void</span> <span class="n">PowOf2</span><span class="p">(</span><span class="kt">int</span> <span class="n">val</span><span class="p">,</span> <span class="n">PowOf2Delegate</span> <span class="n">callback</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">private</span> <span class="k">void</span> <span class="n">Start</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">PowOf2</span><span class="p">(</span><span class="m">10</span><span class="p">,</span> <span class="n">PowOf2Callback</span><span class="p">);</span>    <span class="c1">// &lt;&lt; NotSupportedException</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">private</span> <span class="k">void</span> <span class="n">PowOf2Callback</span><span class="p">(</span><span class="kt">int</span> <span class="n">val</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Script backend 選 mono 的時候可正常執行，但選擇 IL2CPP 的時候，執行到 <code>PowOf2</code> 的時候會丟出 <code>NotSupportedException</code></p>
 <div class="highlight"><div class="chroma">
@@ -168,8 +168,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt">NotSupportedException: To marshal a managed method, please add an attribute named &#39;MonoPInvokeCallback&#39; to the method definition.
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">NotSupportedException: To marshal a managed method, please add an attribute named &#39;MonoPInvokeCallback&#39; to the method definition.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="解法">解法</h2>
 <p>把 callback method 改成 static，並在前面加上 <code>MonoPInvokeCallback</code> 宣告</p>
@@ -181,11 +181,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="na">[MonoPInvokeCallback(typeof(PowOf2Delegate))]</span>
-<span class="k">private</span> <span class="k">static</span> <span class="k">void</span> <span class="n">PowOf2Callback</span><span class="p">(</span><span class="kt">int</span> <span class="n">val</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="na">[MonoPInvokeCallback(typeof(PowOf2Delegate))]</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span> <span class="k">static</span> <span class="k">void</span> <span class="n">PowOf2Callback</span><span class="p">(</span><span class="kt">int</span> <span class="n">val</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="reference">Reference</h2>
 <ul>
@@ -222,7 +222,7 @@
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.93.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

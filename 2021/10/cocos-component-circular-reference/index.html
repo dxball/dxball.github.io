@@ -114,10 +114,10 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"> [Scene] Found possible circular reference in &#34;pack:///mods/fs/0/assets/MyComponentB.js&#34;, happened when use &#34;MyComponentA&#34; imported from &#34;./MyComponentA&#34; Error
- [Scene] You are explicitly specifying `undefined` type to cc property &#34;_a&#34; of cc class &#34;MyComponentB&#34;.
- [Scene] Please specifiy a default value for &#34;MyComponentB._a&#34; property at its declaration:
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl"> [Scene] Found possible circular reference in &#34;pack:///mods/fs/0/assets/MyComponentB.js&#34;, happened when use &#34;MyComponentA&#34; imported from &#34;./MyComponentA&#34; Error
+</span></span><span class="line"><span class="cl"> [Scene] You are explicitly specifying `undefined` type to cc property &#34;_a&#34; of cc class &#34;MyComponentB&#34;.
+</span></span><span class="line"><span class="cl"> [Scene] Please specifiy a default value for &#34;MyComponentB._a&#34; property at its declaration:
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="範例">範例</h2>
 <div class="highlight"><div class="chroma">
@@ -135,18 +135,18 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="c1">// MyComponentA.ts
-</span><span class="c1"></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">_decorator</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;cc&#39;</span><span class="p">;</span>
-<span class="kr">import</span> <span class="p">{</span> <span class="nx">MyComponentB</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;./MyComponentB&#39;</span><span class="p">;</span>
-
-<span class="kr">const</span> <span class="p">{</span> <span class="nx">ccclass</span><span class="p">,</span> <span class="nx">property</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">_decorator</span><span class="p">;</span>
-
-<span class="kd">@ccclass</span><span class="p">(</span><span class="s1">&#39;MyComponentA&#39;</span><span class="p">)</span>
-<span class="kr">export</span> <span class="kr">class</span> <span class="nx">MyComponentA</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
-    <span class="kd">@property</span><span class="p">({</span> <span class="kr">type</span><span class="o">:</span> <span class="nx">MyComponentB</span> <span class="p">})</span>
-    <span class="kr">private</span> <span class="nx">_b</span><span class="o">!:</span> <span class="nx">MyComponentB</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="c1">// MyComponentA.ts
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">_decorator</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;cc&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">MyComponentB</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;./MyComponentB&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">{</span> <span class="nx">ccclass</span><span class="p">,</span> <span class="nx">property</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">_decorator</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">@ccclass</span><span class="p">(</span><span class="s1">&#39;MyComponentA&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">class</span> <span class="nx">MyComponentA</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">@property</span><span class="p">({</span> <span class="kr">type</span><span class="o">:</span> <span class="nx">MyComponentB</span> <span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">private</span> <span class="nx">_b</span><span class="o">!:</span> <span class="nx">MyComponentB</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -163,18 +163,18 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="c1">// MyComponentB.ts
-</span><span class="c1"></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">_decorator</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;cc&#39;</span><span class="p">;</span>
-<span class="kr">import</span> <span class="p">{</span> <span class="nx">MyComponentA</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;./MyComponentA&#39;</span><span class="p">;</span>
-
-<span class="kr">const</span> <span class="p">{</span> <span class="nx">ccclass</span><span class="p">,</span> <span class="nx">property</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">_decorator</span><span class="p">;</span>
-
-<span class="kd">@ccclass</span><span class="p">(</span><span class="s1">&#39;MyComponentB&#39;</span><span class="p">)</span>
-<span class="kr">export</span> <span class="kr">class</span> <span class="nx">MyComponentB</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
-    <span class="kd">@property</span><span class="p">({</span> <span class="kr">type</span><span class="o">:</span> <span class="nx">MyComponentA</span> <span class="p">})</span>
-    <span class="kr">private</span> <span class="nx">_a</span><span class="o">!:</span> <span class="nx">MyComponentA</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="c1">// MyComponentB.ts
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">_decorator</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;cc&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">MyComponentA</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;./MyComponentA&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">{</span> <span class="nx">ccclass</span><span class="p">,</span> <span class="nx">property</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">_decorator</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">@ccclass</span><span class="p">(</span><span class="s1">&#39;MyComponentB&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">class</span> <span class="nx">MyComponentB</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">@property</span><span class="p">({</span> <span class="kr">type</span><span class="o">:</span> <span class="nx">MyComponentA</span> <span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">private</span> <span class="nx">_a</span><span class="o">!:</span> <span class="nx">MyComponentA</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="解法">解法</h2>
 <p>將其中一個類別另外寫一個 interface，<code>@property</code> 的型別改成 <code>Node</code>，再用 <code>Node.getComponent(className: string)</code> 的方式去取得對方元件即可</p>
@@ -184,8 +184,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="kr">export</span> <span class="kr">interface</span> <span class="nx">IMyComponentB</span> <span class="kr">extends</span> <span class="nx">MyComponentB</span> <span class="p">{</span> <span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">interface</span> <span class="nx">IMyComponentB</span> <span class="kr">extends</span> <span class="nx">MyComponentB</span> <span class="p">{</span> <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>MyComponentA.ts 修改為</p>
 <div class="highlight"><div class="chroma">
@@ -209,24 +209,24 @@
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">Node</span><span class="p">,</span> <span class="nx">_decorator</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;cc&#39;</span><span class="p">;</span>
-<span class="kr">import</span> <span class="p">{</span> <span class="nx">IMyComponentB</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;./MyComponentB&#39;</span><span class="p">;</span>
-
-<span class="kr">const</span> <span class="p">{</span> <span class="nx">ccclass</span><span class="p">,</span> <span class="nx">property</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">_decorator</span><span class="p">;</span>
-
-<span class="kd">@ccclass</span><span class="p">(</span><span class="s1">&#39;MyComponentA&#39;</span><span class="p">)</span>
-<span class="kr">export</span> <span class="kr">class</span> <span class="nx">MyComponentA</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
-    <span class="kd">@property</span><span class="p">({</span> <span class="kr">type</span><span class="o">:</span> <span class="nx">Node</span> <span class="p">})</span>
-    <span class="kr">private</span> <span class="nx">_bNode</span><span class="o">!:</span> <span class="nx">Node</span><span class="p">;</span>
-
-    <span class="kr">private</span> <span class="nx">_b</span>: <span class="kt">IMyComponentB</span> <span class="o">|</span> <span class="kc">null</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
-
-    <span class="kr">get</span> <span class="nx">b</span><span class="p">()</span><span class="o">:</span> <span class="nx">IMyComponentB</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_b</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span> <span class="k">this</span><span class="p">.</span><span class="nx">_b</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">_bNode</span><span class="p">.</span><span class="nx">getComponent</span><span class="p">(</span><span class="s1">&#39;MyComponentB&#39;</span><span class="p">)</span> <span class="kr">as</span> <span class="nx">IMyComponentB</span> <span class="p">}</span>
-        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">_b</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">Node</span><span class="p">,</span> <span class="nx">_decorator</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;cc&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">IMyComponentB</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;./MyComponentB&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">{</span> <span class="nx">ccclass</span><span class="p">,</span> <span class="nx">property</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">_decorator</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">@ccclass</span><span class="p">(</span><span class="s1">&#39;MyComponentA&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">class</span> <span class="nx">MyComponentA</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">@property</span><span class="p">({</span> <span class="kr">type</span><span class="o">:</span> <span class="nx">Node</span> <span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">private</span> <span class="nx">_bNode</span><span class="o">!:</span> <span class="nx">Node</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">private</span> <span class="nx">_b</span>: <span class="kt">IMyComponentB</span> <span class="o">|</span> <span class="kc">null</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">get</span> <span class="nx">b</span><span class="p">()</span><span class="o">:</span> <span class="nx">IMyComponentB</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_b</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span> <span class="k">this</span><span class="p">.</span><span class="nx">_b</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">_bNode</span><span class="p">.</span><span class="nx">getComponent</span><span class="p">(</span><span class="s1">&#39;MyComponentB&#39;</span><span class="p">)</span> <span class="kr">as</span> <span class="nx">IMyComponentB</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">_b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="reference">Reference</h2>
 <ul>
@@ -261,7 +261,7 @@
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.93.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
