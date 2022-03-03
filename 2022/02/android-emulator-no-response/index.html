@@ -10,7 +10,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dxball.github.io/2022/02/android-emulator-no-response/" /><meta property="og:image" content="https://dxball.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-02-23T09:45:35+08:00" />
-<meta property="article:modified_time" content="2022-03-03T04:20:05+00:00" />
+<meta property="article:modified_time" content="2022-03-03T04:21:16+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dxball.github.io/logo.png"/>
@@ -30,7 +30,7 @@
             "@type": "WebPage",
             "@id": "https:\/\/dxball.github.io\/2022\/02\/android-emulator-no-response\/"
         },"image": ["https:\/\/dxball.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Android, Flutter, WSL, Win10","wordcount":  313 ,
-        "url": "https:\/\/dxball.github.io\/2022\/02\/android-emulator-no-response\/","datePublished": "2022-02-23T09:45:35+08:00","dateModified": "2022-03-03T04:20:05+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        "url": "https:\/\/dxball.github.io\/2022\/02\/android-emulator-no-response\/","datePublished": "2022-02-23T09:45:35+08:00","dateModified": "2022-03-03T04:21:16+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/dxball.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -148,8 +148,6 @@
 <h2 id="其他問題">其他問題</h2>
 <h3 id="android-emulator-可以開但-wsl-打不開">Android Emulator 可以開但 WSL 打不開</h3>
 <p>WSL 需要 Hyper-V 啟用，目前測試再把 Hyper-V 重新啟用後，也可以正常開 WSL 跟 Android Emulator</p>
-<h2 id="20220303-更新">20220303 更新</h2>
-<p>後來似乎只要 dart 或 flutter 有更新，就會再次發生，目前測試只要先把 Hyper-V 停用 -&gt; 重開機，就可以打開 Android 模擬器，然後再重新打開 Hyper-V 就好了</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -158,7 +156,8 @@
 <pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">bcdedit</span> <span class="p">/</span><span class="nb">set </span><span class="n">hypervisorlaunchtype</span> <span class="n">auto</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div></div><div class="post-footer" id="post-footer">
+</div><h2 id="20220303-更新">20220303 更新</h2>
+<p>後來似乎只要 dart 或 flutter 有更新，就會再次發生，目前測試只要先把 Hyper-V 停用 -&gt; 重開機，就可以打開 Android 模擬器，然後再重新打開 Hyper-V 就好了</p></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
