@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>針對遺留代碼加入單元測試的藝術 課後筆記 - Dx&#39;s Monkey Life</title><meta name="Description" content="Unit Testing gracefully with legacy code notes"><meta property="og:title" content="針對遺留代碼加入單元測試的藝術 課後筆記" />
+<meta property="og:description" content="Unit Testing gracefully with legacy code notes" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dxball.github.io/2022/03/91-unit-test-course-notes/" /><meta property="og:image" content="https://dxball.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-29T22:08:25+08:00" />
+<meta property="article:modified_time" content="2022-03-29T14:15:26+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dxball.github.io/logo.png"/>
+
+<meta name="twitter:title" content="針對遺留代碼加入單元測試的藝術 課後筆記"/>
+<meta name="twitter:description" content="Unit Testing gracefully with legacy code notes"/>
+<meta name="application-name" content="Dx&#39;s Monkey Life">
+<meta name="apple-mobile-web-app-title" content="Dx&#39;s Monkey Life"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://dxball.github.io/2022/03/91-unit-test-course-notes/" /><link rel="prev" href="https://dxball.github.io/2022/02/gitlab-cant-npm-on-windows/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="google-site-verification" content="google9ef93b55acaac792" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "針對遺留代碼加入單元測試的藝術 課後筆記",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/dxball.github.io\/2022\/03\/91-unit-test-course-notes\/"
+        },"image": ["https:\/\/dxball.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Unit Testing, Legacy Code","wordcount":  493 ,
+        "url": "https:\/\/dxball.github.io\/2022\/03\/91-unit-test-course-notes\/","datePublished": "2022-03-29T22:08:25+08:00","dateModified": "2022-03-29T14:15:26+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/dxball.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Dxball"
+            },"description": "Unit Testing gracefully with legacy code notes"
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Dx&#39;s Monkey Life"><span class="header-title-pre"><i class='fas fa-dog'></i></span>Dx&#39;s Monkey Life</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Dx&#39;s Monkey Life"><span class="header-title-pre"><i class='fas fa-dog'></i></span>Dx&#39;s Monkey Life</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">針對遺留代碼加入單元測試的藝術 課後筆記</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dxball</a></span>&nbsp;<span class="post-category">included in <a href="/categories/unit-testing/"><i class="far fa-folder fa-fw"></i>Unit Testing</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-29">2022-03-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;493 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="content" id="content"><p>報名上了 91 的<a href="https://tdd.best/courses/unit-testing-gracefully-with-legacy-code-202203/" target="_blank" rel="noopener noreffer">單元測試課程</a>，把還有印象的東西寫下來，看能不能順利的在平常 coding 的時候用上 XD</p>
+<h2 id="確認需求">確認需求</h2>
+<ul>
+<li>你理解的跟我理解的是否一樣?
+<ul>
+<li>可以故意舉有問題的情境，讓 PM 一起思考這個需求雙方理解是否一致</li>
+</ul>
+</li>
+<li>API 對外參數越少越好，對外面來說，知道越少事就能達到相同的事會比較輕鬆</li>
+</ul>
+<h2 id="isolated-unit-test">isolated unit test</h2>
+<ul>
+<li>測試目標 (SUT, System Under Test / CUT, Class Under Test)</li>
+<li>隔絕依賴，只測試單一功能</li>
+<li>Extract and override
+<ul>
+<li>不適用 static class/method</li>
+<li>不適用不能繼承的類別</li>
+<li>找到外部依賴</li>
+<li>抽離成 protect virtual method (可 override)</li>
+<li>繼承 SUT，override method，fake 外部依賴</li>
+<li>用子類別執行測試</li>
+<li><a href="https://dotblogs.com.tw/hatelove/2015/11/26/unit-test-by-extract-and-override" target="_blank" rel="noopener noreffer">很久以前的 Example</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="重構測試">重構測試</h2>
+<ol>
+<li>
+<p>SUT 抽離成 field，放 <code>[SetUp]</code> method</p>
+</li>
+<li>
+<p>依賴假物件，也要抽 field 放 <code>[SetUp]</code> method</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">private</span> <span class="n">FakeHoliday</span> <span class="m">_</span><span class="n">holiday</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="na">[SetUp]</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span> <span class="k">void</span> <span class="n">SetUp</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="m">_</span><span class="n">holiday</span> <span class="p">=</span> <span class="k">new</span> <span class="n">FakeHoliday</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>可精準描述該測試情境</p>
+</li>
+<li>
+<p>測試裡面應該只有情境</p>
+</li>
+<li>
+<p>就算更換 test framework，test code 應該不需要更動</p>
+</li>
+<li>
+<p>GivenXXX, OOOShouldBeXXXX</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="na">[Test]</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span> <span class="k">void</span> <span class="n">today_is_xmas</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">GiveToday</span><span class="p">(</span><span class="m">12</span><span class="p">,</span> <span class="m">25</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">SayHelloShouldReturn</span><span class="p">(</span><span class="s">&#34;Today is Christmas&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h2 id="測試方式">測試方式</h2>
+<ul>
+<li>Stub
+<ul>
+<li>模擬外部相依物件的行為，讓測試可繼續下去</li>
+</ul>
+</li>
+<li>Mock
+<ul>
+<li>驗證外部相依物件的互動，先定義好結果，再執行 SUT 的動作</li>
+<li>只要跟定義不一樣，其餘行為都會報錯</li>
+</ul>
+</li>
+<li>Spy
+<ul>
+<li>驗證外部相依物件的互動，先執行 SUT 動作，再驗證是不是正確的行為</li>
+<li>只驗證你想驗證的互動</li>
+</ul>
+</li>
+</ul>
+<h2 id="什麼時候要做測試">什麼時候要做測試</h2>
+<ul>
+<li>ROI(投資報酬率)高的
+<ul>
+<li>金流</li>
+<li>Security</li>
+<li>商譽</li>
+<li>有發生過 bug 需要測試案例</li>
+</ul>
+</li>
+<li><a href="https://tdd.best/blog/code-coverage-and-tdd/" target="_blank" rel="noopener noreffer">Code Coverage 使用方式</a></li>
+</ul></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-03-29</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://dxball.github.io/2022/03/91-unit-test-course-notes/" data-title="針對遺留代碼加入單元測試的藝術 課後筆記" data-via="xxxx" data-hashtags="Unit Testing,Legacy Code"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://dxball.github.io/2022/03/91-unit-test-course-notes/" data-hashtag="Unit Testing"><i class="fab fa-facebook-square fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/unit-testing/">Unit Testing</a>,&nbsp;<a href="/tags/legacy-code/">Legacy Code</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2022/02/gitlab-cant-npm-on-windows/" class="prev" rel="prev" title="GitLab Runner 在 Windows cmd 環境沒辦法執行兩句以上的 npm 指令"><i class="fas fa-angle-left fa-fw"></i>GitLab Runner 在 Windows cmd 環境沒辦法執行兩句以上的 npm 指令</a></div>
+</div>
+<div id="comments"><div id="utterances"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.96.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":"blog-comment","lightTheme":"github-light","repo":"dxball/dxball.github.io"}},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'UA-3998330-11', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-3998330-11" async></script></body>
+</html>

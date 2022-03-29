@@ -3,7 +3,14 @@
         <title>All Posts - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/posts/</link>
         <description>All Posts | Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 25 Feb 2022 17:02:33 &#43;0000</lastBuildDate><atom:link href="https://dxball.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 29 Mar 2022 22:08:25 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>針對遺留代碼加入單元測試的藝術 課後筆記</title>
+    <link>https://dxball.github.io/2022/03/91-unit-test-course-notes/</link>
+    <pubDate>Tue, 29 Mar 2022 22:08:25 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2022/03/91-unit-test-course-notes/</guid>
+    <description><![CDATA[<p>報名上了 91 的<a href="https://tdd.best/courses/unit-testing-gracefully-with-legacy-code-202203/" target="_blank" rel="noopener noreffer">單元測試課程</a>，把還有印象的東西寫下來，看能不能順利的在平常 coding 的時候用上 XD</p>]]></description>
+</item><item>
     <title>GitLab Runner 在 Windows cmd 環境沒辦法執行兩句以上的 npm 指令</title>
     <link>https://dxball.github.io/2022/02/gitlab-cant-npm-on-windows/</link>
     <pubDate>Fri, 25 Feb 2022 17:02:33 &#43;0000</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>https://dxball.github.io/2021/03/vs2019-open-proj-error/</guid>
     <description><![CDATA[<p>更新至 Visual Studio 2019 16.9 之後，打開專案會跳出 <code>The 'CascadePackage' package did not load correctly</code> 的錯誤</p>]]></description>
-</item><item>
-    <title>Windows Batch 取得桌面路徑的方法</title>
-    <link>https://dxball.github.io/2021/02/windows-batch-get-desktop-path/</link>
-    <pubDate>Mon, 01 Feb 2021 00:04:00 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2021/02/windows-batch-get-desktop-path/</guid>
-    <description><![CDATA[<p>有個需求是要用 Batch file 在桌面上建立一些檔案，遍尋不著桌面路徑的環境變數，只好透過其他方式來取得桌面路徑</p>]]></description>
 </item></channel>
 </rss>

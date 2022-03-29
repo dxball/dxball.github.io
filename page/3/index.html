@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.93.1" />
+	<meta name="generator" content="Hugo 0.96.0" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
@@ -94,6 +94,11 @@
 </div>
 <main class="main">
                 <div class="container"><div class="page home" posts><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2021/01/git-checkout-exclude-files/">git checkout 排除指定目錄/檔案</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dxball</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-01-11">2021-01-11</time></span>&nbsp;<span class="post-category">included in <a href="/categories/git/"><i class="far fa-folder fa-fw"></i>git</a></span></div><div class="content"><p>跟別人共用的專案，有時候 checkout 的時候不需要把部分的東西一併取出來，可以節省 compile 時間，git 有提供 sparse checkout 的功能，可以指定或排除特定目錄/檔案</p></div><div class="post-footer">
+        <a href="/2021/01/git-checkout-exclude-files/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/git/">git</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020/12/hugo-with-github-codespaces/">用 GitHub Codespaces 來操作 Hugo 網站</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dxball</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-12-08">2020-12-08</time></span>&nbsp;<span class="post-category">included in <a href="/categories/hugo/"><i class="far fa-folder fa-fw"></i>Hugo</a></span></div><div class="content"><p>GitHub 在今年的 GitHub satellite <a href="https://dxball.github.io/2020/05/github-codespaces-feature/" rel="">公佈了 Codespaces</a>，經過一段時間的等待終於申請到試用了</p></div><div class="post-footer">
         <a href="/2020/12/hugo-with-github-codespaces/">Read More</a><div class="post-tags">
@@ -118,11 +123,6 @@
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dxball</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-10-20">2020-10-20</time></span>&nbsp;<span class="post-category">included in <a href="/categories/editor/"><i class="far fa-folder fa-fw"></i>Editor</a></span></div><div class="content"><p>有時候我們需要把文件中某些特定字串改成另外的格式，以前我都是另外寫一隻程式去做字串處理，最近突然想到部分文字編輯器軟體有支援 Regular Expression 取代功能 (Notepad++, VSCode&hellip;)，這篇文章用來記錄 Notepad++ 的 regex 取代字串功能。</p></div><div class="post-footer">
         <a href="/2020/10/notepad-plus-plus-regex-replace/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/npp/">NPP</a>,&nbsp;<a href="/tags/editor/">Editor</a>,&nbsp;<a href="/tags/vscode/">VSCode</a>,&nbsp;<a href="/tags/regex/">Regex</a>,&nbsp;<a href="/tags/regular-expression/">Regular Expression</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020/10/ssh-client-session-ip/">取得 SSH Session Client 的 IP</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dxball</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-10-04">2020-10-04</time></span>&nbsp;<span class="post-category">included in <a href="/categories/linux/"><i class="far fa-folder fa-fw"></i>Linux</a></span></div><div class="content"><p>用 SSH 連到遠端 Server 後，有時候需要取得自己的 IP 來做某些事 (比如說設定 <code>DISPLAY</code> 環境變數)</p></div><div class="post-footer">
-        <a href="/2020/10/ssh-client-session-ip/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/ssh/">SSH</a>,&nbsp;<a href="/tags/linux/">Linux</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -149,7 +149,7 @@
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.93.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.96.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dxball</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

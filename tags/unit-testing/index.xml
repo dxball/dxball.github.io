@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Unit Testing - Tag - Dx&#39;s Monkey Life</title>
+        <link>https://dxball.github.io/tags/unit-testing/</link>
+        <description>Unit Testing - Tag - Dx&#39;s Monkey Life</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 29 Mar 2022 22:08:25 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/unit-testing/" rel="self" type="application/rss+xml" /><item>
+    <title>針對遺留代碼加入單元測試的藝術 課後筆記</title>
+    <link>https://dxball.github.io/2022/03/91-unit-test-course-notes/</link>
+    <pubDate>Tue, 29 Mar 2022 22:08:25 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2022/03/91-unit-test-course-notes/</guid>
+    <description><![CDATA[<p>報名上了 91 的<a href="https://tdd.best/courses/unit-testing-gracefully-with-legacy-code-202203/" target="_blank" rel="noopener noreffer">單元測試課程</a>，把還有印象的東西寫下來，看能不能順利的在平常 coding 的時候用上 XD</p>]]></description>
+</item></channel>
+</rss>
