@@ -3,7 +3,14 @@
         <title>All Posts - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/posts/</link>
         <description>All Posts | Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 29 Mar 2022 22:08:25 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 31 Mar 2022 00:12:18 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>GitLab CI 建立自動化執行 Unit Testing (NUnit)</title>
+    <link>https://dxball.github.io/2022/03/gitlab-ci-test-automation/</link>
+    <pubDate>Thu, 31 Mar 2022 00:12:18 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://dxball.github.io/2022/03/gitlab-ci-test-automation/</guid>
+    <description><![CDATA[<p>記錄一下 GitLab CI 自動跑 Unit Test 的步驟，有踩了一些小坑</p>]]></description>
+</item><item>
     <title>針對遺留代碼加入單元測試的藝術 課後筆記</title>
     <link>https://dxball.github.io/2022/03/91-unit-test-course-notes/</link>
     <pubDate>Tue, 29 Mar 2022 22:08:25 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>Author</author>
     <guid>https://dxball.github.io/2021/05/obs-gstreamer-note/</guid>
     <description><![CDATA[<p>有需求要在 OBS 中加入 RTSP 的來源，用 VLC source 或是內建的 Media Source 延遲都滿高的，找了一下發現有人做了 GStreamer 的 plugin，Latency 可以降到很低</p>]]></description>
-</item><item>
-    <title>Visual Studio 2019 16.9 打開專案跳錯誤</title>
-    <link>https://dxball.github.io/2021/03/vs2019-open-proj-error/</link>
-    <pubDate>Tue, 16 Mar 2021 22:46:59 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2021/03/vs2019-open-proj-error/</guid>
-    <description><![CDATA[<p>更新至 Visual Studio 2019 16.9 之後，打開專案會跳出 <code>The 'CascadePackage' package did not load correctly</code> 的錯誤</p>]]></description>
 </item></channel>
 </rss>

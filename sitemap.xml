@@ -2,25 +2,27 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://dxball.github.io/</loc><lastmod>2022-03-30T16:20:13&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dxball.github.io/tags/gitlab/</loc><lastmod>2022-03-30T16:20:13&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dxball.github.io/2022/03/gitlab-ci-test-automation/</loc><lastmod>2022-03-30T16:20:13&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dxball.github.io/tags/nunit/</loc><lastmod>2022-03-30T16:20:13&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dxball.github.io/posts/</loc><lastmod>2022-03-30T16:20:13&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dxball.github.io/tags/</loc><lastmod>2022-03-30T16:20:13&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dxball.github.io/tags/unit-testing/</loc><lastmod>2022-03-30T16:20:13&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://dxball.github.io/categories/</loc><lastmod>2022-03-29T14:15:26&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dxball.github.io/</loc><lastmod>2022-03-29T14:15:26&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://dxball.github.io/tags/legacy-code/</loc><lastmod>2022-03-29T14:15:26&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dxball.github.io/posts/</loc><lastmod>2022-03-29T14:15:26&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dxball.github.io/tags/</loc><lastmod>2022-03-29T14:15:26&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dxball.github.io/tags/unit-testing/</loc><lastmod>2022-03-29T14:15:26&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://dxball.github.io/categories/unit-testing/</loc><lastmod>2022-03-29T14:15:26&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://dxball.github.io/2022/03/91-unit-test-course-notes/</loc><lastmod>2022-03-29T14:15:26&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dxball.github.io/tags/gitlab/</loc><lastmod>2022-02-25T17:02:38&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://dxball.github.io/2022/02/gitlab-cant-npm-on-windows/</loc><lastmod>2022-02-25T17:02:38&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://dxball.github.io/tags/nodejs/</loc><lastmod>2022-02-25T17:02:38&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://dxball.github.io/tags/npm/</loc><lastmod>2022-02-25T17:02:38&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
-            <loc>https://dxball.github.io/2022/02/csharp-hello-world-without-semicolon/</loc><lastmod>2022-02-23T07:01:43&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
-            <loc>https://dxball.github.io/tags/codeforfun/</loc><lastmod>2022-02-23T07:01:43&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
-            <loc>https://dxball.github.io/categories/codeforfun/</loc><lastmod>2022-02-23T07:01:43&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
-            <loc>https://dxball.github.io/tags/csharp/</loc><lastmod>2022-02-23T07:01:43&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
-            <loc>https://dxball.github.io/tags/git/</loc><lastmod>2022-02-23T10:30:50&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
-            <loc>https://dxball.github.io/categories/git/</loc><lastmod>2022-02-23T10:30:50&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
-            <loc>https://dxball.github.io/2022/02/git-remote-operation-warning/</loc><lastmod>2022-02-23T10:30:50&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://dxball.github.io/2022/02/csharp-hello-world-without-semicolon/</loc><lastmod>2022-02-23T07:01:43&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dxball.github.io/tags/codeforfun/</loc><lastmod>2022-02-23T07:01:43&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dxball.github.io/categories/codeforfun/</loc><lastmod>2022-02-23T07:01:43&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dxball.github.io/tags/csharp/</loc><lastmod>2022-02-23T07:01:43&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dxball.github.io/tags/git/</loc><lastmod>2022-02-23T10:30:50&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dxball.github.io/categories/git/</loc><lastmod>2022-02-23T10:30:50&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dxball.github.io/2022/02/git-remote-operation-warning/</loc><lastmod>2022-02-23T10:30:50&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://dxball.github.io/tags/android/</loc><lastmod>2022-03-03T04:21:16&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
             <loc>https://dxball.github.io/categories/android/</loc><lastmod>2022-03-03T04:21:16&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
             <loc>https://dxball.github.io/2022/02/android-emulator-no-response/</loc><lastmod>2022-03-03T04:21:16&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
