@@ -3,26 +3,25 @@
         <title>Notes - Category - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/categories/notes/</link>
         <description>Notes - Category - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 05 May 2020 23:13:59 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/categories/notes/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 05 May 2020 23:13:59 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/categories/notes/" rel="self" type="application/rss+xml" /><item>
     <title>測試用 RTSP Stream</title>
     <link>https://dxball.github.io/2020/05/test-rtsp-stream/</link>
-    <pubDate>Tue, 05 May 2020 23:13:59 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/05/test-rtsp-stream/</guid>
+    <pubDate>Tue, 05 May 2020 23:13:59 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2020/05/test-rtsp-stream/</guid>
     <description><![CDATA[<p>記錄一下可能會用到的免費測試串流，未來就直接放在這篇了</p>]]></description>
 </item><item>
     <title>git ignore 替代方案</title>
     <link>https://dxball.github.io/2020/05/gitignore-alternate/</link>
-    <pubDate>Fri, 01 May 2020 20:14:12 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/05/gitignore-alternate/</guid>
+    <pubDate>Fri, 01 May 2020 20:14:12 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2020/05/gitignore-alternate/</guid>
     <description><![CDATA[<p>當有某個檔案或資料夾會因為測試需求而異動，但又不想簽入到 git repo 裡面 (例如 config 檔)，通常將路徑加入專案的 <code>.gitignore</code> 做排除</p>]]></description>
 </item><item>
     <title>The Fisrt post</title>
     <link>https://dxball.github.io/2020/04/firstpost/</link>
-    <pubDate>Thu, 30 Apr 2020 00:49:35 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/04/firstpost/</guid>
-    <description><![CDATA[值得紀念的首PO 這裡主要會放一些平常工作上遇到的問題或一些學習紀錄 希望能養成持續紀錄的習慣]]></description>
+    <pubDate>Thu, 30 Apr 2020 00:49:35 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2020/04/firstpost/</guid>
+    <description><![CDATA[<h1 id="值得紀念的首po" class="headerLink">
+    <a href="#%e5%80%bc%e5%be%97%e7%b4%80%e5%bf%b5%e7%9a%84%e9%a6%96po" class="header-mark"></a>值得紀念的首PO</h1><p>這裡主要會放一些平常工作上遇到的問題或一些學習紀錄</p>
+<p>希望能養成持續紀錄的習慣</p>]]></description>
 </item></channel>
 </rss>

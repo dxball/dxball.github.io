@@ -1,0 +1,13 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>LegacyCode - Tag - Dx&#39;s Monkey Life</title>
+        <link>https://dxball.github.io/tags/legacycode/</link>
+        <description>LegacyCode - Tag - Dx&#39;s Monkey Life</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 29 Mar 2022 22:08:25 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/legacycode/" rel="self" type="application/rss+xml" /><item>
+    <title>針對遺留代碼加入單元測試的藝術 課後筆記</title>
+    <link>https://dxball.github.io/2022/03/91-unit-test-course-notes/</link>
+    <pubDate>Tue, 29 Mar 2022 22:08:25 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2022/03/91-unit-test-course-notes/</guid>
+    <description><![CDATA[<p>報名上了 91 的<a href="https://tdd.best/courses/unit-testing-gracefully-with-legacy-code-202203/" target="_blank" rel="noopener noreferrer">單元測試課程</a>，把還有印象的東西寫下來，看能不能順利的在平常 coding 的時候用上 XD</p>]]></description>
+</item></channel>
+</rss>

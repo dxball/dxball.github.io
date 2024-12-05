@@ -3,12 +3,11 @@
         <title>GStreamer - Tag - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/tags/gstreamer/</link>
         <description>GStreamer - Tag - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 20 May 2021 22:39:33 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/gstreamer/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 20 May 2021 22:39:33 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/gstreamer/" rel="self" type="application/rss+xml" /><item>
     <title>OBS GStreamer 筆記</title>
     <link>https://dxball.github.io/2021/05/obs-gstreamer-note/</link>
-    <pubDate>Thu, 20 May 2021 22:39:33 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2021/05/obs-gstreamer-note/</guid>
+    <pubDate>Thu, 20 May 2021 22:39:33 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2021/05/obs-gstreamer-note/</guid>
     <description><![CDATA[<p>有需求要在 OBS 中加入 RTSP 的來源，用 VLC source 或是內建的 Media Source 延遲都滿高的，找了一下發現有人做了 GStreamer 的 plugin，Latency 可以降到很低</p>]]></description>
 </item></channel>
 </rss>

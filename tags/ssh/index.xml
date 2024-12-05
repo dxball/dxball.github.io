@@ -3,12 +3,11 @@
         <title>SSH - Tag - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/tags/ssh/</link>
         <description>SSH - Tag - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 04 Oct 2020 14:30:04 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/ssh/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 04 Oct 2020 14:30:04 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/ssh/" rel="self" type="application/rss+xml" /><item>
     <title>取得 SSH Session Client 的 IP</title>
     <link>https://dxball.github.io/2020/10/ssh-client-session-ip/</link>
-    <pubDate>Sun, 04 Oct 2020 14:30:04 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/10/ssh-client-session-ip/</guid>
+    <pubDate>Sun, 04 Oct 2020 14:30:04 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2020/10/ssh-client-session-ip/</guid>
     <description><![CDATA[<p>用 SSH 連到遠端 Server 後，有時候需要取得自己的 IP 來做某些事 (比如說設定 <code>DISPLAY</code> 環境變數)</p>]]></description>
 </item></channel>
 </rss>

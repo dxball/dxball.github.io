@@ -1,14 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>npm - Tag - Dx&#39;s Monkey Life</title>
+        <title>Npm - Tag - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/tags/npm/</link>
-        <description>npm - Tag - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 25 Feb 2022 17:02:33 &#43;0000</lastBuildDate><atom:link href="https://dxball.github.io/tags/npm/" rel="self" type="application/rss+xml" /><item>
+        <description>Npm - Tag - Dx&#39;s Monkey Life</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 25 Feb 2022 17:02:33 &#43;0000</lastBuildDate><atom:link href="https://dxball.github.io/tags/npm/" rel="self" type="application/rss+xml" /><item>
     <title>GitLab Runner 在 Windows cmd 環境沒辦法執行兩句以上的 npm 指令</title>
     <link>https://dxball.github.io/2022/02/gitlab-cant-npm-on-windows/</link>
-    <pubDate>Fri, 25 Feb 2022 17:02:33 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2022/02/gitlab-cant-npm-on-windows/</guid>
+    <pubDate>Fri, 25 Feb 2022 17:02:33 &#43;0000</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2022/02/gitlab-cant-npm-on-windows/</guid>
     <description><![CDATA[<p>使用 GitLab 跑 nodejs 專案遇到 script 執行不完全的問題</p>]]></description>
 </item></channel>
 </rss>

@@ -1,28 +1,27 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>git - Tag - Dx&#39;s Monkey Life</title>
+        <title>Git - Tag - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/tags/git/</link>
-        <description>git - Tag - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 23 Feb 2022 10:30:50 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/git/" rel="self" type="application/rss+xml" /><item>
+        <description>Git - Tag - Dx&#39;s Monkey Life</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 23 Feb 2022 10:30:50 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/git/" rel="self" type="application/rss+xml" /><item>
     <title>Git 遠端操作出現 warning: auto-detection of host provider took too long</title>
     <link>https://dxball.github.io/2022/02/git-remote-operation-warning/</link>
-    <pubDate>Wed, 23 Feb 2022 10:30:50 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2022/02/git-remote-operation-warning/</guid>
-    <description><![CDATA[<p>最近更新 git for windows 到 2.34.1 之後，執行 fetch/pull/push 等遠端操作都會出現警告訊息，執行時間也變久，紀錄一下怎麼處理這個問題的</p>]]></description>
+    <pubDate>Wed, 23 Feb 2022 10:30:50 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2022/02/git-remote-operation-warning/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/2022/02/git-remote-operation-warning/git-remote-operation-warning.png" referrerpolicy="no-referrer">
+            </div><p>最近更新 git for windows 到 2.34.1 之後，執行 fetch/pull/push 等遠端操作都會出現警告訊息，執行時間也變久，紀錄一下怎麼處理這個問題的</p>]]></description>
 </item><item>
     <title>git checkout 排除指定目錄/檔案</title>
     <link>https://dxball.github.io/2021/01/git-checkout-exclude-files/</link>
-    <pubDate>Mon, 11 Jan 2021 22:56:36 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2021/01/git-checkout-exclude-files/</guid>
+    <pubDate>Mon, 11 Jan 2021 22:56:36 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2021/01/git-checkout-exclude-files/</guid>
     <description><![CDATA[<p>跟別人共用的專案，有時候 checkout 的時候不需要把部分的東西一併取出來，可以節省 compile 時間，git 有提供 sparse checkout 的功能，可以指定或排除特定目錄/檔案</p>]]></description>
 </item><item>
     <title>git ignore 替代方案</title>
     <link>https://dxball.github.io/2020/05/gitignore-alternate/</link>
-    <pubDate>Fri, 01 May 2020 20:14:12 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/05/gitignore-alternate/</guid>
+    <pubDate>Fri, 01 May 2020 20:14:12 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2020/05/gitignore-alternate/</guid>
     <description><![CDATA[<p>當有某個檔案或資料夾會因為測試需求而異動，但又不想簽入到 git repo 裡面 (例如 config 檔)，通常將路徑加入專案的 <code>.gitignore</code> 做排除</p>]]></description>
 </item></channel>
 </rss>

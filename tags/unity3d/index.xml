@@ -3,26 +3,23 @@
         <title>Unity3D - Tag - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/tags/unity3d/</link>
         <description>Unity3D - Tag - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 22 Nov 2020 21:30:49 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/unity3d/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 22 Nov 2020 21:30:49 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/unity3d/" rel="self" type="application/rss+xml" /><item>
     <title>MacOSX 上的 VSCode 開啟 mono 專案，C# Extension 跑出找不到 .NET Framework 4.7.1 的錯誤</title>
     <link>https://dxball.github.io/2020/11/macos-vscode-mono-project-dotnet471-error/</link>
-    <pubDate>Sun, 22 Nov 2020 21:30:49 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/11/macos-vscode-mono-project-dotnet471-error/</guid>
+    <pubDate>Sun, 22 Nov 2020 21:30:49 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2020/11/macos-vscode-mono-project-dotnet471-error/</guid>
     <description><![CDATA[<p>MacOS 上要先安裝 .NET Core SDK 及 Mono 才能使用 VSCode 打開 mono/.NET 專案，但安裝後 VSCode 的 C# Extension 還是跳錯誤訊息</p>]]></description>
 </item><item>
     <title>Unity IL2CPP 中傳 deletage 給 Native plugin</title>
     <link>https://dxball.github.io/2020/09/unity-il2cpp-native-plugin-invoke/</link>
-    <pubDate>Wed, 23 Sep 2020 01:11:44 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/09/unity-il2cpp-native-plugin-invoke/</guid>
+    <pubDate>Wed, 23 Sep 2020 01:11:44 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2020/09/unity-il2cpp-native-plugin-invoke/</guid>
     <description><![CDATA[<p>在 C# 傳 callback method 到 native plugin 裡面，會先包裝成 delegate，這次在執行的時候遇到 <code>NotSupportedException</code></p>]]></description>
 </item><item>
     <title>Gitlab Runner as Windows service freezed when building Unity project</title>
     <link>https://dxball.github.io/2020/05/gitlab-runner-service-unity-build-failed/</link>
-    <pubDate>Fri, 01 May 2020 23:51:04 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/05/gitlab-runner-service-unity-build-failed/</guid>
-    <description><![CDATA[<p>用 Gitlab CI 建置自動化編譯 Unity 專案流程，在 <a href="https://docs.gitlab.com/runner/install/windows.html#installation" title="Install GitLab Runner on Windows" target="_blank" rel="noopener noreffer">Runner 註冊為服務</a>時，若專案過大可能會發生任務卡住的問題</p>]]></description>
+    <pubDate>Fri, 01 May 2020 23:51:04 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2020/05/gitlab-runner-service-unity-build-failed/</guid>
+    <description><![CDATA[<p>用 Gitlab CI 建置自動化編譯 Unity 專案流程，在 <a href="https://docs.gitlab.com/runner/install/windows.html#installation" title="Install GitLab Runner on Windows" target="_blank" rel="noopener noreferrer">Runner 註冊為服務</a>時，若專案過大可能會發生任務卡住的問題</p>]]></description>
 </item></channel>
 </rss>

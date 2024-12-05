@@ -3,12 +3,11 @@
         <title>Unity3D - Category - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/categories/unity3d/</link>
         <description>Unity3D - Category - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 23 Sep 2020 01:11:44 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/categories/unity3d/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 23 Sep 2020 01:11:44 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/categories/unity3d/" rel="self" type="application/rss+xml" /><item>
     <title>Unity IL2CPP 中傳 deletage 給 Native plugin</title>
     <link>https://dxball.github.io/2020/09/unity-il2cpp-native-plugin-invoke/</link>
-    <pubDate>Wed, 23 Sep 2020 01:11:44 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/09/unity-il2cpp-native-plugin-invoke/</guid>
+    <pubDate>Wed, 23 Sep 2020 01:11:44 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2020/09/unity-il2cpp-native-plugin-invoke/</guid>
     <description><![CDATA[<p>在 C# 傳 callback method 到 native plugin 裡面，會先包裝成 delegate，這次在執行的時候遇到 <code>NotSupportedException</code></p>]]></description>
 </item></channel>
 </rss>

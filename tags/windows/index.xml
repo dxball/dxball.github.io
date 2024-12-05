@@ -3,47 +3,41 @@
         <title>Windows - Tag - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/tags/windows/</link>
         <description>Windows - Tag - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 22 Oct 2021 22:58:08 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/windows/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 22 Oct 2021 22:58:08 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/windows/" rel="self" type="application/rss+xml" /><item>
     <title>在 Win10 中計算檔案 hash 值</title>
     <link>https://dxball.github.io/2021/10/calc-hash-in-win10/</link>
-    <pubDate>Fri, 22 Oct 2021 22:58:08 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2021/10/calc-hash-in-win10/</guid>
+    <pubDate>Fri, 22 Oct 2021 22:58:08 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2021/10/calc-hash-in-win10/</guid>
     <description><![CDATA[<p>Linux 下可以用 <code>md5sum</code> 或 <code>sha1sum</code> 來計算 hash，現在 Win10 也有內建工具 <code>certutil</code> 可以用了。</p>]]></description>
 </item><item>
     <title>Windows Batch 取得桌面路徑的方法</title>
     <link>https://dxball.github.io/2021/02/windows-batch-get-desktop-path/</link>
-    <pubDate>Mon, 01 Feb 2021 00:04:00 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2021/02/windows-batch-get-desktop-path/</guid>
+    <pubDate>Mon, 01 Feb 2021 00:04:00 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2021/02/windows-batch-get-desktop-path/</guid>
     <description><![CDATA[<p>有個需求是要用 Batch file 在桌面上建立一些檔案，遍尋不著桌面路徑的環境變數，只好透過其他方式來取得桌面路徑</p>]]></description>
 </item><item>
     <title>Windows Batch echo 數字到檔案</title>
     <link>https://dxball.github.io/2021/01/windows-batch-echo-number-to-file/</link>
-    <pubDate>Thu, 28 Jan 2021 00:33:01 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2021/01/windows-batch-echo-number-to-file/</guid>
+    <pubDate>Thu, 28 Jan 2021 00:33:01 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2021/01/windows-batch-echo-number-to-file/</guid>
     <description><![CDATA[<p>寫 batch 腳本時遇到的怪問題，將某些數字 echo redirect 到檔案時會消失不見</p>]]></description>
 </item><item>
     <title>Microsoft Store 打不開</title>
     <link>https://dxball.github.io/2020/11/ms-store-reinstall/</link>
-    <pubDate>Mon, 16 Nov 2020 23:10:37 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/11/ms-store-reinstall/</guid>
+    <pubDate>Mon, 16 Nov 2020 23:10:37 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2020/11/ms-store-reinstall/</guid>
     <description><![CDATA[<p>某次更新 Windows 10 後，Microsoft Store 怎麼點他都打不開，嘗試了一些方法都失敗，記錄一下有效的方法</p>]]></description>
 </item><item>
     <title>Win10 改回舊版相片檢視器</title>
     <link>https://dxball.github.io/2020/06/win10-photoviewer/</link>
-    <pubDate>Wed, 17 Jun 2020 00:41:16 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/06/win10-photoviewer/</guid>
+    <pubDate>Wed, 17 Jun 2020 00:41:16 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2020/06/win10-photoviewer/</guid>
     <description><![CDATA[<p>升級到 Win10 後，總覺得預設的圖片開啟程式<strong>相片</strong>不是很習慣，想換回 Win7 的<strong>相片檢視器</strong>該怎麼做？</p>]]></description>
 </item><item>
     <title>Win10 常用快速鍵</title>
     <link>https://dxball.github.io/2020/05/win10-useful-shortcuts/</link>
-    <pubDate>Tue, 12 May 2020 23:15:26 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2020/05/win10-useful-shortcuts/</guid>
+    <pubDate>Tue, 12 May 2020 23:15:26 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2020/05/win10-useful-shortcuts/</guid>
     <description><![CDATA[<p>紀錄一下升級到 Windows 10 之後我常用的快速鍵</p>]]></description>
 </item></channel>
 </rss>

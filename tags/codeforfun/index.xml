@@ -3,12 +3,11 @@
         <title>CodeForFun - Tag - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/tags/codeforfun/</link>
         <description>CodeForFun - Tag - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 23 Feb 2022 06:43:32 &#43;0000</lastBuildDate><atom:link href="https://dxball.github.io/tags/codeforfun/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 23 Feb 2022 06:43:32 &#43;0000</lastBuildDate><atom:link href="https://dxball.github.io/tags/codeforfun/" rel="self" type="application/rss+xml" /><item>
     <title>C#不使用 &#34;;&#34; 實作 Hello World</title>
     <link>https://dxball.github.io/2022/02/csharp-hello-world-without-semicolon/</link>
-    <pubDate>Wed, 23 Feb 2022 06:43:32 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://dxball.github.io/2022/02/csharp-hello-world-without-semicolon/</guid>
-    <description><![CDATA[<p>看到<a href="https://github.com/JacobLinCool/without-semicolon" target="_blank" rel="noopener noreffer">別的語言</a>的實作，也來試試看C#版的</p>]]></description>
+    <pubDate>Wed, 23 Feb 2022 06:43:32 &#43;0000</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2022/02/csharp-hello-world-without-semicolon/</guid>
+    <description><![CDATA[<p>看到<a href="https://github.com/JacobLinCool/without-semicolon" target="_blank" rel="noopener noreferrer">別的語言</a>的實作，也來試試看C#版的</p>]]></description>
 </item></channel>
 </rss>
