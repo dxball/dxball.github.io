@@ -3,7 +3,38 @@
         <title>VisualStudio - Tag - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/tags/visualstudio/</link>
         <description>VisualStudio - Tag - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 16 Feb 2022 16:55:46 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/visualstudio/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 05 Dec 2024 22:39:31 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/visualstudio/" rel="self" type="application/rss+xml" /><item>
+    <title>Visual Studio 2019/2022 使用系統管理員身分打開方案檔 (*.sln)</title>
+    <link>https://dxball.github.io/2024/12/visual-studio-open-sln-with-admin/</link>
+    <pubDate>Thu, 05 Dec 2024 22:39:31 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2024/12/visual-studio-open-sln-with-admin/</guid>
+    <description><![CDATA[<p>有些專案的程式需要用系統管理員權限才能執行，以往都是先用系統管理員身分打開 Visual Studio，再手動打開方案，查了之後才發現有方法可以直接對方案檔以系統管理員身分打開</p>]]></description>
+</item><item>
+    <title>Visual Studio Build Tools 下載點整理</title>
+    <link>https://dxball.github.io/2024/10/visual-studio-build-tools-download/</link>
+    <pubDate>Tue, 22 Oct 2024 22:47:19 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2024/10/visual-studio-build-tools-download/</guid>
+    <description><![CDATA[<p>Visual Studio Build Tools 下載點整理</p>]]></description>
+</item><item>
+    <title>專案參考 Nerdbank.GitVersioning 後，使用 dotnet build 編譯失敗</title>
+    <link>https://dxball.github.io/2023/11/reference-nerdbank-gitversioning-build-failed/</link>
+    <pubDate>Mon, 27 Nov 2023 22:11:01 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2023/11/reference-nerdbank-gitversioning-build-failed/</guid>
+    <description><![CDATA[<p>為了簡化專案版號的控制，測試引入 <a href="https://github.com/dotnet/Nerdbank.GitVersioning" target="_blank" rel="noopener noreferrer">Nerdbank.GitVersioning</a> 來協助自動加入 Assembly version 和 git commit id<br>
+本機測試正常，但 CI 環境上使用 <code>dotnet build</code> 編譯的時候跳錯誤</p>]]></description>
+</item><item>
+    <title>Windows Form 使用等寬字型</title>
+    <link>https://dxball.github.io/2023/10/use-monosapce-font-in-windows-form/</link>
+    <pubDate>Sun, 22 Oct 2023 23:36:50 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2023/10/use-monosapce-font-in-windows-form/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Visual Studio .NET Framework 4.0 專案 Intellisense 文件消失</title>
+    <link>https://dxball.github.io/2022/12/visual-studio-missing-intellisense/</link>
+    <pubDate>Tue, 27 Dec 2022 22:28:29 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2022/12/visual-studio-missing-intellisense/</guid>
+    <description><![CDATA[<p>VS語系設中文的時候還有，切換成英文的時候就不見了</p>]]></description>
+</item><item>
     <title>Visual Studio 2019 使用系統管理員身分打開方案檔 (*.sln)</title>
     <link>https://dxball.github.io/2022/02/context-menu-open-sln-as-admin/</link>
     <pubDate>Wed, 16 Feb 2022 16:55:46 &#43;0800</pubDate><author>

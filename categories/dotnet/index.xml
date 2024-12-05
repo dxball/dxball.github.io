@@ -3,7 +3,20 @@
         <title>Dotnet - Category - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/categories/dotnet/</link>
         <description>Dotnet - Category - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 14 Jul 2020 00:06:26 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/categories/dotnet/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 27 Nov 2023 22:11:01 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/categories/dotnet/" rel="self" type="application/rss+xml" /><item>
+    <title>專案參考 Nerdbank.GitVersioning 後，使用 dotnet build 編譯失敗</title>
+    <link>https://dxball.github.io/2023/11/reference-nerdbank-gitversioning-build-failed/</link>
+    <pubDate>Mon, 27 Nov 2023 22:11:01 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2023/11/reference-nerdbank-gitversioning-build-failed/</guid>
+    <description><![CDATA[<p>為了簡化專案版號的控制，測試引入 <a href="https://github.com/dotnet/Nerdbank.GitVersioning" target="_blank" rel="noopener noreferrer">Nerdbank.GitVersioning</a> 來協助自動加入 Assembly version 和 git commit id<br>
+本機測試正常，但 CI 環境上使用 <code>dotnet build</code> 編譯的時候跳錯誤</p>]]></description>
+</item><item>
+    <title>Windows Form 使用等寬字型</title>
+    <link>https://dxball.github.io/2023/10/use-monosapce-font-in-windows-form/</link>
+    <pubDate>Sun, 22 Oct 2023 23:36:50 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2023/10/use-monosapce-font-in-windows-form/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Visual Studio 專案建置完成後取得組件版本號並輸出在文字檔中</title>
     <link>https://dxball.github.io/2020/07/visual-studio-get-version-after-build/</link>
     <pubDate>Tue, 14 Jul 2020 00:06:26 &#43;0800</pubDate><author>

@@ -3,69 +3,164 @@
         <title>Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/</link>
         <description>Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 31 Mar 2022 00:12:18 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 05 Dec 2024 22:39:31 &#43;0800</lastBuildDate>
             <atom:link href="https://dxball.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>GitLab CI 建立自動化執行 Unit Testing (NUnit)</title>
-    <link>https://dxball.github.io/2022/03/gitlab-ci-test-automation/</link>
-    <pubDate>Thu, 31 Mar 2022 00:12:18 &#43;0800</pubDate><author>
-                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2022/03/gitlab-ci-test-automation/</guid>
-    <description><![CDATA[<p>記錄一下 GitLab CI 自動跑 Unit Test 的步驟，有踩了一些小坑</p>]]></description>
-</item><item>
-    <title>針對遺留代碼加入單元測試的藝術 課後筆記</title>
-    <link>https://dxball.github.io/2022/03/91-unit-test-course-notes/</link>
-    <pubDate>Tue, 29 Mar 2022 22:08:25 &#43;0800</pubDate><author>
-                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2022/03/91-unit-test-course-notes/</guid>
-    <description><![CDATA[<p>報名上了 91 的<a href="https://tdd.best/courses/unit-testing-gracefully-with-legacy-code-202203/" target="_blank" rel="noopener noreferrer">單元測試課程</a>，把還有印象的東西寫下來，看能不能順利的在平常 coding 的時候用上 XD</p>]]></description>
-</item><item>
-    <title>GitLab Runner 在 Windows cmd 環境沒辦法執行兩句以上的 npm 指令</title>
-    <link>https://dxball.github.io/2022/02/gitlab-cant-npm-on-windows/</link>
-    <pubDate>Fri, 25 Feb 2022 17:02:33 &#43;0000</pubDate><author>
-                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2022/02/gitlab-cant-npm-on-windows/</guid>
-    <description><![CDATA[<p>使用 GitLab 跑 nodejs 專案遇到 script 執行不完全的問題</p>]]></description>
-</item><item>
-    <title>C#不使用 &#34;;&#34; 實作 Hello World</title>
-    <link>https://dxball.github.io/2022/02/csharp-hello-world-without-semicolon/</link>
-    <pubDate>Wed, 23 Feb 2022 06:43:32 &#43;0000</pubDate><author>
-                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2022/02/csharp-hello-world-without-semicolon/</guid>
-    <description><![CDATA[<p>看到<a href="https://github.com/JacobLinCool/without-semicolon" target="_blank" rel="noopener noreferrer">別的語言</a>的實作，也來試試看C#版的</p>]]></description>
-</item><item>
-    <title>Git 遠端操作出現 warning: auto-detection of host provider took too long</title>
-    <link>https://dxball.github.io/2022/02/git-remote-operation-warning/</link>
-    <pubDate>Wed, 23 Feb 2022 10:30:50 &#43;0800</pubDate><author>
-                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2022/02/git-remote-operation-warning/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/2022/02/git-remote-operation-warning/git-remote-operation-warning.png" referrerpolicy="no-referrer">
-            </div><p>最近更新 git for windows 到 2.34.1 之後，執行 fetch/pull/push 等遠端操作都會出現警告訊息，執行時間也變久，紀錄一下怎麼處理這個問題的</p>]]></description>
-</item><item>
-    <title>Android Emulator 啟動無回應</title>
-    <link>https://dxball.github.io/2022/02/android-emulator-no-response/</link>
-    <pubDate>Wed, 23 Feb 2022 09:45:35 &#43;0800</pubDate><author>
-                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2022/02/android-emulator-no-response/</guid>
-    <description><![CDATA[<p>升級 Flutter 後，要啟動 Android 模擬器，卻無回應，記錄一下怎麼處理這個問題的</p>]]></description>
-</item><item>
-    <title>Visual Studio 2019 使用系統管理員身分打開方案檔 (*.sln)</title>
-    <link>https://dxball.github.io/2022/02/context-menu-open-sln-as-admin/</link>
-    <pubDate>Wed, 16 Feb 2022 16:55:46 &#43;0800</pubDate><author>
-                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2022/02/context-menu-open-sln-as-admin/</guid>
+    <title>Visual Studio 2019/2022 使用系統管理員身分打開方案檔 (*.sln)</title>
+    <link>https://dxball.github.io/2024/12/visual-studio-open-sln-with-admin/</link>
+    <pubDate>Thu, 05 Dec 2024 22:39:31 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2024/12/visual-studio-open-sln-with-admin/</guid>
     <description><![CDATA[<p>有些專案的程式需要用系統管理員權限才能執行，以往都是先用系統管理員身分打開 Visual Studio，再手動打開方案，查了之後才發現有方法可以直接對方案檔以系統管理員身分打開</p>]]></description>
 </item><item>
-    <title>Cocos Component Circular Reference 警告</title>
-    <link>https://dxball.github.io/2021/10/cocos-component-circular-reference/</link>
-    <pubDate>Sat, 30 Oct 2021 02:57:01 &#43;0800</pubDate><author>
-                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2021/10/cocos-component-circular-reference/</guid>
-    <description><![CDATA[<p>用之前 Unity 經驗在寫 cocos 元件的時候遇到一堆警告，搞了老半天才發現是怎麼回事</p>]]></description>
+    <title>Visual Studio Build Tools 下載點整理</title>
+    <link>https://dxball.github.io/2024/10/visual-studio-build-tools-download/</link>
+    <pubDate>Tue, 22 Oct 2024 22:47:19 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2024/10/visual-studio-build-tools-download/</guid>
+    <description><![CDATA[<p>Visual Studio Build Tools 下載點整理</p>]]></description>
 </item><item>
-    <title>在 Win10 中計算檔案 hash 值</title>
-    <link>https://dxball.github.io/2021/10/calc-hash-in-win10/</link>
-    <pubDate>Fri, 22 Oct 2021 22:58:08 &#43;0800</pubDate><author>
-                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2021/10/calc-hash-in-win10/</guid>
-    <description><![CDATA[<p>Linux 下可以用 <code>md5sum</code> 或 <code>sha1sum</code> 來計算 hash，現在 Win10 也有內建工具 <code>certutil</code> 可以用了。</p>]]></description>
+    <title>yt-dlp 使用範例</title>
+    <link>https://dxball.github.io/2024/06/yt-dlp-use-case/</link>
+    <pubDate>Tue, 18 Jun 2024 22:50:10 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2024/06/yt-dlp-use-case/</guid>
+    <description><![CDATA[<p>收集 <a href="https://github.com/yt-dlp/yt-dlp" target="_blank" rel="noopener noreferrer">yt-dlp</a> 基本使用方式</p>]]></description>
 </item><item>
-    <title>OBS GStreamer 筆記</title>
-    <link>https://dxball.github.io/2021/05/obs-gstreamer-note/</link>
-    <pubDate>Thu, 20 May 2021 22:39:33 &#43;0800</pubDate><author>
-                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2021/05/obs-gstreamer-note/</guid>
-    <description><![CDATA[<p>有需求要在 OBS 中加入 RTSP 的來源，用 VLC source 或是內建的 Media Source 延遲都滿高的，找了一下發現有人做了 GStreamer 的 plugin，Latency 可以降到很低</p>]]></description>
+    <title>在 Docker 中執行 msbuild 編譯 C&#43;&#43; 專案發生 LNK1318 錯誤</title>
+    <link>https://dxball.github.io/2024/04/msbuild-error-lnk1318-in-docker/</link>
+    <pubDate>Wed, 17 Apr 2024 21:43:51 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2024/04/msbuild-error-lnk1318-in-docker/</guid>
+    <description><![CDATA[<p>Windows Container 中安裝 Visual Studio 2017 BuildTools，編譯 C++ 專案發生錯誤</p>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    code-block-title 
+    
+    tw-flex 
+    tw-flex-row 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        tw-select-none 
+        tw-mx-2 
+        tw-block
+        group-[.is-open]:tw-rotate-90
+        tw-transition-[transform] 
+        tw-duration-500 
+        tw-ease-in-out
+        print:!tw-hidden"
+      disabled
+      aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></button>
+
+    <div class="code-block-title-bar tw-w-full">
+      <p class="tw-select-none !tw-my-1">text</p>
+    </div>
+    <div class="tw-flex">
+      <button 
+        class="
+          line-number-button
+          tw-select-none 
+          tw-mx-2 
+          tw-hidden 
+          group-[.is-open]:tw-block 
+          group-[.show-line-numbers]:tw-text-fgColor-link 
+          print:!tw-hidden" 
+        title="Toggle line numbers"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M61.77 401l17.5-20.15a19.92 19.92 0 0 0 5.07-14.19v-3.31C84.34 356 80.5 352 73 352H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h22.83a157.41 157.41 0 0 0-11 12.31l-5.61 7c-4 5.07-5.25 10.13-2.8 14.88l1.05 1.93c3 5.76 6.29 7.88 12.25 7.88h4.73c10.33 0 15.94 2.44 15.94 9.09 0 4.72-4.2 8.22-14.36 8.22a41.54 41.54 0 0 1-15.47-3.12c-6.49-3.88-11.74-3.5-15.6 3.12l-5.59 9.31c-3.72 6.13-3.19 11.72 2.63 15.94 7.71 4.69 20.38 9.44 37 9.44 34.16 0 48.5-22.75 48.5-44.12-.03-14.38-9.12-29.76-28.73-34.88zM496 224H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zM16 160h64a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H64V40a8 8 0 0 0-8-8H32a8 8 0 0 0-7.14 4.42l-8 16A8 8 0 0 0 24 64h8v64H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8zm-3.91 160H80a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H41.32c3.29-10.29 48.34-18.68 48.34-56.44 0-29.06-25-39.56-44.47-39.56-21.36 0-33.8 10-40.46 18.75-4.37 5.59-3 10.84 2.8 15.37l8.58 6.88c5.61 4.56 11 2.47 16.12-2.44a13.44 13.44 0 0 1 9.46-3.84c3.33 0 9.28 1.56 9.28 8.75C51 248.19 0 257.31 0 304.59v4C0 316 5.08 320 12.09 320z"/></svg></button>
+
+      <button 
+        class="
+          wrap-code-button
+          tw-select-none 
+          tw-mx-2 
+          tw-hidden 
+          group-[.is-open]:tw-block 
+          group-[.is-wrap]:tw-text-fgColor-link 
+          print:!tw-hidden" 
+        title="Toggle code wrap"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg></button>
+      
+      <button 
+        class="
+          copy-code-button
+          tw-select-none
+          tw-mx-2 
+          tw-hidden
+          group-[.is-open]:tw-block
+          hover:tw-text-fgColor-link 
+          print:!tw-hidden"
+        title="Copy code">
+          <span class="copy-icon tw-block"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"/></svg></span>
+          <span class="check-icon tw-hidden"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg></span>
+      </button>
+        
+      <button 
+        class="
+          tw-select-none 
+          tw-mx-2 
+          tw-block 
+          group-[.is-open]:tw-hidden 
+          print:!tw-hidden" 
+        disabled
+        aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"/></svg></button>
+    </div>
+  </div>
+  <pre style="counter-reset: codeblock;" class="tw-block tw-m-0 tw-p-0"><code 
+    id="codeblock-id-1" 
+    class="
+      chroma 
+      !tw-block 
+      tw-p-0
+      tw-m-0
+      tw-transition-[max-height] 
+      tw-duration-500 
+      tw-ease-in-out 
+      group-[.is-closed]:!tw-max-h-0 
+      group-[.is-wrap]:tw-text-wrap
+      tw-overflow-y-hidden
+      tw-overflow-x-auto
+      tw-scrollbar-thin
+      "><span class="line"><span class="cl">LINK : fatal error LNK1318: Unexpected PDB error; RPC (23) &#39;(0x000006E7)</span></span></code></pre>
+</div>]]></description>
+</item><item>
+    <title>WinXP 安裝 .NET Framework 2.0 及 Powershell 2.0</title>
+    <link>https://dxball.github.io/2024/01/install-net20-powershell2-in-winxp/</link>
+    <pubDate>Fri, 12 Jan 2024 22:21:17 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2024/01/install-net20-powershell2-in-winxp/</guid>
+    <description><![CDATA[<p>記錄怎麼在 WinXP 安裝 .NET Framework 2.0 及 Powershell 2.0 相關資訊</p>]]></description>
+</item><item>
+    <title>VSCode 開啟老舊 C&#43;&#43; 檔案無法正確顯示標色</title>
+    <link>https://dxball.github.io/2024/01/vscode-display-wrong-syntax-highlight-in-legacy-cpp-code/</link>
+    <pubDate>Tue, 09 Jan 2024 21:55:53 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2024/01/vscode-display-wrong-syntax-highlight-in-legacy-cpp-code/</guid>
+    <description><![CDATA[<p>手邊處理舊的 BCB6 專案，只是要單純打開看跟簡單的編輯，就沒有另外用 BCB 的 IDE 打開，VSCode 的 Syntax Highlight 壞掉了</p>]]></description>
+</item><item>
+    <title>專案參考 Nerdbank.GitVersioning 後，使用 dotnet build 編譯失敗</title>
+    <link>https://dxball.github.io/2023/11/reference-nerdbank-gitversioning-build-failed/</link>
+    <pubDate>Mon, 27 Nov 2023 22:11:01 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2023/11/reference-nerdbank-gitversioning-build-failed/</guid>
+    <description><![CDATA[<p>為了簡化專案版號的控制，測試引入 <a href="https://github.com/dotnet/Nerdbank.GitVersioning" target="_blank" rel="noopener noreferrer">Nerdbank.GitVersioning</a> 來協助自動加入 Assembly version 和 git commit id<br>
+本機測試正常，但 CI 環境上使用 <code>dotnet build</code> 編譯的時候跳錯誤</p>]]></description>
+</item><item>
+    <title>GitLab Runner fetch 專案時保留指定目錄不被刪除</title>
+    <link>https://dxball.github.io/2023/11/preserve-file-when-gitlab-runner-fetch/</link>
+    <pubDate>Thu, 23 Nov 2023 21:06:45 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2023/11/preserve-file-when-gitlab-runner-fetch/</guid>
+    <description><![CDATA[<p>GitLab Runner 在 fetch 專案時，預設會在 fetch 後執行 <code>git clean -ffdx</code> 命令，讓專案目錄維持在乾淨的狀態</p>]]></description>
+</item><item>
+    <title>Windows Form 使用等寬字型</title>
+    <link>https://dxball.github.io/2023/10/use-monosapce-font-in-windows-form/</link>
+    <pubDate>Sun, 22 Oct 2023 23:36:50 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2023/10/use-monosapce-font-in-windows-form/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Visual Studio .NET Framework 4.0 專案 Intellisense 文件消失</title>
+    <link>https://dxball.github.io/2022/12/visual-studio-missing-intellisense/</link>
+    <pubDate>Tue, 27 Dec 2022 22:28:29 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2022/12/visual-studio-missing-intellisense/</guid>
+    <description><![CDATA[<p>VS語系設中文的時候還有，切換成英文的時候就不見了</p>]]></description>
 </item></channel>
 </rss>

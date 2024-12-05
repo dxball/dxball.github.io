@@ -3,7 +3,26 @@
         <title>Dotnet - Tag - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/tags/dotnet/</link>
         <description>Dotnet - Tag - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 23 Sep 2020 01:11:44 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/dotnet/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 27 Nov 2023 22:11:01 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/dotnet/" rel="self" type="application/rss+xml" /><item>
+    <title>專案參考 Nerdbank.GitVersioning 後，使用 dotnet build 編譯失敗</title>
+    <link>https://dxball.github.io/2023/11/reference-nerdbank-gitversioning-build-failed/</link>
+    <pubDate>Mon, 27 Nov 2023 22:11:01 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2023/11/reference-nerdbank-gitversioning-build-failed/</guid>
+    <description><![CDATA[<p>為了簡化專案版號的控制，測試引入 <a href="https://github.com/dotnet/Nerdbank.GitVersioning" target="_blank" rel="noopener noreferrer">Nerdbank.GitVersioning</a> 來協助自動加入 Assembly version 和 git commit id<br>
+本機測試正常，但 CI 環境上使用 <code>dotnet build</code> 編譯的時候跳錯誤</p>]]></description>
+</item><item>
+    <title>Windows Form 使用等寬字型</title>
+    <link>https://dxball.github.io/2023/10/use-monosapce-font-in-windows-form/</link>
+    <pubDate>Sun, 22 Oct 2023 23:36:50 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2023/10/use-monosapce-font-in-windows-form/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Visual Studio .NET Framework 4.0 專案 Intellisense 文件消失</title>
+    <link>https://dxball.github.io/2022/12/visual-studio-missing-intellisense/</link>
+    <pubDate>Tue, 27 Dec 2022 22:28:29 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2022/12/visual-studio-missing-intellisense/</guid>
+    <description><![CDATA[<p>VS語系設中文的時候還有，切換成英文的時候就不見了</p>]]></description>
+</item><item>
     <title>Unity IL2CPP 中傳 deletage 給 Native plugin</title>
     <link>https://dxball.github.io/2020/09/unity-il2cpp-native-plugin-invoke/</link>
     <pubDate>Wed, 23 Sep 2020 01:11:44 &#43;0800</pubDate><author>

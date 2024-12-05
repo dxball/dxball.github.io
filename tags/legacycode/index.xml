@@ -3,7 +3,19 @@
         <title>LegacyCode - Tag - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/tags/legacycode/</link>
         <description>LegacyCode - Tag - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 29 Mar 2022 22:08:25 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/legacycode/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 12 Jan 2024 22:21:17 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/legacycode/" rel="self" type="application/rss+xml" /><item>
+    <title>WinXP 安裝 .NET Framework 2.0 及 Powershell 2.0</title>
+    <link>https://dxball.github.io/2024/01/install-net20-powershell2-in-winxp/</link>
+    <pubDate>Fri, 12 Jan 2024 22:21:17 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2024/01/install-net20-powershell2-in-winxp/</guid>
+    <description><![CDATA[<p>記錄怎麼在 WinXP 安裝 .NET Framework 2.0 及 Powershell 2.0 相關資訊</p>]]></description>
+</item><item>
+    <title>VSCode 開啟老舊 C&#43;&#43; 檔案無法正確顯示標色</title>
+    <link>https://dxball.github.io/2024/01/vscode-display-wrong-syntax-highlight-in-legacy-cpp-code/</link>
+    <pubDate>Tue, 09 Jan 2024 21:55:53 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2024/01/vscode-display-wrong-syntax-highlight-in-legacy-cpp-code/</guid>
+    <description><![CDATA[<p>手邊處理舊的 BCB6 專案，只是要單純打開看跟簡單的編輯，就沒有另外用 BCB 的 IDE 打開，VSCode 的 Syntax Highlight 壞掉了</p>]]></description>
+</item><item>
     <title>針對遺留代碼加入單元測試的藝術 課後筆記</title>
     <link>https://dxball.github.io/2022/03/91-unit-test-course-notes/</link>
     <pubDate>Tue, 29 Mar 2022 22:08:25 &#43;0800</pubDate><author>

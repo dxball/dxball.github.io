@@ -3,7 +3,13 @@
         <title>VSCode - Category - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/categories/vscode/</link>
         <description>VSCode - Category - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 22 Nov 2020 21:30:49 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/categories/vscode/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 09 Jan 2024 21:55:53 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/categories/vscode/" rel="self" type="application/rss+xml" /><item>
+    <title>VSCode 開啟老舊 C&#43;&#43; 檔案無法正確顯示標色</title>
+    <link>https://dxball.github.io/2024/01/vscode-display-wrong-syntax-highlight-in-legacy-cpp-code/</link>
+    <pubDate>Tue, 09 Jan 2024 21:55:53 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2024/01/vscode-display-wrong-syntax-highlight-in-legacy-cpp-code/</guid>
+    <description><![CDATA[<p>手邊處理舊的 BCB6 專案，只是要單純打開看跟簡單的編輯，就沒有另外用 BCB 的 IDE 打開，VSCode 的 Syntax Highlight 壞掉了</p>]]></description>
+</item><item>
     <title>MacOSX 上的 VSCode 開啟 mono 專案，C# Extension 跑出找不到 .NET Framework 4.7.1 的錯誤</title>
     <link>https://dxball.github.io/2020/11/macos-vscode-mono-project-dotnet471-error/</link>
     <pubDate>Sun, 22 Nov 2020 21:30:49 &#43;0800</pubDate><author>

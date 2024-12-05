@@ -3,7 +3,19 @@
         <title>VSCode - Tag - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/tags/vscode/</link>
         <description>VSCode - Tag - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 08 Dec 2020 05:07:16 &#43;0000</lastBuildDate><atom:link href="https://dxball.github.io/tags/vscode/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 05 Dec 2024 22:39:31 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/vscode/" rel="self" type="application/rss+xml" /><item>
+    <title>Visual Studio 2019/2022 使用系統管理員身分打開方案檔 (*.sln)</title>
+    <link>https://dxball.github.io/2024/12/visual-studio-open-sln-with-admin/</link>
+    <pubDate>Thu, 05 Dec 2024 22:39:31 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2024/12/visual-studio-open-sln-with-admin/</guid>
+    <description><![CDATA[<p>有些專案的程式需要用系統管理員權限才能執行，以往都是先用系統管理員身分打開 Visual Studio，再手動打開方案，查了之後才發現有方法可以直接對方案檔以系統管理員身分打開</p>]]></description>
+</item><item>
+    <title>VSCode 開啟老舊 C&#43;&#43; 檔案無法正確顯示標色</title>
+    <link>https://dxball.github.io/2024/01/vscode-display-wrong-syntax-highlight-in-legacy-cpp-code/</link>
+    <pubDate>Tue, 09 Jan 2024 21:55:53 &#43;0800</pubDate><author>
+                        <name>Dxball</name><uri>https://dxball.github.io/</uri></author><guid>https://dxball.github.io/2024/01/vscode-display-wrong-syntax-highlight-in-legacy-cpp-code/</guid>
+    <description><![CDATA[<p>手邊處理舊的 BCB6 專案，只是要單純打開看跟簡單的編輯，就沒有另外用 BCB 的 IDE 打開，VSCode 的 Syntax Highlight 壞掉了</p>]]></description>
+</item><item>
     <title>用 GitHub Codespaces 來操作 Hugo 網站</title>
     <link>https://dxball.github.io/2020/12/hugo-with-github-codespaces/</link>
     <pubDate>Tue, 08 Dec 2020 05:07:16 &#43;0000</pubDate><author>

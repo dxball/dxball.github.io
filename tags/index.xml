@@ -3,75 +3,75 @@
         <title>Tags - Tag - Dx&#39;s Monkey Life</title>
         <link>https://dxball.github.io/tags/</link>
         <description>Tags - Tag - Dx&#39;s Monkey Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 31 Mar 2022 00:12:18 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 05 Dec 2024 22:39:31 &#43;0800</lastBuildDate><atom:link href="https://dxball.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>VisualStudio</title>
+    <link>https://dxball.github.io/tags/visualstudio/</link>
+    <pubDate>Thu, 05 Dec 2024 22:39:31 &#43;0800</pubDate><author>
+        <name>Dxball</name>
+    </author><guid>https://dxball.github.io/tags/visualstudio/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>VSCode</title>
+    <link>https://dxball.github.io/tags/vscode/</link>
+    <pubDate>Thu, 05 Dec 2024 22:39:31 &#43;0800</pubDate><author>
+        <name>Dxball</name>
+    </author><guid>https://dxball.github.io/tags/vscode/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Windows</title>
+    <link>https://dxball.github.io/tags/windows/</link>
+    <pubDate>Thu, 05 Dec 2024 22:39:31 &#43;0800</pubDate><author>
+        <name>Dxball</name>
+    </author><guid>https://dxball.github.io/tags/windows/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Batch</title>
+    <link>https://dxball.github.io/tags/batch/</link>
+    <pubDate>Tue, 22 Oct 2024 22:47:19 &#43;0800</pubDate><author>
+        <name>Dxball</name>
+    </author><guid>https://dxball.github.io/tags/batch/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Msbuild</title>
+    <link>https://dxball.github.io/tags/msbuild/</link>
+    <pubDate>Tue, 22 Oct 2024 22:47:19 &#43;0800</pubDate><author>
+        <name>Dxball</name>
+    </author><guid>https://dxball.github.io/tags/msbuild/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Cmd</title>
+    <link>https://dxball.github.io/tags/cmd/</link>
+    <pubDate>Tue, 18 Jun 2024 22:50:10 &#43;0800</pubDate><author>
+        <name>Dxball</name>
+    </author><guid>https://dxball.github.io/tags/cmd/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>YouTube</title>
+    <link>https://dxball.github.io/tags/youtube/</link>
+    <pubDate>Tue, 18 Jun 2024 22:50:10 &#43;0800</pubDate><author>
+        <name>Dxball</name>
+    </author><guid>https://dxball.github.io/tags/youtube/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Yt-Dlp</title>
+    <link>https://dxball.github.io/tags/yt-dlp/</link>
+    <pubDate>Tue, 18 Jun 2024 22:50:10 &#43;0800</pubDate><author>
+        <name>Dxball</name>
+    </author><guid>https://dxball.github.io/tags/yt-dlp/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>CI/CD</title>
     <link>https://dxball.github.io/tags/ci/cd/</link>
-    <pubDate>Thu, 31 Mar 2022 00:12:18 &#43;0800</pubDate><author>
+    <pubDate>Wed, 17 Apr 2024 21:43:51 &#43;0800</pubDate><author>
         <name>Dxball</name>
     </author><guid>https://dxball.github.io/tags/ci/cd/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>GitLab</title>
-    <link>https://dxball.github.io/tags/gitlab/</link>
-    <pubDate>Thu, 31 Mar 2022 00:12:18 &#43;0800</pubDate><author>
+    <title>Docker</title>
+    <link>https://dxball.github.io/tags/docker/</link>
+    <pubDate>Wed, 17 Apr 2024 21:43:51 &#43;0800</pubDate><author>
         <name>Dxball</name>
-    </author><guid>https://dxball.github.io/tags/gitlab/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>NUnit</title>
-    <link>https://dxball.github.io/tags/nunit/</link>
-    <pubDate>Thu, 31 Mar 2022 00:12:18 &#43;0800</pubDate><author>
-        <name>Dxball</name>
-    </author><guid>https://dxball.github.io/tags/nunit/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>UnitTest</title>
-    <link>https://dxball.github.io/tags/unittest/</link>
-    <pubDate>Thu, 31 Mar 2022 00:12:18 &#43;0800</pubDate><author>
-        <name>Dxball</name>
-    </author><guid>https://dxball.github.io/tags/unittest/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>LegacyCode</title>
-    <link>https://dxball.github.io/tags/legacycode/</link>
-    <pubDate>Tue, 29 Mar 2022 22:08:25 &#43;0800</pubDate><author>
-        <name>Dxball</name>
-    </author><guid>https://dxball.github.io/tags/legacycode/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>NodeJS</title>
-    <link>https://dxball.github.io/tags/nodejs/</link>
-    <pubDate>Fri, 25 Feb 2022 17:02:33 &#43;0000</pubDate><author>
-        <name>Dxball</name>
-    </author><guid>https://dxball.github.io/tags/nodejs/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Npm</title>
-    <link>https://dxball.github.io/tags/npm/</link>
-    <pubDate>Fri, 25 Feb 2022 17:02:33 &#43;0000</pubDate><author>
-        <name>Dxball</name>
-    </author><guid>https://dxball.github.io/tags/npm/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>CodeForFun</title>
-    <link>https://dxball.github.io/tags/codeforfun/</link>
-    <pubDate>Wed, 23 Feb 2022 06:43:32 &#43;0000</pubDate><author>
-        <name>Dxball</name>
-    </author><guid>https://dxball.github.io/tags/codeforfun/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Csharp</title>
-    <link>https://dxball.github.io/tags/csharp/</link>
-    <pubDate>Wed, 23 Feb 2022 06:43:32 &#43;0000</pubDate><author>
-        <name>Dxball</name>
-    </author><guid>https://dxball.github.io/tags/csharp/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Git</title>
-    <link>https://dxball.github.io/tags/git/</link>
-    <pubDate>Wed, 23 Feb 2022 10:30:50 &#43;0800</pubDate><author>
-        <name>Dxball</name>
-    </author><guid>https://dxball.github.io/tags/git/</guid>
+    </author><guid>https://dxball.github.io/tags/docker/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
